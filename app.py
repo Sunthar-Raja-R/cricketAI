@@ -25,18 +25,18 @@ st.markdown(
     """
     <style>
       @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
-      :root { --ink:#17231e; --muted:#718078; --paper:#f3f5f1; --line:#dfe5df; --green:#17684d; --lime:#c5e96b; --orange:#ed8054; --blue:#477bb3; }
+            :root { --ink:#111b15; --muted:#46554b; --paper:#f8faf8; --line:#cbd5ce; --green:#17684d; --lime:#c5e96b; --orange:#ed8054; --blue:#477bb3; }
       html, body, [class*="css"] { font-family:'DM Sans', sans-serif; color:var(--ink); }
       .stApp { background:var(--paper); }
       [data-testid="stHeader"] { background:transparent; }
       [data-testid="stSidebar"] { background:#172b23; border-right:0; }
       [data-testid="stSidebar"] * { color:#edf4ef; }
-      [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p { color:#aebdb4; }
+            [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p { color:#d0ddd4; }
       [data-testid="stSidebar"] [data-testid="stRadio"] label { padding:8px 10px; border-radius:6px; }
       [data-testid="stSidebar"] [data-testid="stRadio"] label:hover { background:#294338; }
       .brand { font:600 30px 'Oswald', sans-serif; letter-spacing:0; color:white; margin:7px 0 2px; }
       .brand span { color:var(--lime); }
-      .side-note { color:#9db0a4; font-size:12px; margin-bottom:25px; }
+            .side-note { color:#c2d1c7; font-size:12px; margin-bottom:25px; }
       .eyebrow { color:var(--green); text-transform:uppercase; font-size:11px; font-weight:700; letter-spacing:1.1px; }
       .page-title { font:600 38px 'Oswald', sans-serif; letter-spacing:0; line-height:1.1; margin:5px 0 7px; color:var(--ink); }
       .subhead { color:var(--muted); margin:0 0 22px; font-size:14px; }
@@ -44,7 +44,7 @@ st.markdown(
       .hero:after { content:'BOUNDARY'; position:absolute; right:22px; bottom:-27px; color:rgba(255,255,255,.055); font:700 94px 'Oswald',sans-serif; letter-spacing:0; }
       .hero .eyebrow { color:var(--lime); }
       .hero h2 { color:white; font:600 29px 'Oswald',sans-serif; letter-spacing:0; margin:5px 0 7px; }
-      .hero p { color:#c7d7ce; margin:0; max-width:600px; font-size:14px; }
+            .hero p { color:#e0ebe4; margin:0; max-width:600px; font-size:14px; }
       .metric { background:white; border:1px solid var(--line); border-radius:7px; padding:15px 17px; min-height:92px; }
       .metric-label { color:var(--muted); text-transform:uppercase; font-size:10px; font-weight:700; letter-spacing:.8px; }
       .metric-value { color:var(--ink); font:600 29px 'Oswald',sans-serif; letter-spacing:0; margin-top:4px; }
@@ -57,6 +57,8 @@ st.markdown(
       .stButton button { border-radius:5px; }
       .stChatMessage { background:white; border:1px solid var(--line); border-radius:7px; }
       .stCaption { color:var(--muted); }
+            [data-testid="stTextInput"] input, [data-testid="stChatInput"] textarea { color:var(--ink); }
+            [data-testid="stTextInput"] input::placeholder, [data-testid="stChatInput"] textarea::placeholder { color:#526157; opacity:1; }
       @media (max-width:700px) { .page-title {font-size:32px;} .hero:after {font-size:58px; right:8px;} }
     </style>
     """,
