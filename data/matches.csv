@@ -1,11 +1,75 @@
-date,format,team,opponent,venue,runs,wickets,overs,run_rate,result,player_of_match
-2025-02-19,ODI,India,England,Nagpur,251,6,38.4,6.49,Won by 4 wickets,Shubman Gill
-2025-02-23,ODI,India,Pakistan,Dubai,241,2,42.3,5.67,Won by 6 wickets,Virat Kohli
-2025-03-02,ODI,India,New Zealand,Dubai,249,9,50.0,4.98,Lost by 44 runs,Varun Chakravarthy
-2025-03-04,ODI,India,Australia,Dubai,267,6,48.1,5.54,Won by 4 wickets,Virat Kohli
-2024-11-22,Test,India,Australia,Perth,150,10,49.4,3.02,Lost by 295 runs,Mitchell Starc
-2024-11-30,Test,India,Australia,Adelaide,180,10,44.1,4.07,Lost by 10 wickets,Travis Head
-2024-12-14,Test,India,Australia,Brisbane,260,10,74.5,3.48,Draw,Travis Head
-2024-06-29,T20I,India,South Africa,Bridgetown,176,7,20.0,8.80,Won by 7 runs,Virat Kohli
-2024-06-27,T20I,India,England,Providence,171,7,20.0,8.55,Won by 68 runs,Axar Patel
-2024-06-05,T20I,India,Ireland,New York,97,2,12.2,7.86,Won by 8 wickets,Rohit Sharma
+date,format,team,opponent,venue,runs,wickets,overs,run_rate,result,player_of_match,match_id,stage
+2026-03-28,IPL T20,Sunrisers Hyderabad,Royal Challengers Bengaluru,"M Chinnaswamy Stadium, Bengaluru",201,9,20.0,10.05,Royal Challengers Bengaluru won by 6 wickets,JA Duffy,1527674,League
+2026-03-29,IPL T20,Kolkata Knight Riders,Mumbai Indians,"Wankhede Stadium, Mumbai",220,4,20.0,11.0,Mumbai Indians won by 6 wickets,SN Thakur,1527675,League
+2026-03-30,IPL T20,Chennai Super Kings,Rajasthan Royals,"Barsapara Cricket Stadium, Guwahati",127,10,19.4,6.46,Rajasthan Royals won by 8 wickets,N Burger,1527676,League
+2026-03-31,IPL T20,Gujarat Titans,Punjab Kings,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",162,6,20.0,8.1,Punjab Kings won by 3 wickets,C Connolly,1527677,League
+2026-04-01,IPL T20,Lucknow Super Giants,Delhi Capitals,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",141,10,18.4,7.55,Delhi Capitals won by 6 wickets,Sameer Rizvi,1527678,League
+2026-04-02,IPL T20,Sunrisers Hyderabad,Kolkata Knight Riders,"Eden Gardens, Kolkata",226,8,20.0,11.3,Sunrisers Hyderabad won by 65 runs,Nithish Kumar Reddy,1527679,League
+2026-04-03,IPL T20,Chennai Super Kings,Punjab Kings,"MA Chidambaram Stadium, Chepauk, Chennai",209,5,20.0,10.45,Punjab Kings won by 5 wickets,Priyansh Arya,1527680,League
+2026-04-04,IPL T20,Mumbai Indians,Delhi Capitals,"Arun Jaitley Stadium, Delhi",162,6,20.0,8.1,Delhi Capitals won by 6 wickets,Sameer Rizvi,1527681,League
+2026-04-04,IPL T20,Rajasthan Royals,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",210,6,20.0,10.5,Rajasthan Royals won by 6 runs,Ravi Bishnoi,1527682,League
+2026-04-05,IPL T20,Sunrisers Hyderabad,Lucknow Super Giants,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",156,9,20.0,7.8,Lucknow Super Giants won by 5 wickets,Mohammed Shami,1527683,League
+2026-04-05,IPL T20,Royal Challengers Bengaluru,Chennai Super Kings,"M Chinnaswamy Stadium, Bengaluru",250,3,20.0,12.5,Royal Challengers Bengaluru won by 43 runs,TH David,1527684,League
+2026-04-06,IPL T20,Kolkata Knight Riders,,"Eden Gardens, Kolkata",25,2,3.4,6.82,No result,,1527685,League
+2026-04-07,IPL T20,Rajasthan Royals,Mumbai Indians,"Barsapara Cricket Stadium, Guwahati",150,3,11.0,13.64,Rajasthan Royals won by 27 runs,YBK Jaiswal,1527686,League
+2026-04-08,IPL T20,Gujarat Titans,Delhi Capitals,"Arun Jaitley Stadium, Delhi",210,4,20.0,10.5,Gujarat Titans won by 1 runs,Rashid Khan,1527687,League
+2026-04-09,IPL T20,Kolkata Knight Riders,Lucknow Super Giants,"Eden Gardens, Kolkata",181,4,20.0,9.05,Lucknow Super Giants won by 3 wickets,MD Choudhary,1527688,League
+2026-04-10,IPL T20,Royal Challengers Bengaluru,Rajasthan Royals,"Barsapara Cricket Stadium, Guwahati",201,8,20.0,10.05,Rajasthan Royals won by 6 wickets,V Suryavanshi,1527689,League
+2026-04-11,IPL T20,Sunrisers Hyderabad,Punjab Kings,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",219,6,20.0,10.95,Punjab Kings won by 6 wickets,SS Iyer,1527690,League
+2026-04-11,IPL T20,Chennai Super Kings,Delhi Capitals,"MA Chidambaram Stadium, Chepauk, Chennai",212,2,20.0,10.6,Chennai Super Kings won by 23 runs,SV Samson,1527691,League
+2026-04-12,IPL T20,Lucknow Super Giants,Gujarat Titans,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",164,8,20.0,8.2,Gujarat Titans won by 7 wickets,M Prasidh Krishna,1527692,League
+2026-04-12,IPL T20,Royal Challengers Bengaluru,Mumbai Indians,"Wankhede Stadium, Mumbai",240,4,20.0,12.0,Royal Challengers Bengaluru won by 18 runs,PD Salt,1527693,League
+2026-04-13,IPL T20,Sunrisers Hyderabad,Rajasthan Royals,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",216,6,20.0,10.8,Sunrisers Hyderabad won by 57 runs,PP Hinge,1529264,League
+2026-04-14,IPL T20,Chennai Super Kings,Kolkata Knight Riders,"MA Chidambaram Stadium, Chepauk, Chennai",192,5,20.0,9.6,Chennai Super Kings won by 32 runs,Noor Ahmad,1529265,League
+2026-04-15,IPL T20,Lucknow Super Giants,Royal Challengers Bengaluru,"M Chinnaswamy Stadium, Bengaluru",146,10,20.0,7.3,Royal Challengers Bengaluru won by 5 wickets,JR Hazlewood,1529266,League
+2026-04-16,IPL T20,Mumbai Indians,Punjab Kings,"Wankhede Stadium, Mumbai",195,6,20.0,9.75,Punjab Kings won by 7 wickets,Arshdeep Singh,1529267,League
+2026-04-17,IPL T20,Kolkata Knight Riders,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",180,10,20.0,9.0,Gujarat Titans won by 5 wickets,Shubman Gill,1529268,League
+2026-04-18,IPL T20,Royal Challengers Bengaluru,Delhi Capitals,"M Chinnaswamy Stadium, Bengaluru",175,8,20.0,8.75,Delhi Capitals won by 6 wickets,T Stubbs,1529269,League
+2026-04-18,IPL T20,Sunrisers Hyderabad,Chennai Super Kings,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",194,9,20.0,9.7,Sunrisers Hyderabad won by 10 runs,E Malinga,1529270,League
+2026-04-19,IPL T20,Rajasthan Royals,Kolkata Knight Riders,"Eden Gardens, Kolkata",155,9,20.0,7.75,Kolkata Knight Riders won by 4 wickets,CV Varun,1529271,League
+2026-04-19,IPL T20,Punjab Kings,Lucknow Super Giants,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",254,7,20.0,12.7,Punjab Kings won by 54 runs,Priyansh Arya,1529272,League
+2026-04-20,IPL T20,Mumbai Indians,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",199,5,20.0,9.95,Mumbai Indians won by 99 runs,Tilak Varma,1529273,League
+2026-04-21,IPL T20,Sunrisers Hyderabad,Delhi Capitals,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",242,2,20.0,12.1,Sunrisers Hyderabad won by 47 runs,Abhishek Sharma,1529274,League
+2026-04-22,IPL T20,Rajasthan Royals,Lucknow Super Giants,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",159,6,20.0,7.95,Rajasthan Royals won by 40 runs,RA Jadeja,1529275,League
+2026-04-23,IPL T20,Chennai Super Kings,Mumbai Indians,"Wankhede Stadium, Mumbai",207,6,20.0,10.35,Chennai Super Kings won by 103 runs,SV Samson,1529276,League
+2026-04-24,IPL T20,Gujarat Titans,Royal Challengers Bengaluru,"M Chinnaswamy Stadium, Bengaluru",205,3,20.0,10.25,Royal Challengers Bengaluru won by 5 wickets,V Kohli,1529277,League
+2026-04-25,IPL T20,Delhi Capitals,Punjab Kings,"Arun Jaitley Stadium, Delhi",264,2,20.0,13.2,Punjab Kings won by 6 wickets,KL Rahul,1529278,League
+2026-04-25,IPL T20,Rajasthan Royals,Sunrisers Hyderabad,"Sawai Mansingh Stadium, Jaipur",228,6,20.0,11.4,Sunrisers Hyderabad won by 5 wickets,Ishan Kishan,1529279,League
+2026-04-26,IPL T20,Chennai Super Kings,Gujarat Titans,"MA Chidambaram Stadium, Chepauk, Chennai",158,7,20.0,7.9,Gujarat Titans won by 8 wickets,K Rabada,1529280,League
+2026-04-26,IPL T20,Kolkata Knight Riders,Lucknow Super Giants,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",155,7,20.0,7.75,Tie,RK Singh,1529281,League
+2026-04-27,IPL T20,Delhi Capitals,Royal Challengers Bengaluru,"Arun Jaitley Stadium, Delhi",75,10,16.3,4.55,Royal Challengers Bengaluru won by 9 wickets,JR Hazlewood,1529282,League
+2026-04-28,IPL T20,Punjab Kings,Rajasthan Royals,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",222,4,20.0,11.1,Rajasthan Royals won by 6 wickets,D Ferreira,1529283,League
+2026-04-29,IPL T20,Mumbai Indians,Sunrisers Hyderabad,"Wankhede Stadium, Mumbai",243,5,20.0,12.15,Sunrisers Hyderabad won by 6 wickets,H Klaasen,1529284,League
+2026-04-30,IPL T20,Royal Challengers Bengaluru,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",155,10,19.2,8.02,Gujarat Titans won by 4 wickets,JO Holder,1529285,League
+2026-05-01,IPL T20,Rajasthan Royals,Delhi Capitals,"Sawai Mansingh Stadium, Jaipur",225,6,20.0,11.25,Delhi Capitals won by 7 wickets,KL Rahul,1529286,League
+2026-05-02,IPL T20,Mumbai Indians,Chennai Super Kings,"MA Chidambaram Stadium, Chepauk, Chennai",159,7,20.0,7.95,Chennai Super Kings won by 8 wickets,RD Gaikwad,1529287,League
+2026-05-03,IPL T20,Sunrisers Hyderabad,Kolkata Knight Riders,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",165,10,19.0,8.68,Kolkata Knight Riders won by 7 wickets,CV Varun,1529288,League
+2026-05-03,IPL T20,Punjab Kings,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",163,9,20.0,8.15,Gujarat Titans won by 4 wickets,JO Holder,1529289,League
+2026-05-04,IPL T20,Lucknow Super Giants,Mumbai Indians,"Wankhede Stadium, Mumbai",228,5,20.0,11.4,Mumbai Indians won by 6 wickets,RD Rickelton,1529290,League
+2026-05-05,IPL T20,Delhi Capitals,Chennai Super Kings,"Arun Jaitley Stadium, Delhi",155,7,20.0,7.75,Chennai Super Kings won by 8 wickets,SV Samson,1529291,League
+2026-05-06,IPL T20,Sunrisers Hyderabad,Punjab Kings,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",235,4,20.0,11.75,Sunrisers Hyderabad won by 33 runs,PJ Cummins,1529292,League
+2026-05-07,IPL T20,Lucknow Super Giants,Royal Challengers Bengaluru,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",209,3,19.0,11.0,Lucknow Super Giants won by 9 runs,MR Marsh,1529293,League
+2026-05-08,IPL T20,Delhi Capitals,Kolkata Knight Riders,"Arun Jaitley Stadium, Delhi",142,8,20.0,7.1,Kolkata Knight Riders won by 8 wickets,FH Allen,1529294,League
+2026-05-09,IPL T20,Gujarat Titans,Rajasthan Royals,"Sawai Mansingh Stadium, Jaipur",229,4,20.0,11.45,Gujarat Titans won by 77 runs,Rashid Khan,1529295,League
+2026-05-10,IPL T20,Lucknow Super Giants,Chennai Super Kings,"MA Chidambaram Stadium, Chepauk, Chennai",203,8,20.0,10.15,Chennai Super Kings won by 5 wickets,J Overton,1529296,League
+2026-05-10,IPL T20,Mumbai Indians,Royal Challengers Bengaluru,"Shaheed Veer Narayan Singh International Stadium, Raipur",166,7,20.0,8.3,Royal Challengers Bengaluru won by 2 wickets,B Kumar,1529297,League
+2026-05-11,IPL T20,Punjab Kings,Delhi Capitals,"Himachal Pradesh Cricket Association Stadium, Dharamsala",210,5,20.0,10.5,Delhi Capitals won by 3 wickets,M Tiwari,1529298,League
+2026-05-12,IPL T20,Gujarat Titans,Sunrisers Hyderabad,"Narendra Modi Stadium, Ahmedabad",168,5,20.0,8.4,Gujarat Titans won by 82 runs,K Rabada,1529299,League
+2026-05-13,IPL T20,Kolkata Knight Riders,Royal Challengers Bengaluru,"Shaheed Veer Narayan Singh International Stadium, Raipur",192,4,20.0,9.6,Royal Challengers Bengaluru won by 6 wickets,V Kohli,1529300,League
+2026-05-14,IPL T20,Punjab Kings,Mumbai Indians,"Himachal Pradesh Cricket Association Stadium, Dharamsala",200,8,20.0,10.0,Mumbai Indians won by 6 wickets,Tilak Varma,1529301,League
+2026-05-15,IPL T20,Chennai Super Kings,Lucknow Super Giants,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",187,5,20.0,9.35,Lucknow Super Giants won by 7 wickets,MR Marsh,1529302,League
+2026-05-16,IPL T20,Kolkata Knight Riders,Gujarat Titans,"Eden Gardens, Kolkata",247,2,20.0,12.35,Kolkata Knight Riders won by 29 runs,SP Narine,1529303,League
+2026-05-17,IPL T20,Royal Challengers Bengaluru,Punjab Kings,"Himachal Pradesh Cricket Association Stadium, Dharamsala",222,4,20.0,11.1,Royal Challengers Bengaluru won by 23 runs,VR Iyer,1529304,League
+2026-05-17,IPL T20,Rajasthan Royals,Delhi Capitals,"Arun Jaitley Stadium, Delhi",193,8,20.0,9.65,Delhi Capitals won by 5 wickets,MA Starc,1529305,League
+2026-05-18,IPL T20,Chennai Super Kings,Sunrisers Hyderabad,"MA Chidambaram Stadium, Chepauk, Chennai",180,7,20.0,9.0,Sunrisers Hyderabad won by 5 wickets,Ishan Kishan,1529306,League
+2026-05-19,IPL T20,Lucknow Super Giants,Rajasthan Royals,"Sawai Mansingh Stadium, Jaipur",220,5,20.0,11.0,Rajasthan Royals won by 7 wickets,V Suryavanshi,1529307,League
+2026-05-20,IPL T20,Mumbai Indians,Kolkata Knight Riders,"Eden Gardens, Kolkata",147,8,20.0,7.35,Kolkata Knight Riders won by 4 wickets,MK Pandey,1529308,League
+2026-05-21,IPL T20,Gujarat Titans,Chennai Super Kings,"Narendra Modi Stadium, Ahmedabad",229,4,20.0,11.45,Gujarat Titans won by 89 runs,Mohammed Siraj,1529309,League
+2026-05-22,IPL T20,Sunrisers Hyderabad,Royal Challengers Bengaluru,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",255,4,20.0,12.75,Sunrisers Hyderabad won by 55 runs,Ishan Kishan,1529310,League
+2026-05-23,IPL T20,Lucknow Super Giants,Punjab Kings,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",196,6,20.0,9.8,Punjab Kings won by 7 wickets,SS Iyer,1529311,League
+2026-05-24,IPL T20,Rajasthan Royals,Mumbai Indians,"Wankhede Stadium, Mumbai",205,8,20.0,10.25,Rajasthan Royals won by 30 runs,JC Archer,1529312,League
+2026-05-24,IPL T20,Delhi Capitals,Kolkata Knight Riders,"Eden Gardens, Kolkata",203,5,20.0,10.15,Delhi Capitals won by 40 runs,Kuldeep Yadav,1529313,League
+2026-05-26,IPL T20,Royal Challengers Bengaluru,Gujarat Titans,"Himachal Pradesh Cricket Association Stadium, Dharamsala",254,5,20.0,12.7,Royal Challengers Bengaluru won by 92 runs,RM Patidar,1535462,Playoffs
+2026-05-27,IPL T20,Rajasthan Royals,Sunrisers Hyderabad,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",243,8,20.0,12.15,Rajasthan Royals won by 47 runs,V Suryavanshi,1535463,Playoffs
+2026-05-29,IPL T20,Rajasthan Royals,Gujarat Titans,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",214,6,20.0,10.7,Gujarat Titans won by 7 wickets,Shubman Gill,1535464,Playoffs
+2026-05-31,IPL T20,Gujarat Titans,Royal Challengers Bengaluru,"Narendra Modi Stadium, Ahmedabad",155,8,20.0,7.75,Royal Challengers Bengaluru won by 5 wickets,V Kohli,1535465,Playoffs

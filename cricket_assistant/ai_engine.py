@@ -5,205 +5,320 @@ import re
 
 import pandas as pd
 
-
-def _mentioned_rows(frame: pd.DataFrame, columns: list[str], query: str) -> pd.DataFrame:
-    if frame.empty:
-        return frame.copy()
-    mask = pd.Series(False, index=frame.index)
-    for column in columns:
-        if column not in frame.columns:
-            continue
-        values = frame[column].fillna("").astype(str).str.strip().str.casefold()
-        for value in values.unique():
-            if len(value) >= 3 and value in query:
-                mask |= values.eq(value)
-    return frame[mask].copy()
+from cricket_assistant.data_store import summarize_overs
 
 
-def _mentioned_teams(question: str, *frames: pd.DataFrame) -> list[str]:
+MAX_CONTEXT_ROWS = 40
+
+
+def _mentioned_values(frame: pd.DataFrame, column: str, text: str) -> list[str]:
+    if frame.empty or column not in frame:
+        return []
+    query = text.casefold()
+    values = [str(value) for value in frame[column].dropna().unique()]
+    direct = [
+        value
+        for value in values
+        if len(value) >= 3 and value.casefold() in query
+    ]
+    if direct or column not in {"player", "bowler"}:
+        return direct
+
+    query_words = set(re.findall(r"[a-z0-9]+", query))
+    surname_counts: dict[str, int] = {}
+    for value in values:
+        surname = re.findall(r"[a-z0-9]+", value.casefold())[-1]
+        surname_counts[surname] = surname_counts.get(surname, 0) + 1
+    return [
+        str(value)
+        for value in values
+        if (surname := re.findall(r"[a-z0-9]+", value.casefold())[-1]) in query_words
+        and surname_counts[surname] == 1
+    ]
+
+
+def _mentioned_teams(matches: pd.DataFrame, text: str) -> list[str]:
+    return list(dict.fromkeys(
+        name
+        for column in ("team", "opponent")
+        for name in _mentioned_values(matches, column, text)
+    ))
+
+
+def _match_context(matches: pd.DataFrame, reference: str) -> pd.DataFrame:
+    if matches.empty:
+        return matches
+    date = re.search(r"\b\d{4}-\d{2}-\d{2}\b", reference)
+    selected = matches.copy()
+    if date:
+        selected = selected[selected["date"].astype(str).str[:10].eq(date.group(0))]
+
+    team_names = _mentioned_teams(matches, reference)
+    if len(team_names) >= 2:
+        selected = selected[
+            selected.apply(
+                lambda row: all(
+                    team.casefold() in f"{row.get('team', '')} {row.get('opponent', '')}".casefold()
+                    for team in team_names
+                ),
+                axis=1,
+            )
+        ]
+    return selected
+
+
+def _csv_text(frame: pd.DataFrame | None, columns: list[str] | None = None, limit: int = MAX_CONTEXT_ROWS) -> str:
+    if frame is None or frame.empty:
+        return "(no matching records)"
+    available = [column for column in columns or frame.columns.tolist() if column in frame.columns]
+    if not available:
+        return "(no matching records)"
+    return frame[available].head(limit).to_csv(index=False)
+
+
+def _select_batters(players: pd.DataFrame, reference: str, question: str) -> pd.DataFrame:
+    mentioned = _mentioned_values(players, "player", reference)
+    if mentioned:
+        return players[players["player"].isin(mentioned)]
     query = question.casefold()
-    teams: set[str] = set()
-    for frame in frames:
-        for column in ("team", "opponent"):
-            if column in frame.columns:
-                teams.update(str(value) for value in frame[column].dropna().unique())
-    return [team for team in teams if len(team) >= 3 and team.casefold() in query]
+    metric = "sixes" if "six" in query else "strike_rate" if "strike rate" in query else "runs"
+    return players.sort_values(metric, ascending=False).head(20) if metric in players else players.head(20)
 
 
-def _filter_team(frame: pd.DataFrame, teams: list[str]) -> pd.DataFrame:
-    if not teams or frame.empty:
-        return frame.copy()
-    mask = pd.Series(False, index=frame.index)
-    for column in ("team", "opponent"):
-        if column in frame.columns:
-            mask |= frame[column].fillna("").astype(str).str.casefold().isin({team.casefold() for team in teams})
-    return frame[mask].copy()
+def _select_bowlers(bowlers: pd.DataFrame, reference: str, question: str) -> pd.DataFrame:
+    mentioned = _mentioned_values(bowlers, "bowler", reference)
+    if mentioned:
+        return bowlers[bowlers["bowler"].isin(mentioned)]
+    query = question.casefold()
+    metric = "economy" if "economy" in query else "average" if "average" in query else "wickets"
+    return bowlers.sort_values(metric, ascending=metric in {"economy", "average"}).head(20) if metric in bowlers else bowlers.head(20)
 
 
-def _top_count(query: str, default: int = 1) -> int:
-    match = re.search(r"\btop\s+(\d+)\b", query)
-    return min(int(match.group(1)), 5) if match else default
+def _recent_turns(history: pd.DataFrame | None) -> str:
+    if history is None or history.empty:
+        return "No previous conversation."
+    return "\n".join(
+        f"User: {row.question}\nAssistant: {str(row.answer)[:700]}"
+        for row in history.tail(6).itertuples(index=False)
+    )
 
 
-def _is_run_rate_question(query: str) -> bool:
-    return bool(re.search(r"\b(?:average|avg)\s+run\s+rate\b|\brun[ -]?rate\b", query))
-
-
-def _local_answer(
+def _context_prompt(
     question: str,
     matches: pd.DataFrame,
     players: pd.DataFrame,
-    bowlers: pd.DataFrame | None = None,
-    history: pd.DataFrame | None = None,
+    bowlers: pd.DataFrame,
+    history: pd.DataFrame | None,
+    innings: pd.DataFrame | None,
+    deliveries: pd.DataFrame | None,
+    fielding: pd.DataFrame | None,
+    teams: pd.DataFrame | None,
+    match_batting: pd.DataFrame | None,
+    match_bowling: pd.DataFrame | None,
+    metadata: pd.DataFrame | None,
 ) -> str:
-    bowlers = bowlers if bowlers is not None else pd.DataFrame()
+    history_text = _recent_turns(history)
+    reference = f"{history_text}\n{question}"
     query = question.casefold()
-    lookup_query = query
-    follow_up_phrases = ("what about", "and his", "and her", "their", "that player", "what was his", "what was her")
-    if history is not None and not history.empty and any(phrase in query for phrase in follow_up_phrases):
-        previous = history.iloc[-1]
-        lookup_query = f"{previous.get('question', '')} {previous.get('answer', '')} {question}".casefold()
 
-    if matches.empty and players.empty and bowlers.empty:
-        return "The local scorebook is empty. Add match, batting, and bowling rows under `data/`, then ask again."
+    season_winner_question = "ipl" in query and bool(re.search(
+        r"\b(?:who|which team)\b.{0,50}\b(?:won|winner|champion|champions)\b|"
+        r"\b(?:winner|champion|champions)\b.{0,50}\bipl\b",
+        query,
+    ))
+    if season_winner_question:
+        playoffs = matches[matches["stage"].fillna("").astype(str).str.casefold().eq("playoffs")] if "stage" in matches else pd.DataFrame()
+        final = playoffs.sort_values("date").tail(1) if not playoffs.empty else pd.DataFrame()
+        final_id = set(final["match_id"].astype(str)) if not final.empty and "match_id" in final else set()
+        final_innings = innings[innings["match_id"].astype(str).isin(final_id)] if innings is not None and final_id else pd.DataFrame()
+        return f"""You are Boundary, an IPL 2026 analyst. Answer the user's season-winner question using only the final match record below.
 
-    teams = _mentioned_teams(lookup_query, matches, players, bowlers)
-    count = _top_count(query)
-    bowling_intent = any(term in query for term in ("bowler", "bowling", "wicket", "economy", "best figures", "haul"))
+State the champion and the final opponent/result. The result field identifies the winning team. Do not confuse the league-stage points leader with the IPL champion. If no playoff final record is supplied, say the winner cannot be confirmed from these records.
 
-    if bowling_intent:
-        if bowlers.empty:
-            return "There are no bowling records loaded yet. Add bowling figures to `data/bowlers.csv`."
-        named_bowlers = _mentioned_rows(bowlers, ["bowler"], lookup_query)
-        selected = named_bowlers if not named_bowlers.empty else _filter_team(bowlers, teams)
-        if selected.empty:
-            selected = bowlers.copy()
-        metric = "economy" if "economy" in query else "average" if "average" in query else "wickets"
-        selected = selected.sort_values(metric, ascending=metric in ("economy", "average"))
-        if len(named_bowlers) > 1:
-            count = max(count, len(named_bowlers))
-        records = selected.head(count)
-        if len(named_bowlers) == 1:
-            row = records.iloc[0]
-            return (
-                f"In the supplied sample scorebook, {row['bowler']} ({row['team']}) has "
-                f"{int(row['wickets'])} wickets in {int(row['matches'])} matches, with an economy of "
-                f"{float(row['economy']):.2f}, bowling average {float(row['average']):.2f}, "
-                f"and best figures {row['best_figures']}. Supplemental demo rows are illustrative, not verified career stats."
-            )
-        summaries = [f"{row.bowler} ({row.team}): {int(row.wickets)} wickets, economy {float(row.economy):.2f}" for row in records.itertuples(index=False)]
-        label = f" for {', '.join(teams)}" if teams else ""
-        return f"Bowling leaders{label}, ranked by {metric}, in the supplied sample scorebook: " + "; ".join(summaries) + ". Demo figures are illustrative, not verified career stats."
+SOURCE:\n{_csv_text(metadata, limit=1)}
 
-    date_match = re.search(r"\b(\d{4}-\d{2}-\d{2})\b", query)
-    if date_match and any(term in query for term in ("match", "game", "played", "happen")):
-        match_date = date_match.group(1)
-        date_rows = matches[matches["date"].fillna("").astype(str).str[:10].eq(match_date)]
-        if date_rows.empty:
-            return f"I could not find a match dated {match_date} in the supplied scorebook."
-        details = [
-            f"{row.team} vs {row.opponent} ({row.format}) at {row.venue}: "
-            f"{int(row.runs)}/{int(row.wickets)} in {row.overs} overs; {row.result}; "
-            f"player of the match: {row.player_of_match}"
-            for row in date_rows.itertuples(index=False)
-        ]
-        return f"On {match_date}, the supplied scorebook lists " + "; ".join(details) + ". Supplemental match rows may be illustrative, not verified historical results."
+IPL 2026 FINAL:\n{_csv_text(final, limit=1)}
 
-    if _is_run_rate_question(query):
-        selected_matches = _filter_team(matches, teams)
-        if selected_matches.empty:
-            return "There are no matching records to calculate a run rate from."
-        rates = pd.to_numeric(selected_matches["run_rate"], errors="coerce").dropna()
-        if rates.empty:
-            return "Run-rate values are missing from the matching records."
-        mean_rate = rates.mean()
-        label = f" for {', '.join(teams)}" if teams else ""
-        return (
-            f"The average run rate{label} is {mean_rate:.2f} runs per over across "
-            f"{len(rates)} supplied match records. Supplemental demo match rows are illustrative, not verified results."
-        )
+FINAL INNINGS:\n{_csv_text(final_innings, limit=2)}
 
-    named_players = _mentioned_rows(players, ["player"], lookup_query)
-    run_scorer_intent = bool(re.search(r"\b(?:run|runs)[ -]+scorer\b|\b(?:top|leading)\s+(?:run\s+)?scorer\b", query))
-    batting_intent = run_scorer_intent or any(term in query for term in ("batter", "batsman", "batting", "runs", "strike rate", "centur", "fift", "batting average"))
-    if not named_players.empty or batting_intent:
-        selected = named_players if not named_players.empty else _filter_team(players, teams)
-        if selected.empty:
-            selected = players.copy()
-        metric = "hundreds" if "centur" in query or "hundred" in query else "fifties" if "fift" in query else "strike_rate" if "strike rate" in query else "average" if "average" in query else "runs"
-        selected = selected.sort_values(metric, ascending=False)
-        if len(named_players) > 1:
-            count = max(count, len(named_players))
-        records = selected.head(count)
-        if len(named_players) == 1:
-            row = records.iloc[0]
-            return (
-                f"In the supplied sample scorebook, {row['player']} ({row['team']}) has {int(row['runs'])} runs "
-                f"in {int(row['matches'])} matches, average {float(row['average']):.2f}, strike rate "
-                f"{float(row['strike_rate']):.2f}, {int(row['hundreds'])} hundreds, and {int(row['fifties'])} fifties. "
-                "Treat supplemental demo figures as illustrative, not verified career stats."
-            )
-        if run_scorer_intent and not records.empty:
-            row = records.iloc[0]
-            return (
-                f"The leading run-scorer in the supplied batting records is {row['player']} ({row['team']}) "
-                f"with {int(row['runs'])} runs in {int(row['matches'])} matches, an average of "
-                f"{float(row['average']):.2f}, and a strike rate of {float(row['strike_rate']):.2f}. "
-                "Supplemental demo statistics are synthetic, not verified career totals."
-            )
-        summaries = [f"{row.player} ({row.team}): {int(row.runs)} runs, average {float(row.average):.2f}, SR {float(row.strike_rate):.2f}" for row in records.itertuples(index=False)]
-        label = f" for {', '.join(teams)}" if teams else ""
-        return f"Batting leaders{label}, ranked by {metric.replace('_', ' ')}, in the supplied sample scorebook: " + "; ".join(summaries) + ". Supplemental demo figures are illustrative."
+RECENT CONVERSATION:\n{history_text}
 
-    selected_matches = _filter_team(matches, teams)
-    if any(term in query for term in ("t20", "odi", "test")):
-        formats = []
-        if "t20" in query:
-            formats.extend(("T20", "T20I"))
-        if "odi" in query:
-            formats.append("ODI")
-        if "test" in query:
-            formats.append("Test")
-        if formats:
-            format_mask = selected_matches["format"].fillna("").astype(str).str.casefold().isin({name.casefold() for name in formats})
-            selected_matches = selected_matches[format_mask]
-    if selected_matches.empty:
-        selected_matches = matches.copy()
-    if not selected_matches.empty:
-        if "highest" in query or "most runs" in query or "biggest score" in query:
-            row = selected_matches.sort_values("runs", ascending=False).iloc[0]
-            return (
-                f"The highest listed innings{f' for {', '.join(teams)}' if teams else ''} is "
-                f"{int(row['runs'])}/{int(row['wickets'])} by {row['team']} against {row['opponent']} "
-                f"({row['format']}, {row['venue']}, {row['date']}). Demo match rows are illustrative examples."
-            )
-        win_count = int(selected_matches["result"].fillna("").astype(str).str.startswith("Won", na=False).sum())
-        mean_rate = pd.to_numeric(selected_matches["run_rate"], errors="coerce").mean()
-        label = f" for {', '.join(teams)}" if teams else ""
-        return (
-            f"The supplied scorebook has {len(selected_matches)} match records{label}, "
-            f"{win_count} marked as wins, and an average run rate of {mean_rate:.2f}. "
-            "Supplemental demo match rows are illustrative, not verified historical results."
-        )
-    return "I could not find enough data for that question. Try asking about a named batter or bowler, team, format, runs, wickets, or economy."
+QUESTION:\n{question}
+"""
 
+    match_statistics_question = "match" in query and any(
+        term in query for term in ("stat", "scorecard", "full detail", "all detail", "ball by ball", "ball-by-ball", "over by over")
+    )
+    if match_statistics_question:
+        final_reference = "final" in query
+        date_match = re.search(r"\b\d{4}-\d{2}-\d{2}\b", query)
+        team_names = _mentioned_teams(matches, query)
+        if not date_match and not team_names and not final_reference:
+            date_match = re.search(r"\b\d{4}-\d{2}-\d{2}\b", reference)
+            team_names = _mentioned_teams(matches, reference)
+        if final_reference and not date_match:
+            playoffs = matches[matches["stage"].fillna("").astype(str).str.casefold().eq("playoffs")] if "stage" in matches else pd.DataFrame()
+            candidates = playoffs.sort_values("date").tail(1) if not playoffs.empty else pd.DataFrame()
+        else:
+            candidates = _match_context(matches, reference)
 
-def _context_rows(
-    frame: pd.DataFrame,
-    query: str,
-    mention_columns: list[str],
-    sort_column: str,
-    ascending: bool = False,
-    limit: int = 35,
-) -> pd.DataFrame:
-    if frame.empty:
-        return frame
-    mentioned = _mentioned_rows(frame, mention_columns, query)
-    if not mentioned.empty:
-        return mentioned.head(limit)
-    if sort_column not in frame.columns:
-        return frame.head(limit)
-    return frame.sort_values(sort_column, ascending=ascending).head(limit)
+        has_fixture_reference = bool(date_match) or len(team_names) >= 2 or final_reference
+        unique_match = candidates if has_fixture_reference and len(candidates) == 1 else pd.DataFrame()
+        match_ids = set(unique_match["match_id"].astype(str)) if not unique_match.empty and "match_id" in unique_match else set()
+        match_innings = innings[innings["match_id"].astype(str).isin(match_ids)].sort_values("innings") if innings is not None and match_ids else pd.DataFrame()
+        match_batting_rows = match_batting[match_batting["match_id"].astype(str).isin(match_ids)].sort_values(["innings", "runs"], ascending=[True, False]) if match_batting is not None and match_ids else pd.DataFrame()
+        match_bowling_rows = match_bowling[match_bowling["match_id"].astype(str).isin(match_ids)].sort_values(["innings", "wickets", "economy"], ascending=[True, False, True]) if match_bowling is not None and match_ids else pd.DataFrame()
+        match_deliveries = deliveries[deliveries["match_id"].astype(str).isin(match_ids)].sort_values(["innings", "over", "ball"]) if deliveries is not None and match_ids else pd.DataFrame()
+        over_summary = summarize_overs(match_deliveries)
+        include_ball_by_ball = "ball by ball" in query or "ball-by-ball" in query
+        if len(candidates) > 1:
+            selection_note = "Several matches match those details. Ask the user for the date before giving match statistics."
+        elif unique_match.empty:
+            selection_note = "No unique match was identified. Ask for a date, both teams, or whether the user means the IPL 2026 final. Do not say the statistics are absent from the dataset."
+        else:
+            selection_note = "The selected match has full innings, batting, bowling, over, and delivery records. Answer from those records; do not claim those statistics are missing."
+        delivery_section = f"\nBALL-BY-BALL DELIVERIES:\n{_csv_text(match_deliveries, limit=300)}" if include_ball_by_ball else ""
+        return f"""You are Boundary, an IPL 2026 match analyst. The user is asking for a complete match-statistics report, not only the winner.
+
+{selection_note}
+For a selected match, report the match header and result, each innings total, complete batting scorecards, complete bowling figures, and over-by-over scoring. Include runs, dismissals, balls, fours, sixes, extras, dot balls, economy, wickets, and player of the match when present. Use only supplied records and preserve their values. Do not replace available scorecards with a statement that the data is missing. If the user explicitly asks ball by ball, use the delivery table as well.
+
+MATCH RECORD:\n{_csv_text(unique_match, limit=1)}
+
+INNINGS TOTALS:\n{_csv_text(match_innings, limit=4)}
+
+FULL BATTING SCORECARD:\n{_csv_text(match_batting_rows, limit=50)}
+
+FULL BOWLING FIGURES:\n{_csv_text(match_bowling_rows, limit=50)}
+
+OVER-BY-OVER SUMMARY:\n{_csv_text(over_summary, limit=80)}{delivery_section}
+
+QUESTION:\n{question}
+"""
+
+    match_result_question = "match" in query and bool(re.search(r"\bwho\s+won\b|\bmatch\s+result\b", query))
+    if match_result_question:
+        candidates = _match_context(matches, reference)
+        date_match = re.search(r"\b\d{4}-\d{2}-\d{2}\b", reference)
+        team_names = _mentioned_teams(matches, reference)
+        has_fixture = bool(date_match) or len(team_names) >= 2
+        if has_fixture:
+            unique_match = candidates if len(candidates) == 1 else pd.DataFrame()
+            match_ids = set(unique_match["match_id"].astype(str)) if not unique_match.empty and "match_id" in unique_match else set()
+            match_innings = innings[innings["match_id"].astype(str).isin(match_ids)] if innings is not None and match_ids else pd.DataFrame()
+            if len(candidates) > 1:
+                note = "Multiple fixtures match these details. Ask which date the user means; do not choose one."
+            elif unique_match.empty:
+                note = "No match record matches these details. Say the result is not present in the loaded IPL 2026 records."
+            else:
+                note = "Use the result field in the single matching record to identify the winner and margin."
+            return f"""You are Boundary, an IPL 2026 analyst. Answer this match-result question from the records below only.
+
+{note} Keep the answer to one or two sentences. Do not use unrelated season leaders or infer a result.
+
+MATCH RECORD:\n{_csv_text(candidates, limit=6)}
+
+INNINGS:\n{_csv_text(match_innings, limit=2)}
+
+QUESTION:\n{question}
+"""
+
+    selected_matches = _match_context(matches, reference)
+    has_date = bool(re.search(r"\b\d{4}-\d{2}-\d{2}\b", reference))
+    team_names = _mentioned_teams(matches, reference)
+    match_selected = not selected_matches.empty and (has_date or len(team_names) >= 2)
+    selected_ids = set(selected_matches["match_id"].astype(str)) if match_selected and "match_id" in selected_matches else set()
+    if not match_selected:
+        selected_matches = matches.sort_values("date", ascending=False).head(20) if "date" in matches else matches.head(20)
+
+    match_specific = any(term in query for term in ("this match", "that match", "in this match", "which match", "match on", "match between")) or (
+        "match" in query and any(term in query for term in ("six", "player of the match", "most runs", "highest score", "scorecard"))
+    )
+    ambiguous_match = match_selected and match_specific and not has_date and len(selected_matches) > 1
+    if ambiguous_match:
+        selected_ids = set()
+
+    if match_batting is None:
+        selected_batting = pd.DataFrame()
+    elif selected_ids:
+        selected_batting = match_batting[match_batting["match_id"].astype(str).isin(selected_ids)]
+    elif match_specific:
+        selected_batting = pd.DataFrame()
+    elif any(term in query for term in ("six", "batter", "run", "innings")):
+        selected_batting = match_batting.sort_values("sixes" if "six" in query else "runs", ascending=False).head(30)
+    else:
+        selected_batting = pd.DataFrame()
+
+    if match_bowling is None:
+        selected_match_bowling = pd.DataFrame()
+    elif selected_ids:
+        selected_match_bowling = match_bowling[match_bowling["match_id"].astype(str).isin(selected_ids)]
+    elif any(term in query for term in ("bowler", "wicket", "economy", "bowling")) and not match_specific:
+        selected_match_bowling = match_bowling.sort_values("wickets", ascending=False).head(25)
+    else:
+        selected_match_bowling = pd.DataFrame()
+
+    selected_innings = innings[innings["match_id"].astype(str).isin(selected_ids)] if innings is not None and selected_ids else pd.DataFrame()
+    selected_deliveries = pd.DataFrame()
+    if deliveries is not None and selected_ids and any(term in query for term in ("over", "delivery", "ball by ball", "partnership")):
+        selected_deliveries = deliveries[deliveries["match_id"].astype(str).isin(selected_ids)]
+
+    selected_players = _select_batters(players, reference, question)
+    if team_names:
+        selected_players = players[players["team"].isin(team_names)].sort_values("runs", ascending=False).head(30)
+    selected_bowlers = _select_bowlers(bowlers, reference, question)
+    if team_names:
+        selected_bowlers = bowlers[bowlers["team"].isin(team_names)].sort_values("wickets", ascending=False).head(30)
+
+    team_table = teams[teams["team"].isin(team_names)] if teams is not None and team_names else teams
+    fielding_table = fielding.sort_values("catches", ascending=False).head(15) if fielding is not None else pd.DataFrame()
+    if fielding is not None and any(term in query for term in ("catch", "stumping", "run out", "fielding")):
+        named_fielders = _mentioned_values(fielding, "player", reference)
+        if named_fielders:
+            fielding_table = fielding[fielding["player"].isin(named_fielders)]
+
+    source_note = _csv_text(metadata, limit=1) if metadata is not None else "Cricsheet IPL 2026 source metadata unavailable."
+    if ambiguous_match:
+        match_hint = "Several IPL 2026 matches match the named teams; ask which date or fixture the user means before giving a match-specific statistic."
+    elif not match_selected and match_specific:
+        match_hint = "No unique match was identified from the question or recent conversation; ask the user which match they mean."
+    else:
+        match_hint = "Use the match rows only when they identify the requested game; do not treat a recent match as the requested match without evidence."
+
+    return f"""You are Boundary, an IPL 2026 cricket analyst. Answer using only the supplied IPL 2026 CSV records and the recent conversation.
+
+Answer factual questions with exact supplied values. For match-specific questions, cite the date, teams, innings or match_id used. The match_batting table already contains per-player match totals, so determine most sixes by comparing its sixes column for the identified match. Use player_of_match from the match table for the award. Do not recalculate or guess a missing value.
+
+For strategy questions, make useful conditional recommendations grounded in team/player/bowling/venue evidence. Explain the evidence, identify uncertainty (pitch, toss, injuries, and live form are not supplied), and never promise a win or present a prediction as certain. Separate measured facts from your tactical judgment. If the match or stat is not represented, say what is missing and ask one concise clarification where needed.
+
+The CSV statistics are season-derived from the Cricsheet archive, not live data. Preserve the distinction between batter runs and team runs, batter balls faced and legal balls, and wickets credited to a bowler versus other dismissals. Do not infer omitted records. Keep answers clear and concise.
+
+DATA PROVENANCE:\n{source_note}
+
+MATCH SELECTION NOTE:\n{match_hint}
+
+RECENT CONVERSATION:\n{history_text}
+
+MATCH SUMMARIES:\n{_csv_text(selected_matches, limit=74)}
+
+INNINGS TOTALS FOR IDENTIFIED MATCH:\n{_csv_text(selected_innings, limit=20)}
+
+PLAYER SEASON BATTING:\n{_csv_text(selected_players, limit=30)}
+
+PLAYER TOTALS BY MATCH:\n{_csv_text(selected_batting, limit=MAX_CONTEXT_ROWS)}
+
+BOWLER SEASON FIGURES:\n{_csv_text(selected_bowlers, limit=30)}
+
+BOWLER FIGURES BY MATCH:\n{_csv_text(selected_match_bowling, limit=MAX_CONTEXT_ROWS)}
+
+TEAM SEASON TABLE:\n{_csv_text(team_table, limit=10)}
+
+FIELDING FIGURES:\n{_csv_text(fielding_table, limit=20)}
+
+DELIVERIES FOR IDENTIFIED MATCH (only when requested):\n{_csv_text(selected_deliveries, limit=300)}
+
+CURRENT QUESTION:\n{question}
+"""
 
 
 def answer_question(
@@ -212,75 +327,42 @@ def answer_question(
     players: pd.DataFrame,
     bowlers: pd.DataFrame | None = None,
     history: pd.DataFrame | None = None,
+    *,
+    innings: pd.DataFrame | None = None,
+    deliveries: pd.DataFrame | None = None,
+    fielding: pd.DataFrame | None = None,
+    teams: pd.DataFrame | None = None,
+    match_batting: pd.DataFrame | None = None,
+    match_bowling: pd.DataFrame | None = None,
+    metadata: pd.DataFrame | None = None,
 ) -> tuple[str, str]:
-    bowlers = bowlers if bowlers is not None else pd.DataFrame()
-    query = question.casefold()
-    requested_date = re.search(r"\b(\d{4}-\d{2}-\d{2})\b", query)
-    date_lookup = requested_date and any(term in query for term in ("match", "game", "played", "happen"))
-    exact_date_rows = pd.DataFrame()
-    if date_lookup:
-        exact_date_rows = matches[matches["date"].fillna("").astype(str).str[:10].eq(requested_date.group(1))]
-        if exact_date_rows.empty:
-            return _local_answer(question, matches, players, bowlers, history), "Local CSV analyst · exact date lookup"
-
     api_key = os.getenv("GEMINI_API_KEY", "").strip()
     if not api_key:
-        return _local_answer(question, matches, players, bowlers, history), "Local CSV analyst · no API key configured"
+        raise RuntimeError("Gemini is not configured. Add GEMINI_API_KEY to .env or Streamlit secrets to ask the analyst.")
 
-    try:
-        from google import genai
-        from google.genai.errors import ServerError
+    from google import genai
+    from google.genai import types
 
-        model = os.getenv("GEMINI_MODEL", "gemini-3.8-flash").strip()
-        client = genai.Client(api_key=api_key)
-        if date_lookup:
-            selected_matches = exact_date_rows
-        elif _is_run_rate_question(query):
-            selected_matches = _filter_team(matches, _mentioned_teams(query, matches))
-        else:
-            selected_matches = _context_rows(matches, query, ["team", "opponent", "format", "venue", "player_of_match"], "date", limit=35)
-        match_context = selected_matches.to_csv(index=False)
-        player_metric = "strike_rate" if "strike rate" in query else "average" if "batting average" in query else "runs"
-        player_context = _context_rows(players, query, ["player", "team"], player_metric, limit=35).to_csv(index=False)
-        bowler_metric = "economy" if "economy" in query else "average" if "bowling average" in query else "wickets"
-        bowler_context = _context_rows(bowlers, query, ["bowler", "team"], bowler_metric, ascending=bowler_metric == "economy", limit=35).to_csv(index=False)
-        recent_turns = "No earlier chat context."
-        if history is not None and not history.empty:
-            recent_turns = "\n".join(
-                f"User: {row.question}\nAssistant: {str(row.answer)[:500]}"
-                for row in history.tail(6).itertuples(index=False)
-            )
-        prompt = f"""You are Boundary, a careful cricket analyst. Answer the user's question using the supplied scorebook context.
-Answer the actual question first. Explain comparisons using the relevant metrics, and show short calculations for aggregate questions.
-Do not invent statistics or claim these are live/current results. The supplemental demo CSV records are synthetic illustrative examples, not verified historical cricket data. Describe results as being within this sample scorebook.
-If a name or statistic is absent, say it is not in the loaded records. Keep the answer concise and distinguish runs, wickets, average, strike rate, and economy correctly.
-
-RECENT CONVERSATION:
-{recent_turns}
-
-MATCH DATA (CSV):
-{match_context}
-
-BATTER DATA (CSV):
-{player_context}
-
-BOWLER DATA (CSV):
-{bowler_context}
-
-CURRENT USER QUESTION: {question}
-"""
-        try:
-            response = client.models.generate_content(model=model, contents=prompt)
-        except ServerError:
-            response = client.models.generate_content(model=model, contents=prompt)
-        text = (response.text or "").strip()
-        if not text:
-            raise RuntimeError("The model returned an empty response.")
-        return text, f"Gemini · {model}"
-    except Exception as error:
-        local = _local_answer(question, matches, players, bowlers, history)
-        if type(error).__name__ == "ServerError":
-            note = "Gemini returned a server error after one retry; showing the local scorebook answer instead."
-        else:
-            note = f"Gemini could not respond ({type(error).__name__}); showing the local scorebook answer instead."
-        return f"{local}\n\n{note}", "Local CSV fallback"
+    model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite").strip()
+    timeout_ms = max(1_000, min(int(os.getenv("GEMINI_TIMEOUT_MS", "15000")), 120_000))
+    client = genai.Client(
+        api_key=api_key,
+        http_options=types.HttpOptions(
+            timeout=timeout_ms,
+            retry_options=types.HttpRetryOptions(
+                attempts=2,
+                initial_delay=0.5,
+                max_delay=1.0,
+                http_status_codes=[429, 500, 502, 503, 504],
+            ),
+        ),
+    )
+    prompt = _context_prompt(
+        question, matches, players, bowlers if bowlers is not None else pd.DataFrame(), history,
+        innings, deliveries, fielding, teams, match_batting, match_bowling, metadata,
+    )
+    response = client.models.generate_content(model=model, contents=prompt)
+    text = (response.text or "").strip()
+    if not text:
+        raise RuntimeError("Gemini returned an empty response. Please retry.")
+    return text, f"Gemini · IPL 2026 · {model}"

@@ -1,0 +1,1135 @@
+match_id,date,innings,team,opponent,player,runs,balls_faced,fours,sixes,strike_rate,dismissal
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,TM Head,11,9,2,0,122.22,caught
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Abhishek Sharma,7,8,0,1,87.5,caught
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Ishan Kishan,80,38,8,5,210.53,caught
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Nithish Kumar Reddy,1,6,0,0,16.67,caught
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,H Klaasen,31,22,2,1,140.91,caught
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,S Arora,9,6,0,1,150.0,caught
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Aniket Verma,43,18,3,4,238.89,caught
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Harsh Dubey,3,3,0,0,100.0,caught
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,HV Patel,0,2,0,0,0.0,caught
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,DA Payne,6,5,0,0,120.0,
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,JD Unadkat,4,3,0,0,133.33,
+1527674,2026-03-28,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,PD Salt,8,7,2,0,114.29,caught
+1527674,2026-03-28,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,D Padikkal,61,26,7,4,234.62,caught
+1527674,2026-03-28,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,V Kohli,69,38,5,5,181.58,
+1527674,2026-03-28,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,RM Patidar,31,12,2,3,258.33,caught
+1527674,2026-03-28,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,JM Sharma,0,1,0,0,0.0,caught
+1527674,2026-03-28,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,TH David,16,10,1,1,160.0,
+1527675,2026-03-29,1,Kolkata Knight Riders,Mumbai Indians,AM Rahane,67,40,3,5,167.5,caught
+1527675,2026-03-29,1,Kolkata Knight Riders,Mumbai Indians,FH Allen,37,17,6,2,217.65,caught
+1527675,2026-03-29,1,Kolkata Knight Riders,Mumbai Indians,C Green,18,10,1,1,180.0,caught
+1527675,2026-03-29,1,Kolkata Knight Riders,Mumbai Indians,A Raghuvanshi,51,29,6,2,175.86,caught
+1527675,2026-03-29,1,Kolkata Knight Riders,Mumbai Indians,RK Singh,33,21,4,0,157.14,
+1527675,2026-03-29,1,Kolkata Knight Riders,Mumbai Indians,Ramandeep Singh,4,4,0,0,100.0,
+1527675,2026-03-29,2,Mumbai Indians,Kolkata Knight Riders,RD Rickelton,81,43,4,8,188.37,run out
+1527675,2026-03-29,2,Mumbai Indians,Kolkata Knight Riders,RG Sharma,78,38,6,6,205.26,caught
+1527675,2026-03-29,2,Mumbai Indians,Kolkata Knight Riders,SA Yadav,16,8,3,0,200.0,caught
+1527675,2026-03-29,2,Mumbai Indians,Kolkata Knight Riders,Tilak Varma,20,14,4,0,142.86,caught
+1527675,2026-03-29,2,Mumbai Indians,Kolkata Knight Riders,HH Pandya,18,11,3,0,163.64,
+1527675,2026-03-29,2,Mumbai Indians,Kolkata Knight Riders,Naman Dhir,5,2,1,0,250.0,
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,SV Samson,6,7,1,0,85.71,bowled
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,RD Gaikwad,6,11,1,0,54.55,bowled
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,A Mhatre,0,1,0,0,0.0,caught
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,SN Khan,17,12,2,1,141.67,lbw
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,MW Short,2,7,0,0,28.57,caught
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,Kartik Sharma,18,15,0,1,120.0,lbw
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,S Dube,6,4,0,1,150.0,caught
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,J Overton,43,36,2,2,119.44,run out
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,Noor Ahmad,1,9,0,0,11.11,caught
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,MJ Henry,5,7,1,0,71.43,caught and bowled
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,A Kamboj,7,10,1,0,70.0,
+1527676,2026-03-30,2,Rajasthan Royals,Chennai Super Kings,YBK Jaiswal,38,36,3,1,105.56,
+1527676,2026-03-30,2,Rajasthan Royals,Chennai Super Kings,V Suryavanshi,52,17,4,5,305.88,caught
+1527676,2026-03-30,2,Rajasthan Royals,Chennai Super Kings,Dhruv Jurel,18,9,4,0,200.0,bowled
+1527676,2026-03-30,2,Rajasthan Royals,Chennai Super Kings,R Parag,14,11,1,1,127.27,
+1527677,2026-03-31,1,Gujarat Titans,Punjab Kings,B Sai Sudharsan,13,11,2,0,118.18,caught
+1527677,2026-03-31,1,Gujarat Titans,Punjab Kings,Shubman Gill,39,27,6,0,144.44,caught
+1527677,2026-03-31,1,Gujarat Titans,Punjab Kings,JC Buttler,38,33,3,2,115.15,caught
+1527677,2026-03-31,1,Gujarat Titans,Punjab Kings,GD Phillips,25,17,1,1,147.06,caught
+1527677,2026-03-31,1,Gujarat Titans,Punjab Kings,Washington Sundar,18,16,2,0,112.5,caught
+1527677,2026-03-31,1,Gujarat Titans,Punjab Kings,M Shahrukh Khan,4,6,0,0,66.67,caught
+1527677,2026-03-31,1,Gujarat Titans,Punjab Kings,R Tewatia,11,10,1,0,110.0,
+1527677,2026-03-31,1,Gujarat Titans,Punjab Kings,Rashid Khan,0,1,0,0,0.0,
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,Priyansh Arya,7,8,0,1,87.5,caught
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,C Connolly,72,44,5,5,163.64,
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,P Simran Singh,37,24,1,4,154.17,caught
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,SS Iyer,18,11,0,2,163.64,caught
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,N Wadhera,3,6,0,0,50.0,caught
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,Shashank Singh,4,5,0,0,80.0,caught
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,MP Stoinis,0,2,0,0,0.0,caught
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,M Jansen,9,10,0,1,90.0,caught
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,XC Bartlett,11,5,0,1,220.0,
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,MR Marsh,35,28,2,3,125.0,caught
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,RR Pant,7,9,1,0,77.78,run out
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,AK Markram,11,8,1,1,137.5,bowled
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,A Badoni,0,3,0,0,0.0,caught
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,N Pooran,8,8,1,0,100.0,bowled
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,Abdul Samad,36,25,3,1,144.0,caught
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,MD Choudhary,14,11,2,0,127.27,caught and bowled
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,Shahbaz Ahmed,15,16,1,0,93.75,
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,Mohammed Shami,1,2,0,0,50.0,caught
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,A Nortje,0,1,0,0,0.0,caught
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,Mohsin Khan,0,1,0,0,0.0,caught
+1527678,2026-04-01,2,Delhi Capitals,Lucknow Super Giants,KL Rahul,0,1,0,0,0.0,caught
+1527678,2026-04-01,2,Delhi Capitals,Lucknow Super Giants,N Rana,15,17,2,1,88.24,caught
+1527678,2026-04-01,2,Delhi Capitals,Lucknow Super Giants,P Nissanka,1,5,0,0,20.0,caught
+1527678,2026-04-01,2,Delhi Capitals,Lucknow Super Giants,Sameer Rizvi,70,47,5,4,148.94,
+1527678,2026-04-01,2,Delhi Capitals,Lucknow Super Giants,AR Patel,0,1,0,0,0.0,bowled
+1527678,2026-04-01,2,Delhi Capitals,Lucknow Super Giants,T Stubbs,39,32,3,1,121.88,
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,TM Head,46,21,6,3,219.05,caught
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,Abhishek Sharma,48,21,4,4,228.57,caught
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,Ishan Kishan,14,9,3,0,155.56,caught
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,H Klaasen,52,35,4,1,148.57,caught
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,Aniket Verma,1,4,0,0,25.0,caught
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,Nithish Kumar Reddy,39,24,4,1,162.5,caught
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,S Arora,0,1,0,0,0.0,bowled
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,Harsh Dubey,9,3,2,0,300.0,
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,Shivang Kumar,4,2,1,0,200.0,caught
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,AM Rahane,8,10,0,0,80.0,caught
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,FH Allen,28,7,4,2,400.0,caught and bowled
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,A Raghuvanshi,52,29,6,2,179.31,run out
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,C Green,2,2,0,0,100.0,run out
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,RK Singh,35,25,4,1,140.0,caught
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,AS Roy,0,2,0,0,0.0,caught and bowled
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,Ramandeep Singh,10,9,1,0,111.11,caught
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,SP Narine,12,4,0,2,300.0,caught
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,Kartik Tyagi,5,5,1,0,100.0,caught
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,VG Arora,1,2,0,0,50.0,
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,CV Varun,0,1,0,0,0.0,bowled
+1527680,2026-04-03,1,Chennai Super Kings,Punjab Kings,SV Samson,7,7,1,0,100.0,caught
+1527680,2026-04-03,1,Chennai Super Kings,Punjab Kings,RD Gaikwad,28,22,2,0,127.27,caught
+1527680,2026-04-03,1,Chennai Super Kings,Punjab Kings,A Mhatre,73,43,6,5,169.77,caught
+1527680,2026-04-03,1,Chennai Super Kings,Punjab Kings,S Dube,45,27,5,1,166.67,
+1527680,2026-04-03,1,Chennai Super Kings,Punjab Kings,Kartik Sharma,1,3,0,0,33.33,lbw
+1527680,2026-04-03,1,Chennai Super Kings,Punjab Kings,SN Khan,32,12,6,1,266.67,caught
+1527680,2026-04-03,1,Chennai Super Kings,Punjab Kings,PR Veer,6,7,1,0,85.71,
+1527680,2026-04-03,2,Punjab Kings,Chennai Super Kings,Priyansh Arya,39,11,3,4,354.55,bowled
+1527680,2026-04-03,2,Punjab Kings,Chennai Super Kings,P Simran Singh,43,34,6,1,126.47,run out
+1527680,2026-04-03,2,Punjab Kings,Chennai Super Kings,C Connolly,36,22,6,0,163.64,caught
+1527680,2026-04-03,2,Punjab Kings,Chennai Super Kings,SS Iyer,50,29,4,3,172.41,caught
+1527680,2026-04-03,2,Punjab Kings,Chennai Super Kings,N Wadhera,10,9,0,1,111.11,caught
+1527680,2026-04-03,2,Punjab Kings,Chennai Super Kings,MP Stoinis,9,3,2,0,300.0,
+1527680,2026-04-03,2,Punjab Kings,Chennai Super Kings,Shashank Singh,14,6,2,0,233.33,
+1527681,2026-04-04,1,Mumbai Indians,Delhi Capitals,RD Rickelton,9,11,2,0,81.82,caught
+1527681,2026-04-04,1,Mumbai Indians,Delhi Capitals,RG Sharma,35,26,5,1,134.62,caught
+1527681,2026-04-04,1,Mumbai Indians,Delhi Capitals,Tilak Varma,0,2,0,0,0.0,caught and bowled
+1527681,2026-04-04,1,Mumbai Indians,Delhi Capitals,SA Yadav,51,36,3,2,141.67,lbw
+1527681,2026-04-04,1,Mumbai Indians,Delhi Capitals,SE Rutherford,5,7,1,0,71.43,caught
+1527681,2026-04-04,1,Mumbai Indians,Delhi Capitals,Naman Dhir,28,21,2,1,133.33,caught
+1527681,2026-04-04,1,Mumbai Indians,Delhi Capitals,MJ Santner,18,13,2,0,138.46,
+1527681,2026-04-04,1,Mumbai Indians,Delhi Capitals,C Bosch,11,4,2,0,275.0,
+1527681,2026-04-04,2,Delhi Capitals,Mumbai Indians,KL Rahul,1,3,0,0,33.33,caught
+1527681,2026-04-04,2,Delhi Capitals,Mumbai Indians,P Nissanka,44,30,6,1,146.67,caught
+1527681,2026-04-04,2,Delhi Capitals,Mumbai Indians,N Rana,0,3,0,0,0.0,run out
+1527681,2026-04-04,2,Delhi Capitals,Mumbai Indians,Sameer Rizvi,90,51,7,7,176.47,caught
+1527681,2026-04-04,2,Delhi Capitals,Mumbai Indians,DA Miller,21,18,4,0,116.67,
+1527681,2026-04-04,2,Delhi Capitals,Mumbai Indians,T Stubbs,3,4,0,0,75.0,
+1527682,2026-04-04,1,Rajasthan Royals,Gujarat Titans,YBK Jaiswal,55,36,6,3,152.78,bowled
+1527682,2026-04-04,1,Rajasthan Royals,Gujarat Titans,V Suryavanshi,31,18,5,1,172.22,caught
+1527682,2026-04-04,1,Rajasthan Royals,Gujarat Titans,Dhruv Jurel,75,42,5,5,178.57,caught
+1527682,2026-04-04,1,Rajasthan Royals,Gujarat Titans,R Parag,8,4,0,1,200.0,caught
+1527682,2026-04-04,1,Rajasthan Royals,Gujarat Titans,SO Hetmyer,18,8,1,2,225.0,caught
+1527682,2026-04-04,1,Rajasthan Royals,Gujarat Titans,D Ferreira,1,3,0,0,33.33,caught
+1527682,2026-04-04,1,Rajasthan Royals,Gujarat Titans,RA Jadeja,7,7,1,0,100.0,
+1527682,2026-04-04,1,Rajasthan Royals,Gujarat Titans,JC Archer,1,2,0,0,50.0,
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,B Sai Sudharsan,73,44,9,3,165.91,caught
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,Kumar Kushagra,18,14,3,0,128.57,caught
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,JC Buttler,26,14,5,0,185.71,caught
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,GD Phillips,3,4,0,0,75.0,caught
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,Washington Sundar,4,2,1,0,200.0,caught
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,R Tewatia,12,6,1,1,200.0,caught
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,M Shahrukh Khan,11,4,1,1,275.0,run out
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,Rashid Khan,24,16,3,0,150.0,caught
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,K Rabada,23,16,1,2,143.75,
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,Ashok Sharma,0,1,0,0,0.0,
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,TM Head,7,8,1,0,87.5,caught
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,Abhishek Sharma,0,2,0,0,0.0,caught
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,Ishan Kishan,1,4,0,0,25.0,bowled
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,LS Livingstone,14,20,0,1,70.0,caught
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,H Klaasen,62,41,5,2,151.22,caught
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,Nithish Kumar Reddy,56,33,3,5,169.7,caught
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,Aniket Verma,2,5,0,0,40.0,
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,Harsh Dubey,0,1,0,0,0.0,bowled
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,Shivang Kumar,5,4,1,0,125.0,bowled
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,HV Patel,4,2,1,0,200.0,run out
+1527683,2026-04-05,2,Lucknow Super Giants,Sunrisers Hyderabad,AK Markram,45,27,6,2,166.67,caught
+1527683,2026-04-05,2,Lucknow Super Giants,Sunrisers Hyderabad,MR Marsh,14,12,2,0,116.67,caught
+1527683,2026-04-05,2,Lucknow Super Giants,Sunrisers Hyderabad,RR Pant,68,50,9,0,136.0,
+1527683,2026-04-05,2,Lucknow Super Giants,Sunrisers Hyderabad,A Badoni,12,9,1,0,133.33,stumped
+1527683,2026-04-05,2,Lucknow Super Giants,Sunrisers Hyderabad,N Pooran,1,4,0,0,25.0,run out
+1527683,2026-04-05,2,Lucknow Super Giants,Sunrisers Hyderabad,Abdul Samad,16,12,2,0,133.33,caught
+1527683,2026-04-05,2,Lucknow Super Giants,Sunrisers Hyderabad,MD Choudhary,2,5,0,0,40.0,
+1527684,2026-04-05,1,Royal Challengers Bengaluru,Chennai Super Kings,PD Salt,46,30,3,2,153.33,caught
+1527684,2026-04-05,1,Royal Challengers Bengaluru,Chennai Super Kings,V Kohli,28,18,2,1,155.56,caught
+1527684,2026-04-05,1,Royal Challengers Bengaluru,Chennai Super Kings,D Padikkal,50,29,5,2,172.41,bowled
+1527684,2026-04-05,1,Royal Challengers Bengaluru,Chennai Super Kings,RM Patidar,48,19,1,6,252.63,
+1527684,2026-04-05,1,Royal Challengers Bengaluru,Chennai Super Kings,TH David,70,25,3,8,280.0,
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,SV Samson,9,5,0,1,180.0,caught
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,RD Gaikwad,7,3,0,1,233.33,caught
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,A Mhatre,1,3,0,0,33.33,caught
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,SN Khan,50,25,8,2,200.0,stumped
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,Kartik Sharma,6,3,0,1,200.0,caught
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,S Dube,18,13,2,1,138.46,caught
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,PR Veer,43,29,6,1,148.28,caught
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,J Overton,37,16,4,2,231.25,caught
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,A Kamboj,19,12,1,1,158.33,
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,Noor Ahmad,8,8,0,1,100.0,caught
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,MJ Henry,2,3,0,0,66.67,caught
+1527685,2026-04-06,1,Kolkata Knight Riders,Punjab Kings,AM Rahane,8,6,1,0,133.33,
+1527685,2026-04-06,1,Kolkata Knight Riders,Punjab Kings,FH Allen,6,7,1,0,85.71,caught
+1527685,2026-04-06,1,Kolkata Knight Riders,Punjab Kings,C Green,4,2,1,0,200.0,caught
+1527685,2026-04-06,1,Kolkata Knight Riders,Punjab Kings,A Raghuvanshi,7,7,0,0,100.0,
+1527686,2026-04-07,1,Rajasthan Royals,Mumbai Indians,YBK Jaiswal,77,32,10,4,240.62,
+1527686,2026-04-07,1,Rajasthan Royals,Mumbai Indians,V Suryavanshi,39,14,1,5,278.57,caught
+1527686,2026-04-07,1,Rajasthan Royals,Mumbai Indians,Dhruv Jurel,2,3,0,0,66.67,lbw
+1527686,2026-04-07,1,Rajasthan Royals,Mumbai Indians,R Parag,20,10,1,2,200.0,caught
+1527686,2026-04-07,1,Rajasthan Royals,Mumbai Indians,SO Hetmyer,6,7,0,0,85.71,
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,RD Rickelton,8,4,0,1,200.0,caught
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,RG Sharma,5,6,0,0,83.33,lbw
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,SA Yadav,6,3,0,1,200.0,caught
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,Tilak Varma,14,10,2,0,140.0,caught
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,HH Pandya,9,6,2,0,150.0,caught
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,Naman Dhir,25,13,3,1,192.31,caught
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,SE Rutherford,25,8,2,2,312.5,caught
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,SN Thakur,8,7,1,0,114.29,caught
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,DL Chahar,6,5,1,0,120.0,
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,TA Boult,1,2,0,0,50.0,run out
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,JJ Bumrah,5,2,1,0,250.0,
+1527687,2026-04-08,1,Gujarat Titans,Delhi Capitals,B Sai Sudharsan,12,7,2,0,171.43,bowled
+1527687,2026-04-08,1,Gujarat Titans,Delhi Capitals,Shubman Gill,70,45,4,5,155.56,caught
+1527687,2026-04-08,1,Gujarat Titans,Delhi Capitals,JC Buttler,52,27,3,5,192.59,bowled
+1527687,2026-04-08,1,Gujarat Titans,Delhi Capitals,Washington Sundar,55,32,6,2,171.88,caught
+1527687,2026-04-08,1,Gujarat Titans,Delhi Capitals,GD Phillips,14,9,1,1,155.56,
+1527687,2026-04-08,1,Gujarat Titans,Delhi Capitals,R Tewatia,1,1,0,0,100.0,
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,P Nissanka,41,24,6,1,170.83,caught
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,KL Rahul,92,52,11,4,176.92,caught
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,N Rana,5,6,1,0,83.33,caught
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,Sameer Rizvi,0,1,0,0,0.0,bowled
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,DA Miller,41,20,3,3,205.0,
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,AR Patel,2,3,0,0,66.67,caught
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,T Stubbs,7,6,0,0,116.67,run out
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,V Nigam,12,7,2,0,171.43,caught
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,Kuldeep Yadav,1,1,0,0,100.0,run out
+1527688,2026-04-09,1,Kolkata Knight Riders,Lucknow Super Giants,AM Rahane,41,24,4,2,170.83,caught
+1527688,2026-04-09,1,Kolkata Knight Riders,Lucknow Super Giants,FH Allen,9,8,2,0,112.5,caught
+1527688,2026-04-09,1,Kolkata Knight Riders,Lucknow Super Giants,A Raghuvanshi,45,33,5,2,136.36,caught
+1527688,2026-04-09,1,Kolkata Knight Riders,Lucknow Super Giants,C Green,32,24,3,1,133.33,
+1527688,2026-04-09,1,Kolkata Knight Riders,Lucknow Super Giants,RK Singh,4,7,0,0,57.14,bowled
+1527688,2026-04-09,1,Kolkata Knight Riders,Lucknow Super Giants,R Powell,39,24,4,2,162.5,
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,MR Marsh,15,11,1,1,136.36,caught
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,AK Markram,22,15,2,1,146.67,caught
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,RR Pant,10,9,1,0,111.11,caught
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,A Badoni,54,34,7,2,158.82,caught
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,N Pooran,13,15,0,1,86.67,caught
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,Abdul Samad,2,4,0,0,50.0,bowled
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,MD Choudhary,54,27,2,7,200.0,
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,Mohammed Shami,1,3,0,0,33.33,caught
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,Avesh Khan,1,3,0,0,33.33,
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,PD Salt,0,1,0,0,0.0,caught
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,D Padikkal,14,7,3,0,200.0,caught
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,V Kohli,32,16,7,0,200.0,bowled
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,RM Patidar,63,40,4,4,157.5,caught
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,KH Pandya,1,6,0,0,16.67,caught
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,JM Sharma,5,8,0,0,62.5,lbw
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,TH David,13,9,2,0,144.44,caught
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,R Shepherd,22,11,2,1,200.0,caught
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,VR Iyer,29,15,1,2,193.33,
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,B Kumar,9,7,1,0,128.57,
+1527689,2026-04-10,2,Rajasthan Royals,Royal Challengers Bengaluru,YBK Jaiswal,13,8,0,2,162.5,caught
+1527689,2026-04-10,2,Rajasthan Royals,Royal Challengers Bengaluru,V Suryavanshi,78,26,8,7,300.0,caught
+1527689,2026-04-10,2,Rajasthan Royals,Royal Challengers Bengaluru,Dhruv Jurel,81,43,8,3,188.37,
+1527689,2026-04-10,2,Rajasthan Royals,Royal Challengers Bengaluru,SO Hetmyer,0,1,0,0,0.0,caught
+1527689,2026-04-10,2,Rajasthan Royals,Royal Challengers Bengaluru,R Parag,3,5,0,0,60.0,caught
+1527689,2026-04-10,2,Rajasthan Royals,Royal Challengers Bengaluru,RA Jadeja,24,25,1,0,96.0,
+1527690,2026-04-11,1,Sunrisers Hyderabad,Punjab Kings,Abhishek Sharma,74,28,5,8,264.29,caught
+1527690,2026-04-11,1,Sunrisers Hyderabad,Punjab Kings,TM Head,38,23,5,1,165.22,caught
+1527690,2026-04-11,1,Sunrisers Hyderabad,Punjab Kings,Ishan Kishan,27,17,3,1,158.82,caught
+1527690,2026-04-11,1,Sunrisers Hyderabad,Punjab Kings,H Klaasen,39,33,1,1,118.18,caught
+1527690,2026-04-11,1,Sunrisers Hyderabad,Punjab Kings,Aniket Verma,18,9,1,1,200.0,run out
+1527690,2026-04-11,1,Sunrisers Hyderabad,Punjab Kings,S Arora,9,8,0,1,112.5,caught
+1527690,2026-04-11,1,Sunrisers Hyderabad,Punjab Kings,Nithish Kumar Reddy,0,1,0,0,0.0,
+1527690,2026-04-11,1,Sunrisers Hyderabad,Punjab Kings,Harsh Dubey,1,2,0,0,50.0,
+1527690,2026-04-11,2,Punjab Kings,Sunrisers Hyderabad,Priyansh Arya,57,20,5,5,285.0,caught
+1527690,2026-04-11,2,Punjab Kings,Sunrisers Hyderabad,P Simran Singh,51,25,4,4,204.0,caught
+1527690,2026-04-11,2,Punjab Kings,Sunrisers Hyderabad,C Connolly,11,12,1,0,91.67,caught
+1527690,2026-04-11,2,Punjab Kings,Sunrisers Hyderabad,SS Iyer,69,33,5,5,209.09,
+1527690,2026-04-11,2,Punjab Kings,Sunrisers Hyderabad,N Wadhera,14,14,0,1,100.0,bowled
+1527690,2026-04-11,2,Punjab Kings,Sunrisers Hyderabad,Shashank Singh,16,9,1,1,177.78,
+1527691,2026-04-11,1,Chennai Super Kings,Delhi Capitals,SV Samson,115,56,15,4,205.36,
+1527691,2026-04-11,1,Chennai Super Kings,Delhi Capitals,RD Gaikwad,15,18,1,0,83.33,caught
+1527691,2026-04-11,1,Chennai Super Kings,Delhi Capitals,A Mhatre,59,36,3,4,163.89,retired out
+1527691,2026-04-11,1,Chennai Super Kings,Delhi Capitals,S Dube,20,10,2,1,200.0,
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,P Nissanka,41,24,5,2,170.83,caught
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,KL Rahul,18,10,2,1,180.0,caught
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,AR Patel,1,2,0,0,50.0,caught
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,Sameer Rizvi,6,9,1,0,66.67,caught
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,DA Miller,17,14,1,1,121.43,bowled
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,T Stubbs,60,38,4,3,157.89,caught
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,Ashutosh Sharma,19,10,1,2,190.0,caught
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,Auqib Nabi,4,2,1,0,200.0,caught
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,Kuldeep Yadav,4,7,0,0,57.14,caught
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,L Ngidi,3,5,0,0,60.0,caught
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,T Natarajan,1,2,0,0,50.0,
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,AK Markram,30,21,5,1,142.86,caught
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,MR Marsh,11,4,1,1,275.0,caught
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,RR Pant,18,11,2,1,163.64,caught
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,A Badoni,9,11,1,0,81.82,caught
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,N Pooran,19,21,0,2,90.48,caught
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,Abdul Samad,18,22,2,0,81.82,caught
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,MD Choudhary,18,14,1,1,128.57,caught
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,GF Linde,16,10,3,0,160.0,caught
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,Mohammed Shami,12,5,1,1,240.0,
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,Avesh Khan,4,1,1,0,400.0,
+1527692,2026-04-12,2,Gujarat Titans,Lucknow Super Giants,B Sai Sudharsan,15,14,3,0,107.14,caught
+1527692,2026-04-12,2,Gujarat Titans,Lucknow Super Giants,Shubman Gill,56,40,6,1,140.0,caught
+1527692,2026-04-12,2,Gujarat Titans,Lucknow Super Giants,JC Buttler,60,37,11,0,162.16,caught
+1527692,2026-04-12,2,Gujarat Titans,Lucknow Super Giants,Washington Sundar,21,13,2,1,161.54,
+1527692,2026-04-12,2,Gujarat Titans,Lucknow Super Giants,R Tewatia,10,8,1,0,125.0,
+1527693,2026-04-12,1,Royal Challengers Bengaluru,Mumbai Indians,PD Salt,78,36,6,6,216.67,caught
+1527693,2026-04-12,1,Royal Challengers Bengaluru,Mumbai Indians,V Kohli,50,38,5,1,131.58,caught
+1527693,2026-04-12,1,Royal Challengers Bengaluru,Mumbai Indians,RM Patidar,53,20,4,5,265.0,caught
+1527693,2026-04-12,1,Royal Challengers Bengaluru,Mumbai Indians,TH David,34,16,2,3,212.5,
+1527693,2026-04-12,1,Royal Challengers Bengaluru,Mumbai Indians,JM Sharma,10,9,1,0,111.11,lbw
+1527693,2026-04-12,1,Royal Challengers Bengaluru,Mumbai Indians,R Shepherd,2,2,0,0,100.0,
+1527693,2026-04-12,2,Mumbai Indians,Royal Challengers Bengaluru,RD Rickelton,37,22,3,3,168.18,caught
+1527693,2026-04-12,2,Mumbai Indians,Royal Challengers Bengaluru,RG Sharma,19,13,2,1,146.15,
+1527693,2026-04-12,2,Mumbai Indians,Royal Challengers Bengaluru,SA Yadav,33,22,5,0,150.0,caught
+1527693,2026-04-12,2,Mumbai Indians,Royal Challengers Bengaluru,Tilak Varma,1,3,0,0,33.33,caught
+1527693,2026-04-12,2,Mumbai Indians,Royal Challengers Bengaluru,HH Pandya,40,22,6,1,181.82,caught
+1527693,2026-04-12,2,Mumbai Indians,Royal Challengers Bengaluru,SE Rutherford,71,31,1,9,229.03,
+1527693,2026-04-12,2,Mumbai Indians,Royal Challengers Bengaluru,Naman Dhir,1,2,0,0,50.0,caught
+1527693,2026-04-12,2,Mumbai Indians,Royal Challengers Bengaluru,MJ Santner,8,6,1,0,133.33,
+1529264,2026-04-13,1,Sunrisers Hyderabad,Rajasthan Royals,Abhishek Sharma,0,1,0,0,0.0,caught
+1529264,2026-04-13,1,Sunrisers Hyderabad,Rajasthan Royals,Ishan Kishan,91,44,8,6,206.82,caught and bowled
+1529264,2026-04-13,1,Sunrisers Hyderabad,Rajasthan Royals,TM Head,18,18,3,0,100.0,caught
+1529264,2026-04-13,1,Sunrisers Hyderabad,Rajasthan Royals,H Klaasen,40,26,1,3,153.85,caught
+1529264,2026-04-13,1,Sunrisers Hyderabad,Rajasthan Royals,Nithish Kumar Reddy,28,13,0,4,215.38,caught
+1529264,2026-04-13,1,Sunrisers Hyderabad,Rajasthan Royals,S Arora,24,13,2,2,184.62,
+1529264,2026-04-13,1,Sunrisers Hyderabad,Rajasthan Royals,Aniket Verma,6,5,1,0,120.0,run out
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,YBK Jaiswal,1,5,0,0,20.0,caught
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,V Suryavanshi,0,1,0,0,0.0,caught
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,Dhruv Jurel,0,2,0,0,0.0,bowled
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,LG Pretorius,0,2,0,0,0.0,caught
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,RA Jadeja,45,32,5,0,140.62,caught
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,R Parag,4,6,1,0,66.67,caught
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,D Ferreira,69,44,8,3,156.82,bowled
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,JC Archer,2,5,0,0,40.0,caught
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,TU Deshpande,25,11,0,3,227.27,caught
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,Ravi Bishnoi,0,1,0,0,0.0,caught
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,N Burger,3,5,0,0,60.0,
+1529265,2026-04-14,1,Chennai Super Kings,Kolkata Knight Riders,SV Samson,48,32,4,3,150.0,bowled
+1529265,2026-04-14,1,Chennai Super Kings,Kolkata Knight Riders,RD Gaikwad,7,6,1,0,116.67,caught
+1529265,2026-04-14,1,Chennai Super Kings,Kolkata Knight Riders,A Mhatre,38,17,6,2,223.53,caught
+1529265,2026-04-14,1,Chennai Super Kings,Kolkata Knight Riders,D Brevis,41,29,4,2,141.38,caught
+1529265,2026-04-14,1,Chennai Super Kings,Kolkata Knight Riders,SN Khan,23,18,1,2,127.78,bowled
+1529265,2026-04-14,1,Chennai Super Kings,Kolkata Knight Riders,S Dube,13,12,1,0,108.33,
+1529265,2026-04-14,1,Chennai Super Kings,Kolkata Knight Riders,J Overton,7,6,1,0,116.67,
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,FH Allen,1,3,0,0,33.33,caught
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,SP Narine,24,17,2,2,141.18,caught
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,AM Rahane,28,22,0,2,127.27,caught
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,A Raghuvanshi,27,19,3,1,142.11,caught
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,RK Singh,6,12,0,0,50.0,caught
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,C Green,0,1,0,0,0.0,bowled
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,R Powell,31,22,1,2,140.91,
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,Ramandeep Singh,35,23,4,1,152.17,caught
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,AS Roy,1,1,0,0,100.0,
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,MR Marsh,40,32,3,2,125.0,bowled
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,AK Markram,12,8,0,1,150.0,caught
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,RR Pant,1,6,0,0,16.67,caught
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,N Pooran,1,7,0,0,14.29,bowled
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,A Badoni,38,24,4,1,158.33,caught
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,Abdul Samad,0,2,0,0,0.0,caught
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,MD Choudhary,39,28,3,2,139.29,bowled
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,GF Linde,7,7,1,0,100.0,caught
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,Mohammed Shami,0,1,0,0,0.0,bowled
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,Avesh Khan,1,2,0,0,50.0,bowled
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,DS Rathi,0,3,0,0,0.0,
+1529266,2026-04-15,2,Royal Challengers Bengaluru,Lucknow Super Giants,PD Salt,7,8,1,0,87.5,bowled
+1529266,2026-04-15,2,Royal Challengers Bengaluru,Lucknow Super Giants,V Kohli,49,34,6,1,144.12,caught
+1529266,2026-04-15,2,Royal Challengers Bengaluru,Lucknow Super Giants,D Padikkal,10,11,1,0,90.91,caught
+1529266,2026-04-15,2,Royal Challengers Bengaluru,Lucknow Super Giants,RM Patidar,27,13,1,3,207.69,caught
+1529266,2026-04-15,2,Royal Challengers Bengaluru,Lucknow Super Giants,JM Sharma,23,9,2,2,255.56,caught
+1529266,2026-04-15,2,Royal Challengers Bengaluru,Lucknow Super Giants,TH David,14,8,1,1,175.0,
+1529266,2026-04-15,2,Royal Challengers Bengaluru,Lucknow Super Giants,R Shepherd,14,8,1,1,175.0,
+1529267,2026-04-16,1,Mumbai Indians,Punjab Kings,RD Rickelton,2,8,0,0,25.0,caught
+1529267,2026-04-16,1,Mumbai Indians,Punjab Kings,Q de Kock,112,60,8,7,186.67,
+1529267,2026-04-16,1,Mumbai Indians,Punjab Kings,SA Yadav,0,1,0,0,0.0,caught
+1529267,2026-04-16,1,Mumbai Indians,Punjab Kings,Naman Dhir,50,31,3,3,161.29,caught
+1529267,2026-04-16,1,Mumbai Indians,Punjab Kings,HH Pandya,14,12,0,1,116.67,caught
+1529267,2026-04-16,1,Mumbai Indians,Punjab Kings,SE Rutherford,1,5,0,0,20.0,bowled
+1529267,2026-04-16,1,Mumbai Indians,Punjab Kings,Tilak Varma,8,3,2,0,266.67,run out
+1529267,2026-04-16,2,Punjab Kings,Mumbai Indians,Priyansh Arya,15,9,2,1,166.67,caught
+1529267,2026-04-16,2,Punjab Kings,Mumbai Indians,P Simran Singh,80,39,11,2,205.13,
+1529267,2026-04-16,2,Punjab Kings,Mumbai Indians,C Connolly,17,12,1,2,141.67,caught
+1529267,2026-04-16,2,Punjab Kings,Mumbai Indians,SS Iyer,66,35,5,4,188.57,caught
+1529267,2026-04-16,2,Punjab Kings,Mumbai Indians,MP Stoinis,10,5,2,0,200.0,
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,TL Seifert,19,14,2,1,135.71,caught
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,AM Rahane,0,1,0,0,0.0,caught
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,A Raghuvanshi,8,4,2,0,200.0,caught
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,C Green,79,55,7,4,143.64,caught
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,R Powell,27,20,2,2,135.0,caught
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,AS Roy,9,7,1,0,128.57,caught
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,RK Singh,1,2,0,0,50.0,caught
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,Ramandeep Singh,17,8,2,1,212.5,caught
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,SP Narine,0,5,0,0,0.0,caught
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,Kartik Tyagi,6,4,0,1,150.0,run out
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,VG Arora,0,1,0,0,0.0,
+1529268,2026-04-17,2,Gujarat Titans,Kolkata Knight Riders,B Sai Sudharsan,22,16,1,2,137.5,caught
+1529268,2026-04-17,2,Gujarat Titans,Kolkata Knight Riders,Shubman Gill,86,50,8,4,172.0,caught
+1529268,2026-04-17,2,Gujarat Titans,Kolkata Knight Riders,JC Buttler,25,15,2,2,166.67,caught
+1529268,2026-04-17,2,Gujarat Titans,Kolkata Knight Riders,Washington Sundar,13,13,1,0,100.0,caught
+1529268,2026-04-17,2,Gujarat Titans,Kolkata Knight Riders,GD Phillips,19,16,2,0,118.75,caught
+1529268,2026-04-17,2,Gujarat Titans,Kolkata Knight Riders,R Tewatia,7,6,0,0,116.67,
+1529268,2026-04-17,2,Gujarat Titans,Kolkata Knight Riders,M Shahrukh Khan,3,2,0,0,150.0,
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,PD Salt,63,38,4,3,165.79,caught
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,V Kohli,19,13,3,0,146.15,caught
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,D Padikkal,18,13,1,1,138.46,caught
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,TH David,26,17,3,1,152.94,caught
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,RM Patidar,8,4,0,1,200.0,caught
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,JM Sharma,14,20,1,0,70.0,caught
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,R Shepherd,1,4,0,0,25.0,lbw
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,KH Pandya,12,10,0,1,120.0,run out
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,B Kumar,3,2,0,0,150.0,
+1529269,2026-04-18,2,Delhi Capitals,Royal Challengers Bengaluru,P Nissanka,1,2,0,0,50.0,lbw
+1529269,2026-04-18,2,Delhi Capitals,Royal Challengers Bengaluru,KL Rahul,57,34,6,2,167.65,caught
+1529269,2026-04-18,2,Delhi Capitals,Royal Challengers Bengaluru,KK Nair,5,5,1,0,100.0,caught
+1529269,2026-04-18,2,Delhi Capitals,Royal Challengers Bengaluru,Sameer Rizvi,2,3,0,0,66.67,caught
+1529269,2026-04-18,2,Delhi Capitals,Royal Challengers Bengaluru,T Stubbs,60,47,4,1,127.66,
+1529269,2026-04-18,2,Delhi Capitals,Royal Challengers Bengaluru,AR Patel,26,19,3,0,136.84,
+1529269,2026-04-18,2,Delhi Capitals,Royal Challengers Bengaluru,DA Miller,22,10,1,2,220.0,
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,Abhishek Sharma,59,22,6,4,268.18,caught
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,TM Head,23,20,3,1,115.0,caught
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,Ishan Kishan,0,1,0,0,0.0,caught
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,H Klaasen,59,39,6,2,151.28,bowled
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,Aniket Verma,2,4,0,0,50.0,caught
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,Nithish Kumar Reddy,12,8,0,1,150.0,caught
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,S Arora,13,12,2,0,108.33,caught
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,LS Livingstone,1,5,0,0,20.0,caught
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,Shivang Kumar,12,8,1,1,150.0,caught
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,PP Hinge,0,1,0,0,0.0,
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,SV Samson,7,3,0,1,233.33,caught
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,RD Gaikwad,19,13,3,0,146.15,caught
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,A Mhatre,30,13,5,1,230.77,caught
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,MW Short,34,30,3,0,113.33,caught
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,SN Khan,25,19,3,0,131.58,caught
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,D Brevis,0,4,0,0,0.0,caught
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,S Dube,21,16,1,1,131.25,bowled
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,J Overton,16,15,1,0,106.67,caught
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,A Kamboj,13,8,0,1,162.5,
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,Noor Ahmad,1,1,0,0,100.0,
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,YBK Jaiswal,39,29,4,2,134.48,caught
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,V Suryavanshi,46,28,6,2,164.29,caught
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,Dhruv Jurel,5,7,0,0,71.43,stumped
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,R Parag,12,14,1,0,85.71,bowled
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,SO Hetmyer,15,18,0,0,83.33,caught
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,D Ferreira,7,7,0,1,100.0,caught and bowled
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,RA Jadeja,9,7,1,0,128.57,caught
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,JC Archer,8,5,1,0,160.0,run out
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,Ravi Bishnoi,0,2,0,0,0.0,caught
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,Brijesh Sharma,1,3,0,0,33.33,
+1529271,2026-04-19,2,Kolkata Knight Riders,Rajasthan Royals,TL Seifert,0,1,0,0,0.0,bowled
+1529271,2026-04-19,2,Kolkata Knight Riders,Rajasthan Royals,A Raghuvanshi,10,19,1,0,52.63,lbw
+1529271,2026-04-19,2,Kolkata Knight Riders,Rajasthan Royals,AM Rahane,0,2,0,0,0.0,caught
+1529271,2026-04-19,2,Kolkata Knight Riders,Rajasthan Royals,C Green,27,13,4,1,207.69,stumped
+1529271,2026-04-19,2,Kolkata Knight Riders,Rajasthan Royals,R Powell,23,20,2,1,115.0,caught
+1529271,2026-04-19,2,Kolkata Knight Riders,Rajasthan Royals,RK Singh,53,34,5,2,155.88,
+1529271,2026-04-19,2,Kolkata Knight Riders,Rajasthan Royals,Ramandeep Singh,10,13,1,0,76.92,bowled
+1529271,2026-04-19,2,Kolkata Knight Riders,Rajasthan Royals,AS Roy,29,16,1,2,181.25,
+1529272,2026-04-19,1,Punjab Kings,Lucknow Super Giants,Priyansh Arya,93,37,4,9,251.35,caught
+1529272,2026-04-19,1,Punjab Kings,Lucknow Super Giants,P Simran Singh,0,1,0,0,0.0,caught
+1529272,2026-04-19,1,Punjab Kings,Lucknow Super Giants,C Connolly,87,46,8,7,189.13,caught
+1529272,2026-04-19,1,Punjab Kings,Lucknow Super Giants,SS Iyer,5,6,0,0,83.33,caught
+1529272,2026-04-19,1,Punjab Kings,Lucknow Super Giants,MP Stoinis,29,16,2,2,181.25,run out
+1529272,2026-04-19,1,Punjab Kings,Lucknow Super Giants,N Wadhera,13,7,1,1,185.71,caught
+1529272,2026-04-19,1,Punjab Kings,Lucknow Super Giants,Shashank Singh,17,6,1,2,283.33,caught
+1529272,2026-04-19,1,Punjab Kings,Lucknow Super Giants,M Jansen,1,1,0,0,100.0,
+1529272,2026-04-19,2,Lucknow Super Giants,Punjab Kings,MR Marsh,40,28,3,2,142.86,caught
+1529272,2026-04-19,2,Lucknow Super Giants,Punjab Kings,A Badoni,35,21,5,1,166.67,caught
+1529272,2026-04-19,2,Lucknow Super Giants,Punjab Kings,RR Pant,43,23,1,4,186.96,caught
+1529272,2026-04-19,2,Lucknow Super Giants,Punjab Kings,N Pooran,9,9,1,0,100.0,caught
+1529272,2026-04-19,2,Lucknow Super Giants,Punjab Kings,AK Markram,42,22,3,3,190.91,caught
+1529272,2026-04-19,2,Lucknow Super Giants,Punjab Kings,MD Choudhary,21,17,1,1,123.53,
+1529272,2026-04-19,2,Lucknow Super Giants,Punjab Kings,Himmat Singh,1,1,0,0,100.0,
+1529273,2026-04-20,1,Mumbai Indians,Gujarat Titans,Q de Kock,13,11,1,1,118.18,caught and bowled
+1529273,2026-04-20,1,Mumbai Indians,Gujarat Titans,DV Malewar,2,4,0,0,50.0,lbw
+1529273,2026-04-20,1,Mumbai Indians,Gujarat Titans,Naman Dhir,45,32,6,1,140.62,caught
+1529273,2026-04-20,1,Mumbai Indians,Gujarat Titans,SA Yadav,15,10,1,1,150.0,bowled
+1529273,2026-04-20,1,Mumbai Indians,Gujarat Titans,Tilak Varma,101,45,8,7,224.44,
+1529273,2026-04-20,1,Mumbai Indians,Gujarat Titans,HH Pandya,15,16,1,0,93.75,caught
+1529273,2026-04-20,1,Mumbai Indians,Gujarat Titans,SE Rutherford,1,2,0,0,50.0,
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,B Sai Sudharsan,0,1,0,0,0.0,caught
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,JC Buttler,5,6,1,0,83.33,lbw
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,Shubman Gill,14,13,3,0,107.69,caught
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,Washington Sundar,26,17,5,0,152.94,caught
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,GD Phillips,6,8,0,0,75.0,caught and bowled
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,R Tewatia,8,11,1,0,72.73,caught
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,M Shahrukh Khan,17,13,1,1,130.77,caught
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,Rashid Khan,4,6,0,0,66.67,caught
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,K Rabada,12,14,2,0,85.71,stumped
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,Ashok Sharma,1,3,0,0,33.33,
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,Mohammed Siraj,0,3,0,0,0.0,lbw
+1529274,2026-04-21,1,Sunrisers Hyderabad,Delhi Capitals,Abhishek Sharma,135,68,10,10,198.53,
+1529274,2026-04-21,1,Sunrisers Hyderabad,Delhi Capitals,TM Head,37,26,2,2,142.31,caught
+1529274,2026-04-21,1,Sunrisers Hyderabad,Delhi Capitals,Ishan Kishan,25,13,2,1,192.31,run out
+1529274,2026-04-21,1,Sunrisers Hyderabad,Delhi Capitals,H Klaasen,37,13,3,3,284.62,
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,P Nissanka,8,6,0,1,133.33,caught
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,KL Rahul,37,23,1,3,160.87,caught
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,N Rana,57,30,7,3,190.0,caught
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,Sameer Rizvi,41,28,2,2,146.43,caught
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,DA Miller,0,1,0,0,0.0,bowled
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,T Stubbs,27,16,3,1,168.75,caught
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,Ashutosh Sharma,14,10,2,0,140.0,caught
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,AR Patel,2,3,0,0,66.67,caught
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,Kuldeep Yadav,1,2,0,0,50.0,
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,L Ngidi,0,1,0,0,0.0,caught
+1529275,2026-04-22,1,Rajasthan Royals,Lucknow Super Giants,YBK Jaiswal,22,12,4,0,183.33,caught
+1529275,2026-04-22,1,Rajasthan Royals,Lucknow Super Giants,V Suryavanshi,8,11,2,0,72.73,caught
+1529275,2026-04-22,1,Rajasthan Royals,Lucknow Super Giants,Dhruv Jurel,0,1,0,0,0.0,caught
+1529275,2026-04-22,1,Rajasthan Royals,Lucknow Super Giants,R Parag,20,19,2,1,105.26,caught
+1529275,2026-04-22,1,Rajasthan Royals,Lucknow Super Giants,SO Hetmyer,22,18,2,1,122.22,caught
+1529275,2026-04-22,1,Rajasthan Royals,Lucknow Super Giants,RA Jadeja,43,29,2,1,148.28,
+1529275,2026-04-22,1,Rajasthan Royals,Lucknow Super Giants,D Ferreira,20,19,2,0,105.26,caught
+1529275,2026-04-22,1,Rajasthan Royals,Lucknow Super Giants,SB Dubey,19,11,3,0,172.73,
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,MR Marsh,55,41,6,2,134.15,caught
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,A Badoni,0,1,0,0,0.0,run out
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,RR Pant,0,3,0,0,0.0,caught
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,AK Markram,0,6,0,0,0.0,caught
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,N Pooran,22,25,3,0,88.0,caught
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,Himmat Singh,15,15,0,1,100.0,bowled
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,MD Choudhary,7,3,0,1,233.33,caught
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,Mohammed Shami,6,4,0,1,150.0,bowled
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,MP Yadav,5,5,1,0,100.0,caught
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,DS Rathi,2,2,0,0,100.0,
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,Mohsin Khan,0,3,0,0,0.0,bowled
+1529276,2026-04-23,1,Chennai Super Kings,Mumbai Indians,SV Samson,101,54,10,6,187.04,
+1529276,2026-04-23,1,Chennai Super Kings,Mumbai Indians,RD Gaikwad,22,14,3,1,157.14,caught
+1529276,2026-04-23,1,Chennai Super Kings,Mumbai Indians,SN Khan,14,8,3,0,175.0,bowled
+1529276,2026-04-23,1,Chennai Super Kings,Mumbai Indians,S Dube,5,8,0,0,62.5,bowled
+1529276,2026-04-23,1,Chennai Super Kings,Mumbai Indians,D Brevis,21,11,1,2,190.91,caught
+1529276,2026-04-23,1,Chennai Super Kings,Mumbai Indians,Kartik Sharma,18,19,0,2,94.74,caught
+1529276,2026-04-23,1,Chennai Super Kings,Mumbai Indians,J Overton,15,7,2,1,214.29,caught
+1529276,2026-04-23,1,Chennai Super Kings,Mumbai Indians,AJ Hosein,2,2,0,0,100.0,
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,Q de Kock,7,10,0,1,70.0,bowled
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,DV Malewar,0,1,0,0,0.0,caught
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,SA Yadav,36,30,5,0,120.0,caught
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,Naman Dhir,0,3,0,0,0.0,bowled
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,Tilak Varma,37,29,5,0,127.59,bowled
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,HH Pandya,1,2,0,0,50.0,caught
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,SE Rutherford,0,1,0,0,0.0,caught
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,SN Thakur,6,12,0,0,50.0,caught
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,Krish Bhagat,7,15,0,0,46.67,caught
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,JJ Bumrah,2,5,0,0,40.0,caught
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,Ashwani Kumar,1,6,0,0,16.67,
+1529277,2026-04-24,1,Gujarat Titans,Royal Challengers Bengaluru,B Sai Sudharsan,100,58,11,5,172.41,caught and bowled
+1529277,2026-04-24,1,Gujarat Titans,Royal Challengers Bengaluru,Shubman Gill,32,24,2,1,133.33,caught
+1529277,2026-04-24,1,Gujarat Titans,Royal Challengers Bengaluru,JC Buttler,25,16,2,1,156.25,caught
+1529277,2026-04-24,1,Gujarat Titans,Royal Challengers Bengaluru,Washington Sundar,19,12,1,1,158.33,
+1529277,2026-04-24,1,Gujarat Titans,Royal Challengers Bengaluru,JO Holder,23,10,1,2,230.0,
+1529277,2026-04-24,2,Royal Challengers Bengaluru,Gujarat Titans,JG Bethell,14,10,3,0,140.0,caught
+1529277,2026-04-24,2,Royal Challengers Bengaluru,Gujarat Titans,V Kohli,81,44,8,4,184.09,bowled
+1529277,2026-04-24,2,Royal Challengers Bengaluru,Gujarat Titans,D Padikkal,55,27,2,6,203.7,bowled
+1529277,2026-04-24,2,Royal Challengers Bengaluru,Gujarat Titans,RM Patidar,8,5,0,1,160.0,caught
+1529277,2026-04-24,2,Royal Challengers Bengaluru,Gujarat Titans,JM Sharma,10,6,1,1,166.67,caught
+1529277,2026-04-24,2,Royal Challengers Bengaluru,Gujarat Titans,TH David,10,9,0,1,111.11,
+1529277,2026-04-24,2,Royal Challengers Bengaluru,Gujarat Titans,KH Pandya,23,12,3,1,191.67,
+1529278,2026-04-25,1,Delhi Capitals,Punjab Kings,P Nissanka,11,7,2,0,157.14,caught
+1529278,2026-04-25,1,Delhi Capitals,Punjab Kings,KL Rahul,152,67,16,9,226.87,
+1529278,2026-04-25,1,Delhi Capitals,Punjab Kings,N Rana,91,44,11,4,206.82,caught
+1529278,2026-04-25,1,Delhi Capitals,Punjab Kings,DA Miller,3,3,0,0,100.0,
+1529278,2026-04-25,2,Punjab Kings,Delhi Capitals,Priyansh Arya,43,17,2,5,252.94,caught
+1529278,2026-04-25,2,Punjab Kings,Delhi Capitals,P Simran Singh,76,26,9,5,292.31,lbw
+1529278,2026-04-25,2,Punjab Kings,Delhi Capitals,C Connolly,17,10,1,1,170.0,bowled
+1529278,2026-04-25,2,Punjab Kings,Delhi Capitals,SS Iyer,71,36,3,7,197.22,
+1529278,2026-04-25,2,Punjab Kings,Delhi Capitals,N Wadhera,25,15,3,1,166.67,caught
+1529278,2026-04-25,2,Punjab Kings,Delhi Capitals,Shashank Singh,19,10,2,1,190.0,
+1529279,2026-04-25,1,Rajasthan Royals,Sunrisers Hyderabad,YBK Jaiswal,10,8,2,0,125.0,caught
+1529279,2026-04-25,1,Rajasthan Royals,Sunrisers Hyderabad,V Suryavanshi,103,37,5,12,278.38,lbw
+1529279,2026-04-25,1,Rajasthan Royals,Sunrisers Hyderabad,Dhruv Jurel,51,35,8,1,145.71,caught
+1529279,2026-04-25,1,Rajasthan Royals,Sunrisers Hyderabad,R Parag,7,9,0,0,77.78,bowled
+1529279,2026-04-25,1,Rajasthan Royals,Sunrisers Hyderabad,D Ferreira,33,16,3,3,206.25,caught
+1529279,2026-04-25,1,Rajasthan Royals,Sunrisers Hyderabad,SO Hetmyer,11,10,1,0,110.0,caught
+1529279,2026-04-25,1,Rajasthan Royals,Sunrisers Hyderabad,RA Jadeja,4,3,1,0,133.33,
+1529279,2026-04-25,1,Rajasthan Royals,Sunrisers Hyderabad,JC Archer,2,2,0,0,100.0,
+1529279,2026-04-25,2,Sunrisers Hyderabad,Rajasthan Royals,TM Head,6,5,0,1,120.0,caught
+1529279,2026-04-25,2,Sunrisers Hyderabad,Rajasthan Royals,Ishan Kishan,74,31,11,3,238.71,caught
+1529279,2026-04-25,2,Sunrisers Hyderabad,Rajasthan Royals,Abhishek Sharma,57,29,11,1,196.55,caught
+1529279,2026-04-25,2,Sunrisers Hyderabad,Rajasthan Royals,H Klaasen,29,24,3,1,120.83,caught
+1529279,2026-04-25,2,Sunrisers Hyderabad,Rajasthan Royals,Nithish Kumar Reddy,36,18,2,3,200.0,lbw
+1529279,2026-04-25,2,Sunrisers Hyderabad,Rajasthan Royals,S Arora,8,3,0,1,266.67,
+1529279,2026-04-25,2,Sunrisers Hyderabad,Rajasthan Royals,Aniket Verma,1,1,0,0,100.0,
+1529280,2026-04-26,1,Chennai Super Kings,Gujarat Titans,SV Samson,11,15,2,0,73.33,caught
+1529280,2026-04-26,1,Chennai Super Kings,Gujarat Titans,RD Gaikwad,74,60,6,4,123.33,
+1529280,2026-04-26,1,Chennai Super Kings,Gujarat Titans,Urvil Patel,4,3,1,0,133.33,caught
+1529280,2026-04-26,1,Chennai Super Kings,Gujarat Titans,SN Khan,0,1,0,0,0.0,caught
+1529280,2026-04-26,1,Chennai Super Kings,Gujarat Titans,D Brevis,2,9,0,0,22.22,caught
+1529280,2026-04-26,1,Chennai Super Kings,Gujarat Titans,S Dube,22,17,3,1,129.41,bowled
+1529280,2026-04-26,1,Chennai Super Kings,Gujarat Titans,Kartik Sharma,15,9,3,0,166.67,caught
+1529280,2026-04-26,1,Chennai Super Kings,Gujarat Titans,J Overton,18,6,3,1,300.0,caught
+1529280,2026-04-26,2,Gujarat Titans,Chennai Super Kings,B Sai Sudharsan,87,46,4,7,189.13,caught
+1529280,2026-04-26,2,Gujarat Titans,Chennai Super Kings,Shubman Gill,33,23,1,3,143.48,stumped
+1529280,2026-04-26,2,Gujarat Titans,Chennai Super Kings,JC Buttler,39,30,4,1,130.0,
+1529280,2026-04-26,2,Gujarat Titans,Chennai Super Kings,Washington Sundar,1,1,0,0,100.0,
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,AM Rahane,10,15,0,1,66.67,caught
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,TL Seifert,0,3,0,0,0.0,caught
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,A Raghuvanshi,9,8,1,0,112.5,obstructing the field
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,C Green,34,21,0,3,161.9,caught
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,R Powell,1,4,0,0,25.0,caught
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,RK Singh,83,51,7,5,162.75,
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,AS Roy,0,1,0,0,0.0,caught
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,Ramandeep Singh,6,11,0,0,54.55,caught
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,SP Narine,4,6,0,0,66.67,
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,AK Markram,31,27,2,1,114.81,caught
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,MR Marsh,2,3,0,0,66.67,caught
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,RR Pant,42,38,4,1,110.53,caught
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,N Pooran,9,12,0,1,75.0,caught
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,A Badoni,24,19,0,2,126.32,caught
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,MD Choudhary,1,2,0,0,50.0,caught
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,Himmat Singh,19,10,2,1,190.0,caught
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,GF Linde,8,4,2,0,200.0,caught
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,Mohammed Shami,11,6,1,1,183.33,
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,Prince Yadav,0,1,0,0,0.0,
+1529281,2026-04-26,3,Lucknow Super Giants,Kolkata Knight Riders,N Pooran,0,1,0,0,0.0,bowled
+1529281,2026-04-26,3,Lucknow Super Giants,Kolkata Knight Riders,RR Pant,1,1,0,0,100.0,
+1529281,2026-04-26,3,Lucknow Super Giants,Kolkata Knight Riders,AK Markram,0,1,0,0,0.0,caught
+1529281,2026-04-26,4,Kolkata Knight Riders,Lucknow Super Giants,RK Singh,4,1,1,0,400.0,
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,SU Parakh,0,2,0,0,0.0,bowled
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,N Rana,1,9,0,0,11.11,caught
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,KL Rahul,1,3,0,0,33.33,caught
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,Sameer Rizvi,0,1,0,0,0.0,caught
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,T Stubbs,5,3,1,0,166.67,caught
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,AR Patel,0,3,0,0,0.0,caught
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,Abishek Porel,30,33,3,0,90.91,bowled
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,DA Miller,19,18,3,0,105.56,caught
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,KA Jamieson,12,13,1,1,92.31,lbw
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,Kuldeep Yadav,3,11,0,0,27.27,bowled
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,PVD Chameera,0,3,0,0,0.0,
+1529282,2026-04-27,2,Royal Challengers Bengaluru,Delhi Capitals,JG Bethell,20,11,1,2,181.82,caught
+1529282,2026-04-27,2,Royal Challengers Bengaluru,Delhi Capitals,V Kohli,23,15,1,2,153.33,
+1529282,2026-04-27,2,Royal Challengers Bengaluru,Delhi Capitals,D Padikkal,34,13,3,3,261.54,
+1529283,2026-04-28,1,Punjab Kings,Rajasthan Royals,P Simran Singh,59,44,6,1,134.09,caught
+1529283,2026-04-28,1,Punjab Kings,Rajasthan Royals,Priyansh Arya,29,11,5,1,263.64,caught
+1529283,2026-04-28,1,Punjab Kings,Rajasthan Royals,C Connolly,30,14,2,3,214.29,caught
+1529283,2026-04-28,1,Punjab Kings,Rajasthan Royals,SS Iyer,30,27,1,1,111.11,caught
+1529283,2026-04-28,1,Punjab Kings,Rajasthan Royals,MP Stoinis,62,22,4,6,281.82,
+1529283,2026-04-28,1,Punjab Kings,Rajasthan Royals,Suryansh Shedge,3,2,0,0,150.0,
+1529283,2026-04-28,2,Rajasthan Royals,Punjab Kings,YBK Jaiswal,51,27,7,1,188.89,caught
+1529283,2026-04-28,2,Rajasthan Royals,Punjab Kings,V Suryavanshi,43,16,3,5,268.75,caught
+1529283,2026-04-28,2,Rajasthan Royals,Punjab Kings,Dhruv Jurel,16,20,0,1,80.0,caught
+1529283,2026-04-28,2,Rajasthan Royals,Punjab Kings,R Parag,29,16,2,2,181.25,caught
+1529283,2026-04-28,2,Rajasthan Royals,Punjab Kings,D Ferreira,52,26,6,3,200.0,
+1529283,2026-04-28,2,Rajasthan Royals,Punjab Kings,SB Dubey,31,12,3,2,258.33,
+1529284,2026-04-29,1,Mumbai Indians,Sunrisers Hyderabad,WG Jacks,46,22,5,3,209.09,caught
+1529284,2026-04-29,1,Mumbai Indians,Sunrisers Hyderabad,RD Rickelton,123,55,10,8,223.64,
+1529284,2026-04-29,1,Mumbai Indians,Sunrisers Hyderabad,SA Yadav,5,5,1,0,100.0,caught
+1529284,2026-04-29,1,Mumbai Indians,Sunrisers Hyderabad,Naman Dhir,22,17,3,0,129.41,caught
+1529284,2026-04-29,1,Mumbai Indians,Sunrisers Hyderabad,HH Pandya,31,15,2,2,206.67,caught
+1529284,2026-04-29,1,Mumbai Indians,Sunrisers Hyderabad,Tilak Varma,7,5,0,1,140.0,caught
+1529284,2026-04-29,1,Mumbai Indians,Sunrisers Hyderabad,R Minz,1,1,0,0,100.0,
+1529284,2026-04-29,2,Sunrisers Hyderabad,Mumbai Indians,Abhishek Sharma,45,24,4,3,187.5,caught
+1529284,2026-04-29,2,Sunrisers Hyderabad,Mumbai Indians,TM Head,76,30,4,8,253.33,caught
+1529284,2026-04-29,2,Sunrisers Hyderabad,Mumbai Indians,Ishan Kishan,0,1,0,0,0.0,bowled
+1529284,2026-04-29,2,Sunrisers Hyderabad,Mumbai Indians,H Klaasen,65,30,7,4,216.67,
+1529284,2026-04-29,2,Sunrisers Hyderabad,Mumbai Indians,Nithish Kumar Reddy,21,17,3,0,123.53,caught
+1529284,2026-04-29,2,Sunrisers Hyderabad,Mumbai Indians,S Arora,30,10,2,3,300.0,
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,JG Bethell,5,5,1,0,100.0,caught
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,V Kohli,28,13,5,1,215.38,caught
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,D Padikkal,40,24,5,2,166.67,bowled
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,RM Patidar,19,15,2,1,126.67,caught
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,JM Sharma,1,3,0,0,33.33,caught
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,TH David,9,6,0,1,150.0,caught
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,KH Pandya,4,4,1,0,100.0,caught
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,R Shepherd,17,15,0,2,113.33,caught
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,B Kumar,15,15,2,0,100.0,
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,VR Iyer,12,15,1,0,80.0,caught
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,JR Hazlewood,0,1,0,0,0.0,run out
+1529285,2026-04-30,2,Gujarat Titans,Royal Challengers Bengaluru,B Sai Sudharsan,6,5,1,0,120.0,caught
+1529285,2026-04-30,2,Gujarat Titans,Royal Challengers Bengaluru,Shubman Gill,43,18,4,3,238.89,caught
+1529285,2026-04-30,2,Gujarat Titans,Royal Challengers Bengaluru,JC Buttler,39,19,2,4,205.26,bowled
+1529285,2026-04-30,2,Gujarat Titans,Royal Challengers Bengaluru,Washington Sundar,12,12,0,1,100.0,lbw
+1529285,2026-04-30,2,Gujarat Titans,Royal Challengers Bengaluru,M Shahrukh Khan,8,8,1,0,100.0,caught
+1529285,2026-04-30,2,Gujarat Titans,Royal Challengers Bengaluru,R Tewatia,27,17,4,0,158.82,
+1529285,2026-04-30,2,Gujarat Titans,Royal Challengers Bengaluru,JO Holder,12,10,0,1,120.0,caught
+1529285,2026-04-30,2,Gujarat Titans,Royal Challengers Bengaluru,Rashid Khan,7,6,1,0,116.67,
+1529286,2026-05-01,1,Rajasthan Royals,Delhi Capitals,YBK Jaiswal,6,3,0,1,200.0,caught and bowled
+1529286,2026-05-01,1,Rajasthan Royals,Delhi Capitals,Dhruv Jurel,42,30,4,1,140.0,caught
+1529286,2026-05-01,1,Rajasthan Royals,Delhi Capitals,V Suryavanshi,4,2,1,0,200.0,bowled
+1529286,2026-05-01,1,Rajasthan Royals,Delhi Capitals,R Parag,90,50,8,5,180.0,caught
+1529286,2026-05-01,1,Rajasthan Royals,Delhi Capitals,RA Jadeja,20,14,1,1,142.86,caught
+1529286,2026-05-01,1,Rajasthan Royals,Delhi Capitals,D Ferreira,47,14,2,6,335.71,
+1529286,2026-05-01,1,Rajasthan Royals,Delhi Capitals,SB Dubey,6,6,1,0,100.0,caught
+1529286,2026-05-01,1,Rajasthan Royals,Delhi Capitals,JC Archer,1,1,0,0,100.0,
+1529286,2026-05-01,2,Delhi Capitals,Rajasthan Royals,P Nissanka,62,33,6,3,187.88,lbw
+1529286,2026-05-01,2,Delhi Capitals,Rajasthan Royals,KL Rahul,75,40,6,5,187.5,caught
+1529286,2026-05-01,2,Delhi Capitals,Rajasthan Royals,N Rana,33,17,3,2,194.12,caught
+1529286,2026-05-01,2,Delhi Capitals,Rajasthan Royals,T Stubbs,18,11,1,1,163.64,
+1529286,2026-05-01,2,Delhi Capitals,Rajasthan Royals,Ashutosh Sharma,25,15,4,0,166.67,
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,WG Jacks,1,5,0,0,20.0,caught
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,RD Rickelton,37,24,0,5,154.17,caught
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,Naman Dhir,57,37,4,3,154.05,caught
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,SA Yadav,21,12,3,1,175.0,caught
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,Tilak Varma,5,8,0,0,62.5,caught
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,HH Pandya,18,23,2,0,78.26,caught
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,R Minz,5,3,1,0,166.67,bowled
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,Krish Bhagat,3,6,0,0,50.0,
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,TA Boult,7,2,0,1,350.0,
+1529287,2026-05-02,2,Chennai Super Kings,Mumbai Indians,SV Samson,11,9,2,0,122.22,caught
+1529287,2026-05-02,2,Chennai Super Kings,Mumbai Indians,RD Gaikwad,67,48,5,2,139.58,
+1529287,2026-05-02,2,Chennai Super Kings,Mumbai Indians,Urvil Patel,24,12,2,2,200.0,bowled
+1529287,2026-05-02,2,Chennai Super Kings,Mumbai Indians,Kartik Sharma,54,40,4,3,135.0,
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,Abhishek Sharma,15,10,1,1,150.0,caught
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,TM Head,61,28,9,3,217.86,caught
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,Ishan Kishan,42,29,4,2,144.83,caught
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,H Klaasen,11,8,1,1,137.5,caught
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,R Smaran,4,4,1,0,100.0,caught
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,Aniket Verma,6,8,1,0,75.0,caught
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,S Arora,2,6,0,0,33.33,bowled
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,PJ Cummins,10,8,0,1,125.0,caught and bowled
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,Shivang Kumar,1,2,0,0,50.0,caught
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,E Malinga,2,6,0,0,33.33,
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,HV Patel,6,5,1,0,120.0,caught
+1529288,2026-05-03,2,Kolkata Knight Riders,Sunrisers Hyderabad,AM Rahane,43,36,4,1,119.44,caught
+1529288,2026-05-03,2,Kolkata Knight Riders,Sunrisers Hyderabad,FH Allen,29,13,3,2,223.08,caught
+1529288,2026-05-03,2,Kolkata Knight Riders,Sunrisers Hyderabad,A Raghuvanshi,59,47,5,2,125.53,caught
+1529288,2026-05-03,2,Kolkata Knight Riders,Sunrisers Hyderabad,RK Singh,22,11,2,1,200.0,
+1529288,2026-05-03,2,Kolkata Knight Riders,Sunrisers Hyderabad,C Green,3,3,0,0,100.0,
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,Priyansh Arya,2,2,0,0,100.0,caught
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,C Connolly,0,1,0,0,0.0,caught
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,SS Iyer,19,21,3,0,90.48,bowled
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,P Simran Singh,15,14,2,0,107.14,caught
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,N Wadhera,0,6,0,0,0.0,caught
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,Suryansh Shedge,57,29,3,5,196.55,caught
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,MP Stoinis,40,31,5,1,129.03,caught
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,M Jansen,20,11,1,1,181.82,caught
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,XC Bartlett,0,1,0,0,0.0,bowled
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,Vijaykumar Vyshak,1,3,0,0,33.33,
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,Arshdeep Singh,1,1,0,0,100.0,
+1529289,2026-05-03,2,Gujarat Titans,Punjab Kings,B Sai Sudharsan,57,41,5,1,139.02,caught
+1529289,2026-05-03,2,Gujarat Titans,Punjab Kings,Shubman Gill,5,4,1,0,125.0,caught
+1529289,2026-05-03,2,Gujarat Titans,Punjab Kings,JC Buttler,26,22,1,2,118.18,caught
+1529289,2026-05-03,2,Gujarat Titans,Punjab Kings,N Sindhu,15,11,0,1,136.36,caught
+1529289,2026-05-03,2,Gujarat Titans,Punjab Kings,Washington Sundar,40,23,5,1,173.91,
+1529289,2026-05-03,2,Gujarat Titans,Punjab Kings,R Tewatia,2,6,0,0,33.33,caught
+1529289,2026-05-03,2,Gujarat Titans,Punjab Kings,JO Holder,5,7,0,0,71.43,caught
+1529289,2026-05-03,2,Gujarat Titans,Punjab Kings,Arshad Khan,8,5,1,0,160.0,
+1529290,2026-05-04,1,Lucknow Super Giants,Mumbai Indians,MR Marsh,44,25,4,3,176.0,caught
+1529290,2026-05-04,1,Lucknow Super Giants,Mumbai Indians,JP Inglis,13,5,3,0,260.0,caught
+1529290,2026-05-04,1,Lucknow Super Giants,Mumbai Indians,N Pooran,63,21,1,8,300.0,caught
+1529290,2026-05-04,1,Lucknow Super Giants,Mumbai Indians,RR Pant,15,10,1,1,150.0,caught
+1529290,2026-05-04,1,Lucknow Super Giants,Mumbai Indians,AK Markram,31,25,1,1,124.0,
+1529290,2026-05-04,1,Lucknow Super Giants,Mumbai Indians,Akshat Raghuwanshi,11,7,0,1,157.14,caught and bowled
+1529290,2026-05-04,1,Lucknow Super Giants,Mumbai Indians,Himmat Singh,40,31,2,2,129.03,
+1529290,2026-05-04,2,Mumbai Indians,Lucknow Super Giants,RD Rickelton,83,32,6,8,259.38,caught
+1529290,2026-05-04,2,Mumbai Indians,Lucknow Super Giants,RG Sharma,84,44,6,7,190.91,caught
+1529290,2026-05-04,2,Mumbai Indians,Lucknow Super Giants,Tilak Varma,11,13,0,0,84.62,caught
+1529290,2026-05-04,2,Mumbai Indians,Lucknow Super Giants,SA Yadav,12,7,2,0,171.43,caught
+1529290,2026-05-04,2,Mumbai Indians,Lucknow Super Giants,Naman Dhir,23,12,3,1,191.67,
+1529290,2026-05-04,2,Mumbai Indians,Lucknow Super Giants,WG Jacks,10,4,0,1,250.0,
+1529291,2026-05-05,1,Delhi Capitals,Chennai Super Kings,P Nissanka,19,15,3,1,126.67,caught
+1529291,2026-05-05,1,Delhi Capitals,Chennai Super Kings,KL Rahul,12,13,2,0,92.31,caught
+1529291,2026-05-05,1,Delhi Capitals,Chennai Super Kings,N Rana,15,13,2,0,115.38,caught
+1529291,2026-05-05,1,Delhi Capitals,Chennai Super Kings,KK Nair,13,13,2,0,100.0,caught
+1529291,2026-05-05,1,Delhi Capitals,Chennai Super Kings,AR Patel,2,6,0,0,33.33,caught
+1529291,2026-05-05,1,Delhi Capitals,Chennai Super Kings,T Stubbs,38,31,1,2,122.58,caught
+1529291,2026-05-05,1,Delhi Capitals,Chennai Super Kings,Sameer Rizvi,40,24,0,4,166.67,
+1529291,2026-05-05,1,Delhi Capitals,Chennai Super Kings,Ashutosh Sharma,14,5,0,2,280.0,run out
+1529291,2026-05-05,2,Chennai Super Kings,Delhi Capitals,SV Samson,87,52,7,6,167.31,
+1529291,2026-05-05,2,Chennai Super Kings,Delhi Capitals,RD Gaikwad,6,13,1,0,46.15,caught
+1529291,2026-05-05,2,Chennai Super Kings,Delhi Capitals,Urvil Patel,17,9,0,2,188.89,stumped
+1529291,2026-05-05,2,Chennai Super Kings,Delhi Capitals,Kartik Sharma,41,31,4,2,132.26,
+1529292,2026-05-06,1,Sunrisers Hyderabad,Punjab Kings,Abhishek Sharma,35,13,2,4,269.23,caught
+1529292,2026-05-06,1,Sunrisers Hyderabad,Punjab Kings,TM Head,38,19,3,3,200.0,caught
+1529292,2026-05-06,1,Sunrisers Hyderabad,Punjab Kings,Ishan Kishan,55,32,2,4,171.88,caught
+1529292,2026-05-06,1,Sunrisers Hyderabad,Punjab Kings,H Klaasen,69,43,3,4,160.47,caught
+1529292,2026-05-06,1,Sunrisers Hyderabad,Punjab Kings,Nithish Kumar Reddy,29,13,2,2,223.08,
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,Priyansh Arya,1,3,0,0,33.33,caught
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,P Simran Singh,3,4,0,0,75.0,caught
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,SS Iyer,5,5,1,0,100.0,caught
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,C Connolly,107,59,7,8,181.36,
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,MP Stoinis,28,14,3,2,200.0,caught
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,Suryansh Shedge,25,17,1,2,147.06,caught
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,Shashank Singh,4,3,1,0,133.33,caught
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,M Jansen,19,16,0,1,118.75,caught
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,Vijaykumar Vyshak,1,1,0,0,100.0,
+1529293,2026-05-07,1,Lucknow Super Giants,Royal Challengers Bengaluru,MR Marsh,111,56,9,9,198.21,caught
+1529293,2026-05-07,1,Lucknow Super Giants,Royal Challengers Bengaluru,AA Kulkarni,17,24,1,0,70.83,caught
+1529293,2026-05-07,1,Lucknow Super Giants,Royal Challengers Bengaluru,N Pooran,38,23,4,1,165.22,caught
+1529293,2026-05-07,1,Lucknow Super Giants,Royal Challengers Bengaluru,RR Pant,32,10,4,2,320.0,
+1529293,2026-05-07,1,Lucknow Super Giants,Royal Challengers Bengaluru,AK Markram,1,1,0,0,100.0,
+1529293,2026-05-07,2,Royal Challengers Bengaluru,Lucknow Super Giants,JG Bethell,4,5,1,0,80.0,caught
+1529293,2026-05-07,2,Royal Challengers Bengaluru,Lucknow Super Giants,D Padikkal,34,25,3,1,136.0,caught and bowled
+1529293,2026-05-07,2,Royal Challengers Bengaluru,Lucknow Super Giants,V Kohli,0,2,0,0,0.0,bowled
+1529293,2026-05-07,2,Royal Challengers Bengaluru,Lucknow Super Giants,RM Patidar,61,31,3,6,196.77,caught
+1529293,2026-05-07,2,Royal Challengers Bengaluru,Lucknow Super Giants,JM Sharma,1,3,0,0,33.33,caught
+1529293,2026-05-07,2,Royal Challengers Bengaluru,Lucknow Super Giants,TH David,40,17,4,3,235.29,caught
+1529293,2026-05-07,2,Royal Challengers Bengaluru,Lucknow Super Giants,KH Pandya,28,16,2,2,175.0,
+1529293,2026-05-07,2,Royal Challengers Bengaluru,Lucknow Super Giants,R Shepherd,23,15,3,1,153.33,
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,P Nissanka,50,29,5,3,172.41,stumped
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,KL Rahul,23,14,4,0,164.29,caught
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,N Rana,8,10,1,0,80.0,caught
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,Sameer Rizvi,3,7,0,0,42.86,caught
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,T Stubbs,2,4,0,0,50.0,bowled
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,AR Patel,11,22,0,0,50.0,caught
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,Ashutosh Sharma,39,28,3,3,139.29,caught
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,V Nigam,3,3,0,0,100.0,
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,MA Starc,0,2,0,0,0.0,run out
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,L Ngidi,1,1,0,0,100.0,
+1529294,2026-05-08,2,Kolkata Knight Riders,Delhi Capitals,AM Rahane,13,9,1,1,144.44,run out
+1529294,2026-05-08,2,Kolkata Knight Riders,Delhi Capitals,FH Allen,100,47,5,10,212.77,
+1529294,2026-05-08,2,Kolkata Knight Riders,Delhi Capitals,A Raghuvanshi,1,3,0,0,33.33,bowled
+1529294,2026-05-08,2,Kolkata Knight Riders,Delhi Capitals,C Green,33,27,0,2,122.22,
+1529295,2026-05-09,1,Gujarat Titans,Rajasthan Royals,B Sai Sudharsan,55,36,6,2,152.78,caught
+1529295,2026-05-09,1,Gujarat Titans,Rajasthan Royals,Shubman Gill,84,44,9,3,190.91,caught
+1529295,2026-05-09,1,Gujarat Titans,Rajasthan Royals,JC Buttler,13,10,1,1,130.0,caught
+1529295,2026-05-09,1,Gujarat Titans,Rajasthan Royals,Washington Sundar,37,20,2,3,185.0,
+1529295,2026-05-09,1,Gujarat Titans,Rajasthan Royals,JO Holder,7,7,1,0,100.0,caught
+1529295,2026-05-09,1,Gujarat Titans,Rajasthan Royals,R Tewatia,14,4,0,2,350.0,
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,YBK Jaiswal,3,4,0,0,75.0,caught
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,V Suryavanshi,36,16,3,3,225.0,caught
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,Dhruv Jurel,24,10,1,3,240.0,bowled
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,SO Hetmyer,6,7,1,0,85.71,caught
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,RA Jadeja,38,25,3,2,152.0,lbw
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,D Ferreira,4,2,1,0,200.0,bowled
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,SB Dubey,15,14,1,1,107.14,bowled
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,MD Shanaka,16,11,2,0,145.45,caught
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,JC Archer,5,6,1,0,83.33,caught
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,TU Deshpande,1,3,0,0,33.33,caught
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,Brijesh Sharma,1,1,0,0,100.0,
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,JP Inglis,85,33,10,6,257.58,caught
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,MR Marsh,10,10,0,1,100.0,caught
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,N Pooran,1,3,0,0,33.33,caught
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,RR Pant,15,12,2,0,125.0,bowled
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,AK Markram,6,7,0,0,85.71,run out
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,Akshat Raghuwanshi,18,18,1,0,100.0,caught
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,Shahbaz Ahmed,43,25,3,3,172.0,
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,Himmat Singh,17,12,1,1,141.67,bowled
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,Mohammed Shami,0,1,0,0,0.0,run out
+1529296,2026-05-10,2,Chennai Super Kings,Lucknow Super Giants,SV Samson,28,14,3,2,200.0,bowled
+1529296,2026-05-10,2,Chennai Super Kings,Lucknow Super Giants,RD Gaikwad,42,28,3,2,150.0,bowled
+1529296,2026-05-10,2,Chennai Super Kings,Lucknow Super Giants,Urvil Patel,65,23,2,8,282.61,caught
+1529296,2026-05-10,2,Chennai Super Kings,Lucknow Super Giants,Kartik Sharma,20,20,1,0,100.0,caught
+1529296,2026-05-10,2,Chennai Super Kings,Lucknow Super Giants,D Brevis,10,12,1,0,83.33,bowled
+1529296,2026-05-10,2,Chennai Super Kings,Lucknow Super Giants,PR Veer,17,12,0,2,141.67,
+1529296,2026-05-10,2,Chennai Super Kings,Lucknow Super Giants,S Dube,15,7,0,2,214.29,
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,RD Rickelton,2,4,0,0,50.0,caught
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,RG Sharma,22,10,2,2,220.0,caught
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,Naman Dhir,47,32,5,2,146.88,bowled
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,SA Yadav,0,1,0,0,0.0,caught
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,Tilak Varma,57,42,3,2,135.71,bowled
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,WG Jacks,10,10,1,0,100.0,caught
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,RA Bawa,16,14,1,0,114.29,caught
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,C Bosch,5,5,0,0,100.0,
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,DL Chahar,1,2,0,0,50.0,
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,JG Bethell,27,27,2,0,100.0,caught
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,V Kohli,0,1,0,0,0.0,caught
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,D Padikkal,12,11,1,1,109.09,caught
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,RM Patidar,8,8,1,0,100.0,caught
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,KH Pandya,73,46,4,5,158.7,caught
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,JM Sharma,18,12,1,2,150.0,caught
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,TH David,0,1,0,0,0.0,caught
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,R Shepherd,4,11,0,0,36.36,caught
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,Rasikh Salam,3,2,0,0,150.0,
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,B Kumar,7,2,0,1,350.0,
+1529298,2026-05-11,1,Punjab Kings,Delhi Capitals,Priyansh Arya,56,33,2,6,169.7,caught
+1529298,2026-05-11,1,Punjab Kings,Delhi Capitals,P Simran Singh,18,15,3,0,120.0,caught
+1529298,2026-05-11,1,Punjab Kings,Delhi Capitals,SS Iyer,59,36,5,3,163.89,
+1529298,2026-05-11,1,Punjab Kings,Delhi Capitals,C Connolly,38,27,3,2,140.74,caught
+1529298,2026-05-11,1,Punjab Kings,Delhi Capitals,MP Stoinis,1,2,0,0,50.0,caught
+1529298,2026-05-11,1,Punjab Kings,Delhi Capitals,Shashank Singh,0,1,0,0,0.0,caught
+1529298,2026-05-11,1,Punjab Kings,Delhi Capitals,Suryansh Shedge,21,8,2,2,262.5,
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,KL Rahul,9,8,2,0,112.5,caught
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,Abishek Porel,5,6,1,0,83.33,bowled
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,SU Parakh,13,6,1,1,216.67,caught
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,T Stubbs,12,17,1,0,70.59,run out
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,AR Patel,56,30,8,2,186.67,caught
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,DA Miller,51,28,3,4,182.14,caught
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,Ashutosh Sharma,24,10,2,2,240.0,caught
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,M Tiwari,18,8,2,1,225.0,
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,Auqib Nabi,10,2,1,1,500.0,
+1529299,2026-05-12,1,Gujarat Titans,Sunrisers Hyderabad,B Sai Sudharsan,61,44,5,2,138.64,caught
+1529299,2026-05-12,1,Gujarat Titans,Sunrisers Hyderabad,Shubman Gill,5,7,1,0,71.43,caught
+1529299,2026-05-12,1,Gujarat Titans,Sunrisers Hyderabad,JC Buttler,7,11,1,0,63.64,caught
+1529299,2026-05-12,1,Gujarat Titans,Sunrisers Hyderabad,N Sindhu,22,14,3,1,157.14,caught
+1529299,2026-05-12,1,Gujarat Titans,Sunrisers Hyderabad,Washington Sundar,50,33,7,1,151.52,caught
+1529299,2026-05-12,1,Gujarat Titans,Sunrisers Hyderabad,JO Holder,11,10,0,0,110.0,
+1529299,2026-05-12,1,Gujarat Titans,Sunrisers Hyderabad,R Tewatia,4,1,1,0,400.0,
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,TM Head,0,4,0,0,0.0,caught
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,Ishan Kishan,11,7,1,1,157.14,caught
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,Abhishek Sharma,6,4,0,1,150.0,bowled
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,R Smaran,9,15,1,0,60.0,caught
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,H Klaasen,14,16,2,0,87.5,caught
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,S Arora,16,13,3,0,123.08,caught
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,Nithish Kumar Reddy,2,4,0,0,50.0,caught
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,PJ Cummins,19,9,1,2,211.11,caught
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,Shivang Kumar,4,6,0,0,66.67,caught
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,PP Hinge,3,8,0,0,37.5,stumped
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,E Malinga,0,3,0,0,0.0,
+1529300,2026-05-13,1,Kolkata Knight Riders,Royal Challengers Bengaluru,AM Rahane,19,13,3,1,146.15,caught and bowled
+1529300,2026-05-13,1,Kolkata Knight Riders,Royal Challengers Bengaluru,FH Allen,18,8,3,1,225.0,caught
+1529300,2026-05-13,1,Kolkata Knight Riders,Royal Challengers Bengaluru,A Raghuvanshi,71,46,7,3,154.35,run out
+1529300,2026-05-13,1,Kolkata Knight Riders,Royal Challengers Bengaluru,C Green,32,24,3,1,133.33,bowled
+1529300,2026-05-13,1,Kolkata Knight Riders,Royal Challengers Bengaluru,RK Singh,49,29,3,2,168.97,
+1529300,2026-05-13,2,Royal Challengers Bengaluru,Kolkata Knight Riders,JG Bethell,15,12,2,1,125.0,caught and bowled
+1529300,2026-05-13,2,Royal Challengers Bengaluru,Kolkata Knight Riders,V Kohli,105,60,11,3,175.0,
+1529300,2026-05-13,2,Royal Challengers Bengaluru,Kolkata Knight Riders,D Padikkal,39,27,7,0,144.44,caught
+1529300,2026-05-13,2,Royal Challengers Bengaluru,Kolkata Knight Riders,RM Patidar,11,8,0,1,137.5,caught
+1529300,2026-05-13,2,Royal Challengers Bengaluru,Kolkata Knight Riders,TH David,2,3,0,0,66.67,caught
+1529300,2026-05-13,2,Royal Challengers Bengaluru,Kolkata Knight Riders,JM Sharma,8,5,1,0,160.0,
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,Priyansh Arya,22,17,4,0,129.41,bowled
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,P Simran Singh,57,32,6,4,178.12,caught
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,C Connolly,21,22,2,1,95.45,bowled
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,SS Iyer,4,2,1,0,200.0,bowled
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,Suryansh Shedge,8,5,0,1,160.0,caught
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,Shashank Singh,2,3,0,0,66.67,lbw
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,Azmatullah Omarzai,38,17,2,4,223.53,caught
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,M Jansen,2,7,0,0,28.57,bowled
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,Vishnu Vinod,15,8,1,1,187.5,
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,XC Bartlett,18,7,2,1,257.14,
+1529301,2026-05-14,2,Mumbai Indians,Punjab Kings,RG Sharma,25,26,0,2,96.15,bowled
+1529301,2026-05-14,2,Mumbai Indians,Punjab Kings,RD Rickelton,48,23,4,4,208.7,caught
+1529301,2026-05-14,2,Mumbai Indians,Punjab Kings,Naman Dhir,9,6,0,1,150.0,caught
+1529301,2026-05-14,2,Mumbai Indians,Punjab Kings,Tilak Varma,75,33,6,6,227.27,
+1529301,2026-05-14,2,Mumbai Indians,Punjab Kings,SE Rutherford,20,21,1,1,95.24,caught
+1529301,2026-05-14,2,Mumbai Indians,Punjab Kings,WG Jacks,25,10,2,2,250.0,
+1529302,2026-05-15,1,Chennai Super Kings,Lucknow Super Giants,SV Samson,20,20,3,0,100.0,caught
+1529302,2026-05-15,1,Chennai Super Kings,Lucknow Super Giants,RD Gaikwad,13,9,2,0,144.44,caught
+1529302,2026-05-15,1,Chennai Super Kings,Lucknow Super Giants,Urvil Patel,6,7,1,0,85.71,caught
+1529302,2026-05-15,1,Chennai Super Kings,Lucknow Super Giants,Kartik Sharma,71,42,6,5,169.05,caught
+1529302,2026-05-15,1,Chennai Super Kings,Lucknow Super Giants,D Brevis,25,16,0,2,156.25,caught
+1529302,2026-05-15,1,Chennai Super Kings,Lucknow Super Giants,S Dube,32,16,3,2,200.0,
+1529302,2026-05-15,1,Chennai Super Kings,Lucknow Super Giants,PR Veer,13,10,1,0,130.0,
+1529302,2026-05-15,2,Lucknow Super Giants,Chennai Super Kings,MR Marsh,90,38,9,7,236.84,run out
+1529302,2026-05-15,2,Lucknow Super Giants,Chennai Super Kings,JP Inglis,36,32,3,1,112.5,caught
+1529302,2026-05-15,2,Lucknow Super Giants,Chennai Super Kings,N Pooran,32,17,1,4,188.24,
+1529302,2026-05-15,2,Lucknow Super Giants,Chennai Super Kings,Abdul Samad,7,3,0,1,233.33,bowled
+1529302,2026-05-15,2,Lucknow Super Giants,Chennai Super Kings,MD Choudhary,13,10,2,0,130.0,
+1529303,2026-05-16,1,Kolkata Knight Riders,Gujarat Titans,AM Rahane,14,14,1,1,100.0,bowled
+1529303,2026-05-16,1,Kolkata Knight Riders,Gujarat Titans,FH Allen,93,35,4,10,265.71,caught
+1529303,2026-05-16,1,Kolkata Knight Riders,Gujarat Titans,A Raghuvanshi,82,44,4,7,186.36,
+1529303,2026-05-16,1,Kolkata Knight Riders,Gujarat Titans,C Green,52,28,3,4,185.71,
+1529303,2026-05-16,2,Gujarat Titans,Kolkata Knight Riders,B Sai Sudharsan,53,28,6,3,189.29,
+1529303,2026-05-16,2,Gujarat Titans,Kolkata Knight Riders,Shubman Gill,85,49,5,7,173.47,caught
+1529303,2026-05-16,2,Gujarat Titans,Kolkata Knight Riders,N Sindhu,1,4,0,0,25.0,caught
+1529303,2026-05-16,2,Gujarat Titans,Kolkata Knight Riders,JC Buttler,57,35,5,2,162.86,caught
+1529303,2026-05-16,2,Gujarat Titans,Kolkata Knight Riders,R Tewatia,2,4,0,0,50.0,caught
+1529304,2026-05-17,1,Royal Challengers Bengaluru,Punjab Kings,JG Bethell,11,7,2,0,157.14,bowled
+1529304,2026-05-17,1,Royal Challengers Bengaluru,Punjab Kings,V Kohli,58,37,4,3,156.76,caught
+1529304,2026-05-17,1,Royal Challengers Bengaluru,Punjab Kings,D Padikkal,45,25,4,3,180.0,caught
+1529304,2026-05-17,1,Royal Challengers Bengaluru,Punjab Kings,VR Iyer,73,40,8,4,182.5,
+1529304,2026-05-17,1,Royal Challengers Bengaluru,Punjab Kings,TH David,28,12,2,2,233.33,caught
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,Priyansh Arya,0,3,0,0,0.0,caught
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,C Connolly,37,22,3,3,168.18,caught
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,P Simran Singh,2,5,0,0,40.0,caught
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,SS Iyer,1,3,0,0,33.33,caught
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,Suryansh Shedge,35,22,2,2,159.09,caught
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,MP Stoinis,37,25,5,0,148.0,lbw
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,Shashank Singh,56,27,4,4,207.41,caught
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,Azmatullah Omarzai,14,10,1,1,140.0,caught
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,Harpreet Brar,5,3,1,0,166.67,
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,YBK Jaiswal,12,9,3,0,133.33,caught
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,V Suryavanshi,46,21,5,3,219.05,caught
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,Dhruv Jurel,53,40,5,2,132.5,lbw
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,R Parag,51,26,3,5,196.15,caught
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,D Ferreira,0,1,0,0,0.0,caught
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,Ravi Singh,4,2,1,0,200.0,lbw
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,SB Dubey,5,9,0,0,55.56,caught
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,MD Shanaka,10,8,0,1,125.0,caught
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,JC Archer,2,2,0,0,100.0,
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,AF Milne,2,2,0,0,100.0,
+1529305,2026-05-17,2,Delhi Capitals,Rajasthan Royals,Abishek Porel,51,31,7,1,164.52,caught
+1529305,2026-05-17,2,Delhi Capitals,Rajasthan Royals,KL Rahul,56,42,1,3,133.33,bowled
+1529305,2026-05-17,2,Delhi Capitals,Rajasthan Royals,SU Parakh,9,8,1,0,112.5,caught
+1529305,2026-05-17,2,Delhi Capitals,Rajasthan Royals,AR Patel,34,18,2,2,188.89,
+1529305,2026-05-17,2,Delhi Capitals,Rajasthan Royals,T Stubbs,4,6,0,0,66.67,caught
+1529305,2026-05-17,2,Delhi Capitals,Rajasthan Royals,DA Miller,9,6,0,1,150.0,caught
+1529305,2026-05-17,2,Delhi Capitals,Rajasthan Royals,Ashutosh Sharma,18,5,1,2,360.0,
+1529306,2026-05-18,1,Chennai Super Kings,Sunrisers Hyderabad,SV Samson,27,13,5,1,207.69,caught
+1529306,2026-05-18,1,Chennai Super Kings,Sunrisers Hyderabad,RD Gaikwad,15,21,0,0,71.43,caught
+1529306,2026-05-18,1,Chennai Super Kings,Sunrisers Hyderabad,Urvil Patel,13,8,0,2,162.5,bowled
+1529306,2026-05-18,1,Chennai Super Kings,Sunrisers Hyderabad,Kartik Sharma,32,19,3,2,168.42,caught
+1529306,2026-05-18,1,Chennai Super Kings,Sunrisers Hyderabad,D Brevis,44,27,2,4,162.96,bowled
+1529306,2026-05-18,1,Chennai Super Kings,Sunrisers Hyderabad,S Dube,26,23,3,1,113.04,bowled
+1529306,2026-05-18,1,Chennai Super Kings,Sunrisers Hyderabad,PR Veer,11,9,2,0,122.22,caught and bowled
+1529306,2026-05-18,1,Chennai Super Kings,Sunrisers Hyderabad,AJ Hosein,3,1,0,0,300.0,
+1529306,2026-05-18,2,Sunrisers Hyderabad,Chennai Super Kings,Abhishek Sharma,26,21,3,1,123.81,caught
+1529306,2026-05-18,2,Sunrisers Hyderabad,Chennai Super Kings,TM Head,6,6,1,0,100.0,caught and bowled
+1529306,2026-05-18,2,Sunrisers Hyderabad,Chennai Super Kings,Ishan Kishan,70,47,7,3,148.94,caught
+1529306,2026-05-18,2,Sunrisers Hyderabad,Chennai Super Kings,H Klaasen,47,26,6,2,180.77,stumped
+1529306,2026-05-18,2,Sunrisers Hyderabad,Chennai Super Kings,Nithish Kumar Reddy,11,7,1,0,157.14,caught
+1529306,2026-05-18,2,Sunrisers Hyderabad,Chennai Super Kings,S Arora,10,5,0,1,200.0,
+1529306,2026-05-18,2,Sunrisers Hyderabad,Chennai Super Kings,R Smaran,5,2,1,0,250.0,
+1529307,2026-05-19,1,Lucknow Super Giants,Rajasthan Royals,MR Marsh,96,57,11,5,168.42,run out
+1529307,2026-05-19,1,Lucknow Super Giants,Rajasthan Royals,JP Inglis,60,29,7,3,206.9,bowled
+1529307,2026-05-19,1,Lucknow Super Giants,Rajasthan Royals,N Pooran,16,11,0,2,145.45,caught
+1529307,2026-05-19,1,Lucknow Super Giants,Rajasthan Royals,RR Pant,35,23,2,2,152.17,run out
+1529307,2026-05-19,1,Lucknow Super Giants,Rajasthan Royals,A Badoni,0,1,0,0,0.0,bowled
+1529307,2026-05-19,2,Rajasthan Royals,Lucknow Super Giants,YBK Jaiswal,43,23,8,1,186.96,caught
+1529307,2026-05-19,2,Rajasthan Royals,Lucknow Super Giants,V Suryavanshi,93,38,7,10,244.74,caught
+1529307,2026-05-19,2,Rajasthan Royals,Lucknow Super Giants,Dhruv Jurel,53,38,3,3,139.47,
+1529307,2026-05-19,2,Rajasthan Royals,Lucknow Super Giants,LG Pretorius,7,6,0,0,116.67,run out
+1529307,2026-05-19,2,Rajasthan Royals,Lucknow Super Giants,D Ferreira,16,10,1,1,160.0,
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,RD Rickelton,6,7,1,0,85.71,caught
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,RG Sharma,15,13,0,2,115.38,caught
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,Naman Dhir,0,3,0,0,0.0,caught
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,Tilak Varma,20,32,0,1,62.5,caught
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,SA Yadav,15,6,2,1,250.0,bowled
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,HH Pandya,26,27,2,1,96.3,bowled
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,WG Jacks,14,7,1,1,200.0,run out
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,C Bosch,32,18,3,2,177.78,
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,DL Chahar,10,7,2,0,142.86,caught
+1529308,2026-05-20,2,Kolkata Knight Riders,Mumbai Indians,AM Rahane,21,17,4,0,123.53,caught
+1529308,2026-05-20,2,Kolkata Knight Riders,Mumbai Indians,FH Allen,8,5,2,0,160.0,bowled
+1529308,2026-05-20,2,Kolkata Knight Riders,Mumbai Indians,MK Pandey,45,33,6,0,136.36,bowled
+1529308,2026-05-20,2,Kolkata Knight Riders,Mumbai Indians,C Green,4,8,0,0,50.0,caught
+1529308,2026-05-20,2,Kolkata Knight Riders,Mumbai Indians,R Powell,40,30,4,2,133.33,caught
+1529308,2026-05-20,2,Kolkata Knight Riders,Mumbai Indians,T Dahiya,11,12,2,0,91.67,caught
+1529308,2026-05-20,2,Kolkata Knight Riders,Mumbai Indians,RK Singh,9,5,2,0,180.0,
+1529308,2026-05-20,2,Kolkata Knight Riders,Mumbai Indians,AS Roy,4,4,0,0,100.0,
+1529309,2026-05-21,1,Gujarat Titans,Chennai Super Kings,B Sai Sudharsan,84,53,7,4,158.49,caught
+1529309,2026-05-21,1,Gujarat Titans,Chennai Super Kings,Shubman Gill,64,37,7,3,172.97,caught
+1529309,2026-05-21,1,Gujarat Titans,Chennai Super Kings,JC Buttler,57,27,5,4,211.11,
+1529309,2026-05-21,1,Gujarat Titans,Chennai Super Kings,R Tewatia,0,1,0,0,0.0,run out
+1529309,2026-05-21,1,Gujarat Titans,Chennai Super Kings,Washington Sundar,7,3,0,1,233.33,caught
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,SV Samson,0,1,0,0,0.0,caught
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,RD Gaikwad,16,7,1,2,228.57,bowled
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,MW Short,24,14,3,1,171.43,caught
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,Urvil Patel,0,2,0,0,0.0,caught
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,Kartik Sharma,19,15,3,0,126.67,run out
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,D Brevis,8,10,0,0,80.0,caught
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,S Dube,47,17,4,4,276.47,caught
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,A Kamboj,19,8,1,2,237.5,caught
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,Noor Ahmad,1,5,0,0,20.0,caught and bowled
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,Mukesh Choudhary,2,2,0,0,100.0,
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,SH Johnson,0,1,0,0,0.0,caught
+1529310,2026-05-22,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Abhishek Sharma,56,22,4,5,254.55,caught
+1529310,2026-05-22,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,TM Head,26,16,5,0,162.5,bowled
+1529310,2026-05-22,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Ishan Kishan,79,46,8,3,171.74,caught
+1529310,2026-05-22,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,H Klaasen,51,24,2,5,212.5,caught
+1529310,2026-05-22,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Nithish Kumar Reddy,29,12,1,3,241.67,
+1529310,2026-05-22,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,VR Iyer,44,19,4,4,231.58,caught
+1529310,2026-05-22,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,V Kohli,15,11,2,0,136.36,caught
+1529310,2026-05-22,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,D Padikkal,21,14,2,1,150.0,caught
+1529310,2026-05-22,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,RM Patidar,56,39,6,1,143.59,caught
+1529310,2026-05-22,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,KH Pandya,41,31,5,0,132.26,
+1529310,2026-05-22,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,TH David,15,7,1,1,214.29,
+1529311,2026-05-23,1,Lucknow Super Giants,Punjab Kings,JP Inglis,72,44,9,2,163.64,caught
+1529311,2026-05-23,1,Lucknow Super Giants,Punjab Kings,AA Kulkarni,0,1,0,0,0.0,caught
+1529311,2026-05-23,1,Lucknow Super Giants,Punjab Kings,N Pooran,2,7,0,0,28.57,bowled
+1529311,2026-05-23,1,Lucknow Super Giants,Punjab Kings,A Badoni,43,18,5,3,238.89,stumped
+1529311,2026-05-23,1,Lucknow Super Giants,Punjab Kings,RR Pant,26,22,3,0,118.18,caught
+1529311,2026-05-23,1,Lucknow Super Giants,Punjab Kings,Abdul Samad,37,20,3,3,185.0,
+1529311,2026-05-23,1,Lucknow Super Giants,Punjab Kings,MD Choudhary,1,3,0,0,33.33,caught
+1529311,2026-05-23,1,Lucknow Super Giants,Punjab Kings,Arjun Tendulkar,5,5,0,0,100.0,
+1529311,2026-05-23,2,Punjab Kings,Lucknow Super Giants,Priyansh Arya,0,1,0,0,0.0,caught
+1529311,2026-05-23,2,Punjab Kings,Lucknow Super Giants,C Connolly,18,10,4,0,180.0,bowled
+1529311,2026-05-23,2,Punjab Kings,Lucknow Super Giants,P Simran Singh,69,39,7,2,176.92,lbw
+1529311,2026-05-23,2,Punjab Kings,Lucknow Super Giants,SS Iyer,101,51,11,5,198.04,
+1529311,2026-05-23,2,Punjab Kings,Lucknow Super Giants,Suryansh Shedge,9,7,1,0,128.57,
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,YBK Jaiswal,27,17,1,3,158.82,caught
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,V Suryavanshi,4,6,0,0,66.67,caught
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,Dhruv Jurel,38,26,3,2,146.15,bowled
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,R Parag,14,8,2,1,175.0,caught
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,MD Shanaka,29,15,0,3,193.33,run out
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,D Ferreira,18,15,0,2,120.0,caught
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,JC Archer,32,15,1,3,213.33,caught
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,SB Dubey,5,6,0,0,83.33,caught
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,RA Jadeja,19,11,3,0,172.73,
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,N Burger,10,3,0,1,333.33,
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,RG Sharma,0,4,0,0,0.0,caught
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,Naman Dhir,6,5,1,0,120.0,bowled
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,RD Rickelton,12,7,1,1,171.43,caught
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,SA Yadav,60,42,3,4,142.86,caught and bowled
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,Tilak Varma,3,7,0,0,42.86,bowled
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,WG Jacks,33,18,3,2,183.33,caught
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,HH Pandya,34,15,3,2,226.67,caught
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,C Bosch,2,4,0,0,50.0,caught
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,SN Thakur,10,11,1,0,90.91,
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,DL Chahar,8,5,0,1,160.0,lbw
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,AM Ghazanfar,2,3,0,0,66.67,
+1529313,2026-05-24,1,Delhi Capitals,Kolkata Knight Riders,Abishek Porel,22,18,4,0,122.22,caught
+1529313,2026-05-24,1,Delhi Capitals,Kolkata Knight Riders,KL Rahul,60,30,5,4,200.0,caught
+1529313,2026-05-24,1,Delhi Capitals,Kolkata Knight Riders,SU Parakh,24,17,3,1,141.18,caught
+1529313,2026-05-24,1,Delhi Capitals,Kolkata Knight Riders,AR Patel,39,25,3,2,156.0,caught
+1529313,2026-05-24,1,Delhi Capitals,Kolkata Knight Riders,DA Miller,28,19,0,3,147.37,caught
+1529313,2026-05-24,1,Delhi Capitals,Kolkata Knight Riders,Ashutosh Sharma,18,11,2,1,163.64,
+1529313,2026-05-24,1,Delhi Capitals,Kolkata Knight Riders,T Stubbs,0,1,0,0,0.0,
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,AM Rahane,63,39,4,4,161.54,caught
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,FH Allen,20,13,3,1,153.85,bowled
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,MK Pandey,25,16,2,2,156.25,caught
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,C Green,2,3,0,0,66.67,caught
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,R Powell,29,21,3,1,138.1,run out
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,RK Singh,0,1,0,0,0.0,caught
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,T Dahiya,1,3,0,0,33.33,bowled
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,AS Roy,9,8,1,0,112.5,caught and bowled
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,CV Varun,5,5,1,0,100.0,caught
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,Kartik Tyagi,0,1,0,0,0.0,caught
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,SR Dubey,4,2,1,0,200.0,
+1535462,2026-05-26,1,Royal Challengers Bengaluru,Gujarat Titans,VR Iyer,19,7,3,1,271.43,caught
+1535462,2026-05-26,1,Royal Challengers Bengaluru,Gujarat Titans,V Kohli,43,25,5,1,172.0,bowled
+1535462,2026-05-26,1,Royal Challengers Bengaluru,Gujarat Titans,D Padikkal,30,19,5,0,157.89,caught
+1535462,2026-05-26,1,Royal Challengers Bengaluru,Gujarat Titans,RM Patidar,93,33,5,9,281.82,
+1535462,2026-05-26,1,Royal Challengers Bengaluru,Gujarat Titans,KH Pandya,43,28,5,2,153.57,caught
+1535462,2026-05-26,1,Royal Challengers Bengaluru,Gujarat Titans,TH David,4,5,0,0,80.0,bowled
+1535462,2026-05-26,1,Royal Challengers Bengaluru,Gujarat Titans,JM Sharma,15,5,1,1,300.0,
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,B Sai Sudharsan,14,9,3,0,155.56,hit wicket
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,Shubman Gill,2,7,0,0,28.57,bowled
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,JC Buttler,29,11,4,2,263.64,bowled
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,N Sindhu,5,3,1,0,166.67,caught and bowled
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,Washington Sundar,8,8,1,0,100.0,caught
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,JO Holder,0,3,0,0,0.0,caught
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,R Tewatia,68,43,8,4,158.14,caught
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,Rashid Khan,8,9,0,1,88.89,caught
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,K Rabada,9,5,2,0,180.0,caught
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,Mohammed Siraj,5,13,1,0,38.46,caught
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,M Prasidh Krishna,6,7,1,0,85.71,
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,YBK Jaiswal,29,29,4,0,100.0,caught
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,V Suryavanshi,97,29,5,12,334.48,caught
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,Dhruv Jurel,50,21,5,3,238.1,caught
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,R Parag,26,12,2,2,216.67,caught
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,D Ferreira,12,9,1,0,133.33,run out
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,MD Shanaka,5,3,1,0,166.67,caught
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,RA Jadeja,12,9,1,0,133.33,
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,JC Archer,4,5,1,0,80.0,caught
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,N Burger,1,1,0,0,100.0,run out
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,SS Mishra,1,3,0,0,33.33,
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,Abhishek Sharma,0,2,0,0,0.0,caught
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,Ishan Kishan,33,11,3,3,300.0,caught
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,TM Head,17,8,2,1,212.5,bowled
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,R Smaran,1,4,0,0,25.0,caught
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,H Klaasen,18,10,2,1,180.0,lbw
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,Nithish Kumar Reddy,38,20,3,2,190.0,caught
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,Salil Arora,35,21,2,2,166.67,caught
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,PJ Cummins,1,2,0,0,50.0,caught
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,Shivang Kumar,27,24,3,0,112.5,caught
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,E Malinga,5,8,0,0,62.5,caught
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,Sakib Hussain,5,7,1,0,71.43,
+1535464,2026-05-29,1,Rajasthan Royals,Gujarat Titans,YBK Jaiswal,1,2,0,0,50.0,caught
+1535464,2026-05-29,1,Rajasthan Royals,Gujarat Titans,V Suryavanshi,96,47,8,7,204.26,caught
+1535464,2026-05-29,1,Rajasthan Royals,Gujarat Titans,Dhruv Jurel,7,6,1,0,116.67,caught
+1535464,2026-05-29,1,Rajasthan Royals,Gujarat Titans,RA Jadeja,45,35,5,1,128.57,
+1535464,2026-05-29,1,Rajasthan Royals,Gujarat Titans,R Parag,11,6,1,1,183.33,caught
+1535464,2026-05-29,1,Rajasthan Royals,Gujarat Titans,MD Shanaka,3,9,0,0,33.33,caught
+1535464,2026-05-29,1,Rajasthan Royals,Gujarat Titans,JC Archer,7,4,0,1,175.0,caught
+1535464,2026-05-29,1,Rajasthan Royals,Gujarat Titans,D Ferreira,38,11,2,4,345.45,
+1535464,2026-05-29,2,Gujarat Titans,Rajasthan Royals,B Sai Sudharsan,58,32,8,1,181.25,hit wicket
+1535464,2026-05-29,2,Gujarat Titans,Rajasthan Royals,Shubman Gill,104,53,15,3,196.23,lbw
+1535464,2026-05-29,2,Gujarat Titans,Rajasthan Royals,JC Buttler,9,9,0,0,100.0,
+1535464,2026-05-29,2,Gujarat Titans,Rajasthan Royals,Washington Sundar,16,9,2,1,177.78,caught
+1535464,2026-05-29,2,Gujarat Titans,Rajasthan Royals,R Tewatia,17,9,2,1,188.89,
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,B Sai Sudharsan,12,12,2,0,100.0,caught
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,Shubman Gill,10,8,2,0,125.0,caught
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,N Sindhu,20,18,3,0,111.11,caught
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,JC Buttler,19,23,1,0,82.61,stumped
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,Washington Sundar,50,37,5,0,135.14,
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,Arshad Khan,15,6,0,2,250.0,caught
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,R Tewatia,7,5,1,0,140.0,caught
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,JO Holder,7,5,1,0,140.0,caught
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,Rashid Khan,7,3,0,1,233.33,caught
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,K Rabada,3,3,0,0,100.0,
+1535465,2026-05-31,2,Royal Challengers Bengaluru,Gujarat Titans,VR Iyer,32,16,4,2,200.0,caught
+1535465,2026-05-31,2,Royal Challengers Bengaluru,Gujarat Titans,V Kohli,75,42,9,3,178.57,
+1535465,2026-05-31,2,Royal Challengers Bengaluru,Gujarat Titans,D Padikkal,1,4,0,0,25.0,caught
+1535465,2026-05-31,2,Royal Challengers Bengaluru,Gujarat Titans,RM Patidar,15,13,1,1,115.38,caught
+1535465,2026-05-31,2,Royal Challengers Bengaluru,Gujarat Titans,KH Pandya,1,2,0,0,50.0,lbw
+1535465,2026-05-31,2,Royal Challengers Bengaluru,Gujarat Titans,TH David,24,17,3,1,141.18,caught
+1535465,2026-05-31,2,Royal Challengers Bengaluru,Gujarat Titans,JM Sharma,11,14,1,0,78.57,

@@ -8,7 +8,23 @@ import streamlit as st
 from dotenv import load_dotenv
 
 from cricket_assistant.ai_engine import answer_question
-from cricket_assistant.data_store import DATA_DIR, append_chat, clear_chat_history, load_bowlers, load_chat_history, load_matches, load_players
+from cricket_assistant.data_store import (
+    DATA_DIR,
+    append_chat,
+    clear_chat_history,
+    load_bowlers,
+    load_chat_history,
+    load_dataset_metadata,
+    load_deliveries,
+    load_fielding_stats,
+    load_innings,
+    load_match_batting,
+    load_match_bowling,
+    load_matches,
+    load_players,
+    summarize_overs,
+    load_team_stats,
+)
 
 
 ROOT = Path(__file__).parent
@@ -18,48 +34,59 @@ st.set_page_config(
     page_title="Boundary | Cricket intelligence",
     page_icon="🏏",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
+
+try:
+    if st.secrets.get("GEMINI_API_KEY"):
+        os.environ.setdefault("GEMINI_API_KEY", st.secrets["GEMINI_API_KEY"])
+except Exception:
+    pass
 
 st.markdown(
     """
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
-            :root { --ink:#111b15; --muted:#46554b; --paper:#f8faf8; --line:#cbd5ce; --green:#17684d; --lime:#c5e96b; --orange:#ed8054; --blue:#477bb3; }
-      html, body, [class*="css"] { font-family:'DM Sans', sans-serif; color:var(--ink); }
-      .stApp { background:var(--paper); }
-      [data-testid="stHeader"] { background:transparent; }
-      [data-testid="stSidebar"] { background:#172b23; border-right:0; }
-      [data-testid="stSidebar"] * { color:#edf4ef; }
-            [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p { color:#d0ddd4; }
-      [data-testid="stSidebar"] [data-testid="stRadio"] label { padding:8px 10px; border-radius:6px; }
-      [data-testid="stSidebar"] [data-testid="stRadio"] label:hover { background:#294338; }
-      .brand { font:600 30px 'Oswald', sans-serif; letter-spacing:0; color:white; margin:7px 0 2px; }
-      .brand span { color:var(--lime); }
-            .side-note { color:#c2d1c7; font-size:12px; margin-bottom:25px; }
-      .eyebrow { color:var(--green); text-transform:uppercase; font-size:11px; font-weight:700; letter-spacing:1.1px; }
-      .page-title { font:600 38px 'Oswald', sans-serif; letter-spacing:0; line-height:1.1; margin:5px 0 7px; color:var(--ink); }
-      .subhead { color:var(--muted); margin:0 0 22px; font-size:14px; }
-      .hero { background:#183c2e; color:#f5f8f5; padding:25px 28px; border-radius:8px; position:relative; overflow:hidden; margin:4px 0 22px; }
-      .hero:after { content:'BOUNDARY'; position:absolute; right:22px; bottom:-27px; color:rgba(255,255,255,.055); font:700 94px 'Oswald',sans-serif; letter-spacing:0; }
-      .hero .eyebrow { color:var(--lime); }
-      .hero h2 { color:white; font:600 29px 'Oswald',sans-serif; letter-spacing:0; margin:5px 0 7px; }
-            .hero p { color:#e0ebe4; margin:0; max-width:600px; font-size:14px; }
-      .metric { background:white; border:1px solid var(--line); border-radius:7px; padding:15px 17px; min-height:92px; }
-      .metric-label { color:var(--muted); text-transform:uppercase; font-size:10px; font-weight:700; letter-spacing:.8px; }
-      .metric-value { color:var(--ink); font:600 29px 'Oswald',sans-serif; letter-spacing:0; margin-top:4px; }
-      .metric-detail { color:var(--muted); font-size:11px; margin-top:1px; }
-      .section-title { font:600 21px 'Oswald',sans-serif; letter-spacing:0; margin:18px 0 9px; }
-      .panel { background:white; border:1px solid var(--line); border-radius:7px; padding:16px 18px; }
-      .callout { border-left:3px solid var(--orange); background:#fff7f2; padding:12px 14px; color:#684b3f; border-radius:0 5px 5px 0; font-size:13px; }
-      div[data-testid="stDataFrame"] { border:1px solid var(--line); border-radius:6px; overflow:hidden; }
-      .stButton button[kind="primary"] { background:var(--green); border:0; }
-      .stButton button { border-radius:5px; }
-      .stChatMessage { background:white; border:1px solid var(--line); border-radius:7px; }
-      .stCaption { color:var(--muted); }
-            [data-testid="stTextInput"] input, [data-testid="stChatInput"] textarea { color:var(--ink); }
-            [data-testid="stTextInput"] input::placeholder, [data-testid="stChatInput"] textarea::placeholder { color:#526157; opacity:1; }
-      @media (max-width:700px) { .page-title {font-size:32px;} .hero:after {font-size:58px; right:8px;} }
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+    :root { --ink:#15263b; --muted:#63748a; --paper:#f3f7fb; --line:#dce6f0; --blue:#1769aa; --yellow:#f2c94c; --yellow-soft:#fff8df; --surface:#ffffff; }
+    html, body, [class*="css"] { font-family:'DM Sans',sans-serif; color:var(--ink); }
+    .stApp { background:linear-gradient(180deg,#ffffff 0%,var(--paper) 100%); }
+    [data-testid="stHeader"] { background:transparent; }
+    [data-testid="stSidebar"] { background:#122a45; border-right:1px solid #294968; }
+    [data-testid="stSidebar"] * { color:#f4f8fc; }
+    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p { color:#c6d8e8; }
+    [data-testid="stSidebar"] [data-testid="stRadio"] label { padding:9px 11px; border-radius:8px; transition:background .15s ease; }
+    [data-testid="stSidebar"] [data-testid="stRadio"] label:hover { background:#1d3d5d; }
+    [data-testid="stSidebar"] [data-testid="stRadio"] label:has(input:checked) { background:#24517b; }
+    .brand { font:700 27px 'Space Grotesk',sans-serif; color:#fff; margin:8px 0 2px; }
+    .brand span { color:var(--yellow); }
+    .side-note { color:#b6cbe0; font-size:11px; margin-bottom:22px; }
+    .eyebrow { color:var(--blue); text-transform:uppercase; font-size:11px; font-weight:700; letter-spacing:1px; }
+    .page-title { font:600 39px 'Space Grotesk',sans-serif; line-height:1.12; margin:5px 0 7px; color:var(--ink); }
+    .subhead { color:var(--muted); margin:0 0 22px; font-size:14px; }
+    .hero { background:linear-gradient(115deg,#123a60 0%,#175b8a 72%,#244d70 100%); color:#f7fbff; padding:27px 30px; border-radius:10px; position:relative; overflow:hidden; margin:4px 0 22px; }
+    .hero:after { content:'BOUNDARY'; position:absolute; right:20px; bottom:-24px; color:rgba(255,255,255,.07); font:700 82px 'Space Grotesk',sans-serif; }
+    .hero .eyebrow { color:var(--yellow); }
+    .hero h2 { color:#fff; font:600 29px 'Space Grotesk',sans-serif; margin:5px 0 7px; }
+    .hero p { color:#e0edf8; margin:0; max-width:620px; font-size:14px; }
+    .metric { background:var(--surface); border:1px solid var(--line); border-radius:9px; padding:15px 17px; min-height:94px; box-shadow:0 3px 12px rgba(21,49,78,.045); }
+    .metric-label { color:var(--muted); text-transform:uppercase; font-size:10px; font-weight:700; letter-spacing:.7px; }
+    .metric-value { color:var(--ink); font:600 27px 'Space Grotesk',sans-serif; margin-top:5px; overflow-wrap:anywhere; }
+    .metric-detail { color:var(--muted); font-size:11px; margin-top:1px; }
+    .section-title { font:600 20px 'Space Grotesk',sans-serif; margin:20px 0 9px; }
+    .panel { background:var(--surface); border:1px solid var(--line); border-radius:9px; padding:16px 18px; }
+    .callout { border-left:3px solid var(--yellow); background:var(--yellow-soft); padding:12px 14px; color:#594a20; border-radius:0 7px 7px 0; font-size:13px; }
+    .st-key-player_face_gallery [data-testid="stImage"] { display:flex; justify-content:center; }
+    .st-key-player_face_gallery [data-testid="stImage"] img { width:96px; max-width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:8px; background:#fff; margin:0 auto; }
+    .st-key-player_face_gallery [data-testid="stCaptionContainer"] { min-height:2.4rem; }
+    div[data-testid="stDataFrame"] { border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    .stButton button[kind="primary"] { background:var(--blue); border:0; }
+    .stButton button { border-radius:7px; }
+    .stChatMessage { background:var(--surface); border:1px solid var(--line); border-radius:9px; }
+    .stCaption { color:var(--muted); }
+    .block-container { padding-top:1.75rem; padding-bottom:2.5rem; }
+    [data-testid="stTextInput"] input, [data-testid="stChatInput"] textarea { color:var(--ink); }
+    [data-testid="stTextInput"] input::placeholder, [data-testid="stChatInput"] textarea::placeholder { color:#75817b; opacity:1; }
+    @media (max-width:700px) { .block-container {padding-left:1rem; padding-right:1rem;} .page-title {font-size:32px;} .hero {padding:22px 20px;} .hero:after {font-size:48px; right:6px;} }
     </style>
     """,
     unsafe_allow_html=True,
@@ -83,67 +110,122 @@ def heading(kicker: str, title: str, subtitle: str) -> None:
 
 
 matches = load_matches()
+team_options = ["All teams", *sorted(set(matches["team"].dropna()) | set(matches["opponent"].dropna()))]
 players = load_players()
 bowlers = load_bowlers()
+innings = load_innings()
+deliveries = load_deliveries()
+fielding = load_fielding_stats()
+team_stats = load_team_stats()
+match_batting = load_match_batting()
+match_bowling = load_match_bowling()
+dataset_metadata = load_dataset_metadata()
 chat_history = load_chat_history()
+
+scorecards: dict[str, str] = {}
+for match_id, match_innings in innings.groupby("match_id", sort=False):
+    scorecards[str(match_id)] = " · ".join(
+        f"{row.batting_team} {int(row.runs)}/{int(row.wickets)} ({row.overs:g} ov)"
+        for row in match_innings.sort_values("innings").itertuples(index=False)
+    )
+match_index = matches.copy()
+match_index["scorecard"] = match_index["match_id"].astype(str).map(scorecards).fillna("")
 
 with st.sidebar:
     st.markdown('<div class="brand">BOUNDARY<span>.</span></div>', unsafe_allow_html=True)
-    st.markdown('<div class="side-note">CRICKET INTELLIGENCE / 01</div>', unsafe_allow_html=True)
-    section = st.radio("Workspace", ["Match centre", "Ask the analyst", "Player index", "Bowling index"], label_visibility="collapsed")
+    st.markdown('<div class="side-note">IPL 2026 · CRICKET INTELLIGENCE</div>', unsafe_allow_html=True)
+    workspace = st.radio("Workspace", ["General", "Ask analyst"], label_visibility="collapsed", key="workspace")
+    if workspace == "General":
+        st.markdown("**GENERAL**")
+        section = st.radio(
+            "General pages",
+            ["Match centre", "Match index", "Batting index", "Bowling index", "Team table", "Fielding index"],
+            label_visibility="collapsed",
+            key="general_page",
+        )
+    else:
+        section = "Ask the analyst"
     st.markdown("---")
     st.markdown("**DATA STATUS**")
-    st.caption(f"{len(matches)} matches · {len(players)} batters · {len(bowlers)} bowlers")
-    st.caption("Local CSV storage")
+    season = dataset_metadata.iloc[0]["season"] if not dataset_metadata.empty else "unavailable"
+    st.caption(f"IPL {season} · {len(matches)} matches · {len(players)} batters · {len(bowlers)} bowlers")
+    st.caption(f"{len(deliveries):,} ball-by-ball records · CSV storage")
     st.markdown("---")
     if os.getenv("GEMINI_API_KEY"):
         st.success("Gemini connected", icon="✨")
     else:
-        st.info("Local analyst mode", icon="💬")
-    st.caption("Add a Gemini key in `.env` to enable live AI answers.")
+        st.warning("Gemini key required", icon="🔑")
+    st.caption("Analyst responses are Gemini-generated; there is no local answer fallback.")
 
 if section == "Match centre":
-    heading("THE NUMBERS BEHIND THE GAME", "Match centre", "Explore the starter sample scorebook, then replace or expand it with your own CSV records.")
-    st.warning("Supplemental match and player rows contain generated statistics and are illustrative, not verified historical records.")
+    heading("SEASON OVERVIEW", "IPL 2026", "The season at a glance: league phase, playoffs, scoring, and recent results.")
     st.markdown(
-        '<div class="hero"><div class="eyebrow">THE CURRENT READ</div>'
-        '<h2>Every over has a story.</h2>'
-        '<p>Filter the scorebook, spot the form line, and use the analyst when the numbers need a second look.</p></div>',
+        '<div class="hero"><div class="eyebrow">TATA INDIAN PREMIER LEAGUE</div>'
+        '<h2>A season decided at the margins.</h2>'
+        '<p>Review the season totals, compare innings output, and keep the latest results in view.</p></div>',
         unsafe_allow_html=True,
     )
-    controls = st.columns([1, 1, 2])
-    formats = ["All formats", *sorted(matches["format"].dropna().unique().tolist())]
-    teams = ["All teams", *sorted(set(matches["team"].dropna()) | set(matches["opponent"].dropna()))]
-    selected_format = controls[0].selectbox("Format", formats)
-    selected_team = controls[1].selectbox("Team", teams)
-    search = controls[2].text_input("Find a venue or player", placeholder="Try: Lord's, Kohli...")
+    featured_players = [
+        ("Virat Kohli", "V Kohli", "virat-kohli.jpg"),
+        ("Shubman Gill", "Shubman Gill", "shubman-gill.jpg"),
+        ("MS Dhoni", "MS Dhoni", "ms-dhoni.jpg"),
+        ("Rohit Sharma", "RG Sharma", "rohit-sharma.jpg"),
+        ("Shreyas Iyer", "SS Iyer", "shreyas-iyer.jpg"),
+    ]
+    st.markdown('<div class="section-title">Player spotlights</div>', unsafe_allow_html=True)
+    with st.container(key="player_face_gallery"):
+        portrait_columns = st.columns(len(featured_players), gap="small")
+        for column, (display_name, record_name, image_name) in zip(portrait_columns, featured_players):
+            with column:
+                st.image(ROOT / "assets" / "player_portraits" / image_name, width=96)
+                st.markdown(f"**{display_name}**")
+                player_record = players[players["player"].eq(record_name)]
+                if player_record.empty:
+                    st.caption("No 2026 match record")
+                else:
+                    record = player_record.iloc[0]
+                    st.caption(f"{record['team']} · {int(record['runs']):,} runs")
+    with st.expander("Photo credits"):
+        st.markdown(
+            "- Virat Kohli, photographed July 2024 by the Prime Minister's Office, Government of India, [GODL-India](https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf) ([source](https://commons.wikimedia.org/wiki/File:Virat_Kohli_in_PMO_New_Delhi.jpg))\n"
+            "- Shubman Gill 2023 (cropped) by Bollywood Hungama, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) ([source](https://commons.wikimedia.org/wiki/File:Shubman_Gill_2023_(cropped).jpg))\n"
+            "- MS Dhoni, photographed October 2023 by RIGI, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) ([source](https://commons.wikimedia.org/wiki/File:MS_Dhoni_(Prabhav_%2723_-_RiGI_2023).jpg))\n"
+            "- Rohit Sharma, photographed June 2026 by the President's Secretariat, Government of India, [GODL-India](https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf) ([source](https://commons.wikimedia.org/wiki/File:The_President_of_Bharat,_Smt._Droupadi_Murmu_presenting_the_Padma_Shri_Award_to_Shri_Rohit_Gurunath_Sharma_at_the_Civil_Investiture_Ceremony-II_at_Rashtrapati_Bhavan.jpg))\n"
+            "- Shreyas Iyer, photographed April 2025 by Bollywood Hungama, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) ([source](https://commons.wikimedia.org/wiki/File:Shreyas_Iyer_snapped_at_the_airport.jpg))"
+        )
+    controls = st.columns([1, 1])
+    selected_team = controls[0].selectbox("Team", team_options)
+    selected_stage = controls[1].selectbox("Stage", ["All stages", "League", "Playoffs"])
 
-    filtered = matches.copy()
-    if selected_format != "All formats":
-        filtered = filtered[filtered["format"] == selected_format]
+    filtered = match_index.copy()
     if selected_team != "All teams":
         filtered = filtered[(filtered["team"] == selected_team) | (filtered["opponent"] == selected_team)]
-    if search.strip():
-        mask = filtered.astype(str).apply(lambda column: column.str.contains(search.strip(), case=False, na=False)).any(axis=1)
-        filtered = filtered[mask]
+    if selected_stage != "All stages":
+        filtered = filtered[filtered["stage"] == selected_stage]
 
-    total_runs = int(filtered["runs"].sum()) if not filtered.empty else 0
-    avg_rr = float(filtered["run_rate"].mean()) if not filtered.empty else 0.0
-    wins = int(filtered["result"].str.startswith("Won", na=False).sum()) if not filtered.empty else 0
+    selected_match_ids = set(filtered["match_id"].astype(str)) if "match_id" in filtered else set()
+    filtered_innings = innings[innings["match_id"].astype(str).isin(selected_match_ids)]
+    total_runs = int(filtered_innings["runs"].sum()) if not filtered_innings.empty else 0
+    avg_rr = float(filtered_innings["run_rate"].mean()) if not filtered_innings.empty else 0.0
+    sixes = int(filtered_innings["sixes"].sum()) if not filtered_innings.empty else 0
+    league_count = int(matches["stage"].eq("League").sum())
+    playoff_count = int(matches["stage"].eq("Playoffs").sum())
     cards = st.columns(4)
-    cards[0].markdown(f'<div class="metric"><div class="metric-label">MATCHES</div><div class="metric-value">{len(filtered)}</div><div class="metric-detail">in this view</div></div>', unsafe_allow_html=True)
-    cards[1].markdown(f'<div class="metric"><div class="metric-label">RUNS SCORED</div><div class="metric-value">{total_runs:,}</div><div class="metric-detail">combined innings</div></div>', unsafe_allow_html=True)
-    cards[2].markdown(f'<div class="metric"><div class="metric-label">AVG RUN RATE</div><div class="metric-value">{avg_rr:.2f}</div><div class="metric-detail">runs per over</div></div>', unsafe_allow_html=True)
-    cards[3].markdown(f'<div class="metric"><div class="metric-label">WINS</div><div class="metric-value">{wins}</div><div class="metric-detail">in the selected view</div></div>', unsafe_allow_html=True)
+    cards[0].markdown(f'<div class="metric"><div class="metric-label">FIXTURES</div><div class="metric-value">{len(filtered)}</div><div class="metric-detail">in this view</div></div>', unsafe_allow_html=True)
+    cards[1].markdown(f'<div class="metric"><div class="metric-label">RUNS SCORED</div><div class="metric-value">{total_runs:,}</div><div class="metric-detail">both innings</div></div>', unsafe_allow_html=True)
+    cards[2].markdown(f'<div class="metric"><div class="metric-label">LEAGUE / PLAYOFFS</div><div class="metric-value">{league_count} / {playoff_count}</div><div class="metric-detail">season fixtures</div></div>', unsafe_allow_html=True)
+    cards[3].markdown(f'<div class="metric"><div class="metric-label">SIXES</div><div class="metric-value">{sixes:,}</div><div class="metric-detail">in this view</div></div>', unsafe_allow_html=True)
 
     left, right = st.columns([1.1, 1])
     with left:
         st.markdown('<div class="section-title">Runs by match</div>', unsafe_allow_html=True)
-        if filtered.empty:
+        if filtered_innings.empty:
             st.info("No matches match those filters.")
         else:
-            chart_data = filtered.sort_values("date").set_index("opponent")["runs"]
-            st.bar_chart(chart_data, color="#17684d", height=260)
+            chart_data = filtered_innings.sort_values(["date", "innings"]).assign(
+                innings_label=lambda frame: frame["date"] + " · " + frame["batting_team"]
+            ).set_index("innings_label")["runs"]
+            st.bar_chart(chart_data, color="#1769aa", height=270)
     with right:
         st.markdown('<div class="section-title">Recent results</div>', unsafe_allow_html=True)
         if filtered.empty:
@@ -152,19 +234,109 @@ if section == "Match centre":
             recent = filtered.sort_values("date", ascending=False).head(5)
             for row in recent.itertuples(index=False):
                 st.markdown(
-                    f'<div class="panel" style="padding:11px 14px;margin-bottom:7px;display:flex;justify-content:space-between;gap:12px">'
-                    f'<span><b>{row.team}</b> <span style="color:#718078">v {row.opponent}</span><br>'
-                    f'<small style="color:#718078">{row.date} · {row.format} · {row.venue}</small></span>'
-                    f'<b style="white-space:nowrap">{row.runs}/{row.wickets}</b></div>',
+                    f'<div class="panel" style="padding:12px 14px;margin-bottom:8px">'
+                    f'<small style="color:#718078">{row.date} · {row.stage} · {row.venue}</small><br>'
+                    f'<b>{row.team}</b> <span style="color:#718078">v</span> <b>{row.opponent}</b><br>'
+                    f'<small style="color:#526157">{row.scorecard}</small><br>'
+                    f'<small style="color:#1769aa">{row.result}</small></div>',
                     unsafe_allow_html=True,
                 )
-    st.markdown('<div class="section-title">Scorebook</div>', unsafe_allow_html=True)
-    st.dataframe(filtered.sort_values("date", ascending=False), width="stretch", hide_index=True)
+    if not filtered_innings.empty:
+        st.caption(f"Average innings run rate in this view: {avg_rr:.2f}")
+
+elif section == "Match index":
+    heading("FIXTURES · SCORECARDS · BALL BY BALL", "Match index", "Browse every fixture, then open its innings, batting, bowling, over, and delivery details.")
+    filters = st.columns([1, 1, 2])
+    stage_filter = filters[0].selectbox("Stage", ["All stages", "League", "Playoffs"])
+    team_filter = filters[1].selectbox("Team", team_options)
+    fixture_search = filters[2].text_input("Search fixtures", placeholder="Opponent, venue, player, or date")
+    fixture_view = match_index.copy()
+    if stage_filter != "All stages":
+        fixture_view = fixture_view[fixture_view["stage"] == stage_filter]
+    if team_filter != "All teams":
+        fixture_view = fixture_view[(fixture_view["team"] == team_filter) | (fixture_view["opponent"] == team_filter)]
+    if fixture_search.strip():
+        searchable = fixture_view.astype(str).apply(lambda column: column.str.contains(fixture_search.strip(), case=False, na=False)).any(axis=1)
+        fixture_view = fixture_view[searchable]
+    st.caption(f"{len(fixture_view)} of {len(match_index)} fixtures")
+    st.dataframe(
+        fixture_view.sort_values("date", ascending=False)[["date", "stage", "team", "opponent", "scorecard", "result", "player_of_match", "venue"]],
+        width="stretch",
+        hide_index=True,
+    )
+    if fixture_view.empty:
+        st.info("No fixtures match these filters.")
+    else:
+        fixture_options = fixture_view.sort_values("date", ascending=False)
+        fixture_labels = {
+            str(row.match_id): f"{row.date} · {row.team} v {row.opponent} · {row.venue}"
+            for row in fixture_options.itertuples(index=False)
+        }
+        selected_match_id = st.selectbox(
+            "Inspect a match",
+            options=list(fixture_labels),
+            format_func=fixture_labels.get,
+            key="match_detail_selector",
+        )
+        selected_match = fixture_options[fixture_options["match_id"].astype(str).eq(selected_match_id)].iloc[0]
+        selected_innings = innings[innings["match_id"].astype(str).eq(selected_match_id)].sort_values("innings")
+        selected_batting = match_batting[match_batting["match_id"].astype(str).eq(selected_match_id)].sort_values(["innings", "runs"], ascending=[True, False])
+        selected_bowling = match_bowling[match_bowling["match_id"].astype(str).eq(selected_match_id)].sort_values(["innings", "wickets", "economy"], ascending=[True, False, True])
+        selected_deliveries = deliveries[deliveries["match_id"].astype(str).eq(selected_match_id)].sort_values(["innings", "over", "ball"])
+
+        st.markdown('<div class="section-title">Match details</div>', unsafe_allow_html=True)
+        st.caption(f"{selected_match['date']} · {selected_match['stage']} · {selected_match['venue']} · {selected_match['result']} · Player of the match: {selected_match['player_of_match']}")
+        score_columns = st.columns(max(1, len(selected_innings)))
+        for index, row in enumerate(selected_innings.itertuples(index=False)):
+            with score_columns[index]:
+                metric(
+                    f"Innings {row.innings} · {row.batting_team}",
+                    f"{int(row.runs)}/{int(row.wickets)}",
+                    f"{row.overs:g} overs · RR {row.run_rate:.2f} · {int(row.fours)} fours · {int(row.sixes)} sixes",
+                )
+
+        detail_tabs = st.tabs(["Innings", "Batting", "Bowling", "Overs", "Ball by ball"])
+        with detail_tabs[0]:
+            st.dataframe(
+                selected_innings[["innings", "batting_team", "bowling_team", "runs", "wickets", "overs", "legal_balls", "run_rate", "fours", "sixes", "extras", "dot_balls"]],
+                width="stretch",
+                hide_index=True,
+            )
+        with detail_tabs[1]:
+            st.dataframe(selected_batting, width="stretch", hide_index=True)
+        with detail_tabs[2]:
+            st.dataframe(selected_bowling, width="stretch", hide_index=True)
+        with detail_tabs[3]:
+            over_summary = summarize_overs(selected_deliveries)
+            st.dataframe(over_summary, width="stretch", hide_index=True)
+        with detail_tabs[4]:
+            delivery_view = selected_deliveries.copy()
+            delivery_view["over"] += 1
+            delivery_view = delivery_view.rename(columns={
+                "innings": "innings", "over": "over_number", "ball": "delivery",
+                "batting_team": "batting_team", "bowling_team": "bowling_team",
+                "batter": "batter", "bowler": "bowler", "non_striker": "non_striker",
+                "batter_runs": "runs_off_bat", "extras": "extras", "total_runs": "total_runs",
+                "wides": "wides", "noballs": "no_balls", "byes": "byes",
+                "legbyes": "leg_byes", "penalty": "penalty", "is_four": "four",
+                "is_six": "six", "wicket_kind": "wicket_kind", "player_out": "player_out",
+                "fielders": "fielders",
+            })
+            delivery_columns = ["innings", "over_number", "delivery", "batting_team", "batter", "bowler", "non_striker", "runs_off_bat", "extras", "total_runs", "wides", "no_balls", "byes", "leg_byes", "penalty", "four", "six", "wicket_kind", "player_out", "fielders"]
+            st.caption(f"{len(delivery_view)} deliveries across {len(selected_innings)} innings")
+            st.dataframe(delivery_view[delivery_columns], width="stretch", hide_index=True)
+            st.download_button(
+                "Download this match's ball-by-ball CSV",
+                data=selected_deliveries.to_csv(index=False).encode("utf-8"),
+                file_name=f"ipl_2026_{selected_match_id}_deliveries.csv",
+                mime="text/csv",
+                key=f"download_deliveries_{selected_match_id}",
+            )
 
 elif section == "Ask the analyst":
-    heading("ASK A BETTER CRICKET QUESTION", "The analyst", "Ask about form, matchups, score trends, or what the scorebook might be missing.")
+    heading("GEMINI · IPL 2026", "The analyst", "Ask about match facts, player performance, team trends, or tactical ways to improve a side's chances.")
     if not os.getenv("GEMINI_API_KEY"):
-        st.markdown('<div class="callout">You are in local analyst mode. Add a free-tier Gemini API key to <code>.env</code> for generated answers; local answers still use the CSV scorebook.</div>', unsafe_allow_html=True)
+        st.markdown('<div class="callout">Gemini is not configured. Add <code>GEMINI_API_KEY</code> to <code>.env</code> or Streamlit secrets to enable generated answers.</div>', unsafe_allow_html=True)
     conversation_heading, clear_action = st.columns([3, 1])
     with conversation_heading:
         st.markdown('<div class="section-title">Conversation</div>', unsafe_allow_html=True)
@@ -184,16 +356,31 @@ elif section == "Ask the analyst":
         with st.chat_message("user"):
             st.write(prompt)
         with st.chat_message("assistant"):
-            with st.spinner("Reading the scorebook..."):
-                response, mode = answer_question(prompt, matches, players, bowlers, chat_history.tail(8))
-            st.write(response)
-            st.caption(mode)
-        append_chat(prompt, response, mode)
-        st.rerun()
+            with st.spinner("Asking Gemini..."):
+                try:
+                    response, mode = answer_question(
+                        prompt, matches, players, bowlers, chat_history.tail(8),
+                        innings=innings, deliveries=deliveries, fielding=fielding,
+                        teams=team_stats, match_batting=match_batting,
+                        match_bowling=match_bowling, metadata=dataset_metadata,
+                    )
+                except Exception as error:
+                    error_status = str(getattr(error, "status", "")).upper()
+                    error_code = getattr(error, "code", None)
+                    if error_status == "DEADLINE_EXCEEDED" or error_code == 504 or "timeout" in type(error).__name__.casefold():
+                        st.error("Gemini timed out (504). Retry in a moment; the request now uses a faster model and a 15-second per-attempt limit.")
+                    elif error_status == "UNAVAILABLE" or error_code in {429, 500, 502, 503}:
+                        st.error("Gemini is temporarily unavailable or rate-limited. Wait a moment and try again.")
+                    else:
+                        st.error(f"Gemini could not answer ({type(error).__name__}). Check the API key, model setting, or connection and try again.")
+                else:
+                    st.write(response)
+                    st.caption(mode)
+                    append_chat(prompt, response, mode)
+                    st.rerun()
 
-elif section == "Player index":
-    heading("PLAYER FORM, WITHOUT THE NOISE", "Player index", "Compare batting output in the sample scorebook. Add rows to the CSV to grow your own dataset.")
-    st.warning("Supplemental batting statistics are generated examples assigned to real cricketer names; they are not verified career records.")
+elif section == "Batting index":
+    heading("2026 SEASON", "Batting index", "Batting performance across the 2026 IPL season.")
     search_player = st.text_input("Search players", placeholder="Player name or team")
     player_view = players.copy()
     if search_player.strip():
@@ -209,11 +396,9 @@ elif section == "Player index":
         )
     st.dataframe(player_view.sort_values("runs", ascending=False), width="stretch", hide_index=True)
     st.markdown('<div class="section-title">Your local data</div>', unsafe_allow_html=True)
-    st.caption(f"Match records: {DATA_DIR / 'matches.csv'} · Player records: {DATA_DIR / 'players.csv'}")
-    st.caption("Edit these CSV files directly; the app reads them again on each interaction.")
-else:
-    heading("WICKETS, CONTROL, AND BOWLING FORM", "Bowling index", "Explore bowling figures and compare wicket-taking and economy in the local scorebook.")
-    st.warning("Supplemental bowling statistics are generated examples assigned to real cricketer names; they are not verified career records.")
+    st.caption(f"Season CSVs: {DATA_DIR / 'players.csv'} · {DATA_DIR / 'match_batting.csv'}")
+elif section == "Bowling index":
+    heading("2026 SEASON", "Bowling index", "Compare wicket-taking, control, and innings-level bowling figures.")
     search_bowler = st.text_input("Search bowlers", placeholder="Bowler name or team")
     bowler_view = bowlers.copy()
     if search_bowler.strip():
@@ -226,4 +411,10 @@ else:
         economy_col.markdown(f'<div class="metric"><div class="metric-label">ECONOMY</div><div class="metric-value">{float(leader["economy"]):.2f}</div><div class="metric-detail">leader row economy</div></div>', unsafe_allow_html=True)
         average_col.markdown(f'<div class="metric"><div class="metric-label">BOWLING AVERAGE</div><div class="metric-value">{float(leader["average"]):.2f}</div><div class="metric-detail">runs per wicket</div></div>', unsafe_allow_html=True)
     st.dataframe(bowler_view.sort_values("wickets", ascending=False), width="stretch", hide_index=True)
-    st.caption(f"Bowling records: {DATA_DIR / 'bowlers.csv'} · Generated examples: {DATA_DIR / 'demo_bowlers.csv'}")
+    st.caption(f"Season CSVs: {DATA_DIR / 'bowlers.csv'} · {DATA_DIR / 'match_bowling.csv'}")
+elif section == "Team table":
+    heading("2026 SEASON", "Team table", "Season standings and run-rate totals derived from recorded match innings.")
+    st.dataframe(team_stats.sort_values(["points", "net_run_rate"], ascending=[False, False]), width="stretch", hide_index=True)
+elif section == "Fielding index":
+    heading("2026 SEASON", "Fielding index", "Recorded catches, stumpings, and run-outs by player.")
+    st.dataframe(fielding.sort_values(["catches", "stumpings", "run_outs"], ascending=False), width="stretch", hide_index=True)

@@ -1,0 +1,150 @@
+match_id,date,innings,batting_team,bowling_team,runs,wickets,legal_balls,overs,run_rate,fours,sixes,extras,dot_balls
+1527674,2026-03-28,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,201,9,120,20.0,10.05,15,12,6,39
+1527674,2026-03-28,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,203,4,94,15.4,12.96,17,13,18,21
+1527675,2026-03-29,1,Kolkata Knight Riders,Mumbai Indians,220,4,120,20.0,11.0,20,10,10,30
+1527675,2026-03-29,2,Mumbai Indians,Kolkata Knight Riders,224,4,115,19.1,11.69,21,14,6,33
+1527676,2026-03-30,1,Chennai Super Kings,Rajasthan Royals,127,10,118,19.4,6.46,8,5,16,57
+1527676,2026-03-30,2,Rajasthan Royals,Chennai Super Kings,128,2,73,12.1,10.52,12,7,6,23
+1527677,2026-03-31,1,Gujarat Titans,Punjab Kings,162,6,120,20.0,8.1,15,3,14,41
+1527677,2026-03-31,2,Punjab Kings,Gujarat Titans,165,7,115,19.1,8.61,6,14,4,48
+1527678,2026-04-01,1,Lucknow Super Giants,Delhi Capitals,141,10,112,18.4,7.55,11,5,14,44
+1527678,2026-04-01,2,Delhi Capitals,Lucknow Super Giants,145,4,103,17.1,8.45,10,6,20,43
+1527679,2026-04-02,1,Sunrisers Hyderabad,Kolkata Knight Riders,226,8,120,20.0,11.3,24,9,13,32
+1527679,2026-04-02,2,Kolkata Knight Riders,Sunrisers Hyderabad,161,10,96,16.0,10.06,16,7,8,29
+1527680,2026-04-03,1,Chennai Super Kings,Punjab Kings,209,5,120,20.0,10.45,21,7,17,39
+1527680,2026-04-03,2,Punjab Kings,Chennai Super Kings,210,5,112,18.4,11.25,23,9,9,33
+1527681,2026-04-04,1,Mumbai Indians,Delhi Capitals,162,6,120,20.0,8.1,17,4,5,40
+1527681,2026-04-04,2,Delhi Capitals,Mumbai Indians,164,4,109,18.1,9.03,17,8,5,42
+1527682,2026-04-04,1,Rajasthan Royals,Gujarat Titans,210,6,120,20.0,10.5,18,12,14,44
+1527682,2026-04-04,2,Gujarat Titans,Rajasthan Royals,204,8,120,20.0,10.2,24,7,10,39
+1527683,2026-04-05,1,Sunrisers Hyderabad,Lucknow Super Giants,156,9,120,20.0,7.8,11,8,5,49
+1527683,2026-04-05,2,Lucknow Super Giants,Sunrisers Hyderabad,160,5,119,19.5,8.07,20,2,2,37
+1527684,2026-04-05,1,Royal Challengers Bengaluru,Chennai Super Kings,250,3,120,20.0,12.5,14,19,8,26
+1527684,2026-04-05,2,Chennai Super Kings,Royal Challengers Bengaluru,207,10,118,19.4,10.53,21,11,7,38
+1527685,2026-04-06,1,Kolkata Knight Riders,Punjab Kings,25,2,22,3.4,6.82,3,0,0,10
+1527686,2026-04-07,1,Rajasthan Royals,Mumbai Indians,150,3,66,11.0,13.64,12,11,6,15
+1527686,2026-04-07,2,Mumbai Indians,Rajasthan Royals,123,9,66,11.0,11.18,12,5,11,21
+1527687,2026-04-08,1,Gujarat Titans,Delhi Capitals,210,4,120,20.0,10.5,16,13,6,31
+1527687,2026-04-08,2,Delhi Capitals,Gujarat Titans,209,8,120,20.0,10.45,23,8,8,37
+1527688,2026-04-09,1,Kolkata Knight Riders,Lucknow Super Giants,181,4,120,20.0,9.05,18,7,11,39
+1527688,2026-04-09,2,Lucknow Super Giants,Kolkata Knight Riders,182,7,120,20.0,9.1,13,12,10,48
+1527689,2026-04-10,1,Royal Challengers Bengaluru,Rajasthan Royals,201,8,120,20.0,10.05,20,7,13,31
+1527689,2026-04-10,2,Rajasthan Royals,Royal Challengers Bengaluru,202,4,108,18.0,11.22,17,12,3,26
+1527690,2026-04-11,1,Sunrisers Hyderabad,Punjab Kings,219,6,120,20.0,10.95,15,13,13,32
+1527690,2026-04-11,2,Punjab Kings,Sunrisers Hyderabad,223,4,113,18.5,11.84,16,16,5,27
+1527691,2026-04-11,1,Chennai Super Kings,Delhi Capitals,212,2,120,20.0,10.6,21,9,3,26
+1527691,2026-04-11,2,Delhi Capitals,Chennai Super Kings,189,10,120,20.0,9.45,15,9,15,44
+1527692,2026-04-12,1,Lucknow Super Giants,Gujarat Titans,164,8,120,20.0,8.2,17,7,9,50
+1527692,2026-04-12,2,Gujarat Titans,Lucknow Super Giants,165,3,112,18.4,8.84,23,2,3,37
+1527693,2026-04-12,1,Royal Challengers Bengaluru,Mumbai Indians,240,4,120,20.0,12.0,18,15,13,31
+1527693,2026-04-12,2,Mumbai Indians,Royal Challengers Bengaluru,222,5,120,20.0,11.1,18,14,12,37
+1529264,2026-04-13,1,Sunrisers Hyderabad,Rajasthan Royals,216,6,120,20.0,10.8,15,15,9,39
+1529264,2026-04-13,2,Rajasthan Royals,Sunrisers Hyderabad,159,10,114,19.0,8.37,14,6,10,46
+1529265,2026-04-14,1,Chennai Super Kings,Kolkata Knight Riders,192,5,120,20.0,9.6,18,9,15,42
+1529265,2026-04-14,2,Kolkata Knight Riders,Chennai Super Kings,160,7,120,20.0,8.0,10,8,7,41
+1529266,2026-04-15,1,Lucknow Super Giants,Royal Challengers Bengaluru,146,10,120,20.0,7.3,11,6,7,48
+1529266,2026-04-15,2,Royal Challengers Bengaluru,Lucknow Super Giants,149,5,91,15.1,9.82,13,8,5,29
+1529267,2026-04-16,1,Mumbai Indians,Punjab Kings,195,6,120,20.0,9.75,13,11,8,33
+1529267,2026-04-16,2,Punjab Kings,Mumbai Indians,198,3,99,16.3,12.0,21,9,10,24
+1529268,2026-04-17,1,Kolkata Knight Riders,Gujarat Titans,180,10,120,20.0,9.0,16,9,14,52
+1529268,2026-04-17,2,Gujarat Titans,Kolkata Knight Riders,181,5,118,19.4,9.2,14,8,6,33
+1529269,2026-04-18,1,Royal Challengers Bengaluru,Delhi Capitals,175,8,120,20.0,8.75,12,7,11,35
+1529269,2026-04-18,2,Delhi Capitals,Royal Challengers Bengaluru,179,4,119,19.5,9.03,15,5,6,27
+1529270,2026-04-18,1,Sunrisers Hyderabad,Chennai Super Kings,194,9,120,20.0,9.7,18,9,13,39
+1529270,2026-04-18,2,Chennai Super Kings,Sunrisers Hyderabad,184,8,120,20.0,9.2,16,4,18,36
+1529271,2026-04-19,1,Rajasthan Royals,Kolkata Knight Riders,155,9,120,20.0,7.75,13,5,13,47
+1529271,2026-04-19,2,Kolkata Knight Riders,Rajasthan Royals,161,6,118,19.4,8.19,14,6,9,42
+1529272,2026-04-19,1,Punjab Kings,Lucknow Super Giants,254,7,120,20.0,12.7,16,21,9,31
+1529272,2026-04-19,2,Lucknow Super Giants,Punjab Kings,200,5,120,20.0,10.0,14,11,9,32
+1529273,2026-04-20,1,Mumbai Indians,Gujarat Titans,199,5,120,20.0,9.95,17,10,7,34
+1529273,2026-04-20,2,Gujarat Titans,Mumbai Indians,100,10,95,15.5,6.32,13,1,7,50
+1529274,2026-04-21,1,Sunrisers Hyderabad,Delhi Capitals,242,2,120,20.0,12.1,17,16,8,26
+1529274,2026-04-21,2,Delhi Capitals,Sunrisers Hyderabad,195,9,120,20.0,9.75,15,10,8,37
+1529275,2026-04-22,1,Rajasthan Royals,Lucknow Super Giants,159,6,120,20.0,7.95,17,3,5,49
+1529275,2026-04-22,2,Lucknow Super Giants,Rajasthan Royals,119,10,108,18.0,6.61,10,5,7,52
+1529276,2026-04-23,1,Chennai Super Kings,Mumbai Indians,207,6,120,20.0,10.35,19,12,9,41
+1529276,2026-04-23,2,Mumbai Indians,Chennai Super Kings,104,10,114,19.0,5.47,10,1,7,56
+1529277,2026-04-24,1,Gujarat Titans,Royal Challengers Bengaluru,205,3,120,20.0,10.25,17,10,6,27
+1529277,2026-04-24,2,Royal Challengers Bengaluru,Gujarat Titans,206,5,113,18.5,10.94,17,14,5,34
+1529278,2026-04-25,1,Delhi Capitals,Punjab Kings,264,2,120,20.0,13.2,29,13,7,20
+1529278,2026-04-25,2,Punjab Kings,Delhi Capitals,265,4,113,18.5,14.07,20,20,14,25
+1529279,2026-04-25,1,Rajasthan Royals,Sunrisers Hyderabad,228,6,120,20.0,11.4,20,16,7,44
+1529279,2026-04-25,2,Sunrisers Hyderabad,Rajasthan Royals,229,5,111,18.3,12.38,27,10,18,37
+1529280,2026-04-26,1,Chennai Super Kings,Gujarat Titans,158,7,120,20.0,7.9,18,6,12,64
+1529280,2026-04-26,2,Gujarat Titans,Chennai Super Kings,162,2,100,16.4,9.72,9,11,2,27
+1529281,2026-04-26,1,Kolkata Knight Riders,Lucknow Super Giants,155,7,120,20.0,7.75,8,9,8,47
+1529281,2026-04-26,2,Lucknow Super Giants,Kolkata Knight Riders,155,8,120,20.0,7.75,11,7,8,45
+1529281,2026-04-26,3,Lucknow Super Giants,Kolkata Knight Riders,1,2,3,0.3,2.0,0,0,0,2
+1529281,2026-04-26,4,Kolkata Knight Riders,Lucknow Super Giants,4,0,1,0.1,24.0,1,0,0,0
+1529282,2026-04-27,1,Delhi Capitals,Royal Challengers Bengaluru,75,10,99,16.3,4.55,8,1,4,60
+1529282,2026-04-27,2,Royal Challengers Bengaluru,Delhi Capitals,77,1,39,6.3,11.85,5,7,0,13
+1529283,2026-04-28,1,Punjab Kings,Rajasthan Royals,222,4,120,20.0,11.1,18,12,9,28
+1529283,2026-04-28,2,Rajasthan Royals,Punjab Kings,228,4,116,19.2,11.79,21,14,6,31
+1529284,2026-04-29,1,Mumbai Indians,Sunrisers Hyderabad,243,5,120,20.0,12.15,21,14,8,25
+1529284,2026-04-29,2,Sunrisers Hyderabad,Mumbai Indians,249,4,112,18.4,13.34,20,18,12,26
+1529285,2026-04-30,1,Royal Challengers Bengaluru,Gujarat Titans,155,10,116,19.2,8.02,17,7,5,53
+1529285,2026-04-30,2,Gujarat Titans,Royal Challengers Bengaluru,158,6,95,15.5,9.98,13,9,4,33
+1529286,2026-05-01,1,Rajasthan Royals,Delhi Capitals,225,6,120,20.0,11.25,17,14,9,30
+1529286,2026-05-01,2,Delhi Capitals,Rajasthan Royals,226,3,115,19.1,11.79,20,11,13,29
+1529287,2026-05-02,1,Mumbai Indians,Chennai Super Kings,159,7,120,20.0,7.95,10,10,5,49
+1529287,2026-05-02,2,Chennai Super Kings,Mumbai Indians,160,2,109,18.1,8.81,13,7,4,34
+1529288,2026-05-03,1,Sunrisers Hyderabad,Kolkata Knight Riders,165,10,114,19.0,8.68,18,8,5,48
+1529288,2026-05-03,2,Kolkata Knight Riders,Sunrisers Hyderabad,169,3,110,18.2,9.22,14,6,13,33
+1529289,2026-05-03,1,Punjab Kings,Gujarat Titans,163,9,120,20.0,8.15,14,7,8,48
+1529289,2026-05-03,2,Gujarat Titans,Punjab Kings,167,6,119,19.5,8.42,13,5,9,37
+1529290,2026-05-04,1,Lucknow Super Giants,Mumbai Indians,228,5,120,20.0,11.4,12,16,11,30
+1529290,2026-05-04,2,Mumbai Indians,Lucknow Super Giants,229,4,112,18.4,12.27,17,17,6,26
+1529291,2026-05-05,1,Delhi Capitals,Chennai Super Kings,155,7,120,20.0,7.75,10,9,2,45
+1529291,2026-05-05,2,Chennai Super Kings,Delhi Capitals,159,2,105,17.3,9.09,12,10,8,43
+1529292,2026-05-06,1,Sunrisers Hyderabad,Punjab Kings,235,4,120,20.0,11.75,12,17,9,23
+1529292,2026-05-06,2,Punjab Kings,Sunrisers Hyderabad,202,7,120,20.0,10.1,13,13,9,42
+1529293,2026-05-07,1,Lucknow Super Giants,Royal Challengers Bengaluru,209,3,114,19.0,11.0,18,12,10,36
+1529293,2026-05-07,2,Royal Challengers Bengaluru,Lucknow Super Giants,203,6,114,19.0,10.68,16,13,12,38
+1529294,2026-05-08,1,Delhi Capitals,Kolkata Knight Riders,142,8,120,20.0,7.1,13,6,2,51
+1529294,2026-05-08,2,Kolkata Knight Riders,Delhi Capitals,147,2,86,14.2,10.26,6,13,0,26
+1529295,2026-05-09,1,Gujarat Titans,Rajasthan Royals,229,4,120,20.0,11.45,19,11,19,31
+1529295,2026-05-09,2,Rajasthan Royals,Gujarat Titans,152,10,99,16.3,9.21,13,9,3,43
+1529296,2026-05-10,1,Lucknow Super Giants,Chennai Super Kings,203,8,120,20.0,10.15,17,11,8,40
+1529296,2026-05-10,2,Chennai Super Kings,Lucknow Super Giants,208,5,116,19.2,10.76,10,16,11,33
+1529297,2026-05-10,1,Mumbai Indians,Royal Challengers Bengaluru,166,7,120,20.0,8.3,12,6,6,38
+1529297,2026-05-10,2,Royal Challengers Bengaluru,Mumbai Indians,167,8,120,20.0,8.35,9,9,15,43
+1529298,2026-05-11,1,Punjab Kings,Delhi Capitals,210,5,120,20.0,10.5,15,13,17,41
+1529298,2026-05-11,2,Delhi Capitals,Punjab Kings,216,7,114,19.0,11.37,21,11,18,39
+1529299,2026-05-12,1,Gujarat Titans,Sunrisers Hyderabad,168,5,120,20.0,8.4,18,4,8,43
+1529299,2026-05-12,2,Sunrisers Hyderabad,Gujarat Titans,86,10,89,14.5,5.8,8,4,2,53
+1529300,2026-05-13,1,Kolkata Knight Riders,Royal Challengers Bengaluru,192,4,120,20.0,9.6,19,8,3,36
+1529300,2026-05-13,2,Royal Challengers Bengaluru,Kolkata Knight Riders,194,4,115,19.1,10.12,21,5,14,28
+1529301,2026-05-14,1,Punjab Kings,Mumbai Indians,200,8,120,20.0,10.0,18,12,13,49
+1529301,2026-05-14,2,Mumbai Indians,Punjab Kings,205,4,119,19.5,10.34,13,16,3,38
+1529302,2026-05-15,1,Chennai Super Kings,Lucknow Super Giants,187,5,120,20.0,9.35,16,9,7,42
+1529302,2026-05-15,2,Lucknow Super Giants,Chennai Super Kings,188,3,100,16.4,11.28,15,13,10,32
+1529303,2026-05-16,1,Kolkata Knight Riders,Gujarat Titans,247,2,120,20.0,12.35,12,22,6,33
+1529303,2026-05-16,2,Gujarat Titans,Kolkata Knight Riders,218,4,120,20.0,10.9,16,12,20,35
+1529304,2026-05-17,1,Royal Challengers Bengaluru,Punjab Kings,222,4,120,20.0,11.1,20,12,7,29
+1529304,2026-05-17,2,Punjab Kings,Royal Challengers Bengaluru,199,8,120,20.0,9.95,16,10,12,37
+1529305,2026-05-17,1,Rajasthan Royals,Delhi Capitals,193,8,120,20.0,9.65,17,11,8,43
+1529305,2026-05-17,2,Delhi Capitals,Rajasthan Royals,197,5,116,19.2,10.19,12,9,16,24
+1529306,2026-05-18,1,Chennai Super Kings,Sunrisers Hyderabad,180,7,120,20.0,9.0,15,10,9,47
+1529306,2026-05-18,2,Sunrisers Hyderabad,Chennai Super Kings,181,5,114,19.0,9.53,19,7,6,38
+1529307,2026-05-19,1,Lucknow Super Giants,Rajasthan Royals,220,5,120,20.0,11.0,20,12,13,38
+1529307,2026-05-19,2,Rajasthan Royals,Lucknow Super Giants,225,3,115,19.1,11.74,19,15,13,39
+1529308,2026-05-20,1,Mumbai Indians,Kolkata Knight Riders,147,8,120,20.0,7.35,11,8,9,57
+1529308,2026-05-20,2,Kolkata Knight Riders,Mumbai Indians,148,6,113,18.5,7.86,20,2,6,45
+1529309,2026-05-21,1,Gujarat Titans,Chennai Super Kings,229,4,120,20.0,11.45,19,12,17,31
+1529309,2026-05-21,2,Chennai Super Kings,Gujarat Titans,140,10,82,13.4,10.24,12,9,4,33
+1529310,2026-05-22,1,Sunrisers Hyderabad,Royal Challengers Bengaluru,255,4,120,20.0,12.75,20,16,14,29
+1529310,2026-05-22,2,Royal Challengers Bengaluru,Sunrisers Hyderabad,200,4,120,20.0,10.0,20,7,8,31
+1529311,2026-05-23,1,Lucknow Super Giants,Punjab Kings,196,6,120,20.0,9.8,20,8,10,38
+1529311,2026-05-23,2,Punjab Kings,Lucknow Super Giants,200,3,108,18.0,11.11,23,7,3,24
+1529312,2026-05-24,1,Rajasthan Royals,Mumbai Indians,205,8,120,20.0,10.25,10,15,9,38
+1529312,2026-05-24,2,Mumbai Indians,Rajasthan Royals,175,9,120,20.0,8.75,12,10,5,42
+1529313,2026-05-24,1,Delhi Capitals,Kolkata Knight Riders,203,5,120,20.0,10.15,17,11,12,37
+1529313,2026-05-24,2,Kolkata Knight Riders,Delhi Capitals,163,10,112,18.4,8.73,15,8,5,45
+1535462,2026-05-26,1,Royal Challengers Bengaluru,Gujarat Titans,254,5,120,20.0,12.7,24,14,7,26
+1535462,2026-05-26,2,Gujarat Titans,Royal Challengers Bengaluru,162,10,117,19.3,8.31,21,7,8,62
+1535463,2026-05-27,1,Rajasthan Royals,Sunrisers Hyderabad,243,8,120,20.0,12.15,20,17,6,37
+1535463,2026-05-27,2,Sunrisers Hyderabad,Rajasthan Royals,196,10,116,19.2,10.14,16,9,16,39
+1535464,2026-05-29,1,Rajasthan Royals,Gujarat Titans,214,6,120,20.0,10.7,17,14,6,43
+1535464,2026-05-29,2,Gujarat Titans,Rajasthan Royals,219,3,112,18.4,11.73,27,6,15,24
+1535465,2026-05-31,1,Gujarat Titans,Royal Challengers Bengaluru,155,8,120,20.0,7.75,15,3,5,38
+1535465,2026-05-31,2,Royal Challengers Bengaluru,Gujarat Titans,161,5,108,18.0,8.94,18,7,2,42
