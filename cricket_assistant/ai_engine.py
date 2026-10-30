@@ -50,6 +50,11 @@ def _match_context(matches: pd.DataFrame, reference: str) -> pd.DataFrame:
         return matches
     date = re.search(r"\b\d{4}-\d{2}-\d{2}\b", reference)
     selected = matches.copy()
+    match_id = re.search(r"\bmatch[_\s-]*id\s*[:#=]?\s*(\d+)\b", reference, re.IGNORECASE)
+    if match_id and "match_id" in selected:
+        id_matches = selected[selected["match_id"].astype(str).eq(match_id.group(1))]
+        if not id_matches.empty:
+            selected = id_matches
     if date:
         selected = selected[selected["date"].astype(str).str[:10].eq(date.group(0))]
 
@@ -146,9 +151,7 @@ RECENT CONVERSATION:\n{history_text}
 QUESTION:\n{question}
 """
 
-    match_statistics_question = "match" in query and any(
-        term in query for term in ("stat", "scorecard", "full detail", "all detail", "ball by ball", "ball-by-ball", "over by over")
-    )
+    match_statistics_question = any(term in query for term in ("stat", "scorecard", "full detail", "all detail", "ball by ball", "ball-by-ball", "ballbyball", "over by over")) and "match" in query
     if match_statistics_question:
         final_reference = "final" in query
         date_match = re.search(r"\b\d{4}-\d{2}-\d{2}\b", query)
@@ -162,7 +165,7 @@ QUESTION:\n{question}
         else:
             candidates = _match_context(matches, reference)
 
-        has_fixture_reference = bool(date_match) or len(team_names) >= 2 or final_reference
+        has_fixture_reference = bool(date_match) or len(team_names) >= 2 or final_reference or bool(re.search(r"\bmatch[_\s-]*id\s*[:#=]?\s*\d+\b", reference, re.IGNORECASE))
         unique_match = candidates if has_fixture_reference and len(candidates) == 1 else pd.DataFrame()
         match_ids = set(unique_match["match_id"].astype(str)) if not unique_match.empty and "match_id" in unique_match else set()
         match_innings = innings[innings["match_id"].astype(str).isin(match_ids)].sort_values("innings") if innings is not None and match_ids else pd.DataFrame()
@@ -170,7 +173,7 @@ QUESTION:\n{question}
         match_bowling_rows = match_bowling[match_bowling["match_id"].astype(str).isin(match_ids)].sort_values(["innings", "wickets", "economy"], ascending=[True, False, True]) if match_bowling is not None and match_ids else pd.DataFrame()
         match_deliveries = deliveries[deliveries["match_id"].astype(str).isin(match_ids)].sort_values(["innings", "over", "ball"]) if deliveries is not None and match_ids else pd.DataFrame()
         over_summary = summarize_overs(match_deliveries)
-        include_ball_by_ball = "ball by ball" in query or "ball-by-ball" in query
+        include_ball_by_ball = any(term in query for term in ("ball by ball", "ball-by-ball", "ballbyball"))
         if len(candidates) > 1:
             selection_note = "Several matches match those details. Ask the user for the date before giving match statistics."
         elif unique_match.empty:
@@ -226,7 +229,8 @@ QUESTION:\n{question}
     selected_matches = _match_context(matches, reference)
     has_date = bool(re.search(r"\b\d{4}-\d{2}-\d{2}\b", reference))
     team_names = _mentioned_teams(matches, reference)
-    match_selected = not selected_matches.empty and (has_date or len(team_names) >= 2)
+    has_match_id = bool(re.search(r"\bmatch[_\s-]*id\s*[:#=]?\s*\d+\b", reference, re.IGNORECASE))
+    match_selected = not selected_matches.empty and (has_date or len(team_names) >= 2 or has_match_id)
     selected_ids = set(selected_matches["match_id"].astype(str)) if match_selected and "match_id" in selected_matches else set()
     if not match_selected:
         selected_matches = matches.sort_values("date", ascending=False).head(20) if "date" in matches else matches.head(20)
@@ -260,8 +264,16 @@ QUESTION:\n{question}
 
     selected_innings = innings[innings["match_id"].astype(str).isin(selected_ids)] if innings is not None and selected_ids else pd.DataFrame()
     selected_deliveries = pd.DataFrame()
-    if deliveries is not None and selected_ids and any(term in query for term in ("over", "delivery", "ball by ball", "partnership")):
+    if deliveries is not None and selected_ids and any(term in query for term in ("over", "delivery", "ball by ball", "ball-by-ball", "ballbyball", "partnership")):
         selected_deliveries = deliveries[deliveries["match_id"].astype(str).isin(selected_ids)]
+        requested_over = re.search(r"\bover(?:_number)?\s*(?:number\s*)?(?:#|no\.?\s*)?(\d+)\b", query)
+        requested_innings = re.search(r"\binnings\s*(\d+)\b|\b(\d+)(?:st|nd)\s+innings\b", query)
+        if requested_over:
+            # Cricsheet stores overs zero-based; user-facing over numbers are one-based.
+            selected_deliveries = selected_deliveries[selected_deliveries["over"].eq(int(requested_over.group(1)) - 1)]
+        if requested_innings:
+            innings_number = next(group for group in requested_innings.groups() if group is not None)
+            selected_deliveries = selected_deliveries[selected_deliveries["innings"].eq(int(innings_number))]
 
     selected_players = _select_batters(players, reference, question)
     if team_names:
@@ -315,7 +327,7 @@ TEAM SEASON TABLE:\n{_csv_text(team_table, limit=10)}
 
 FIELDING FIGURES:\n{_csv_text(fielding_table, limit=20)}
 
-DELIVERIES FOR IDENTIFIED MATCH (only when requested):\n{_csv_text(selected_deliveries, limit=300)}
+DELIVERIES FOR IDENTIFIED MATCH (only when requested; over numbers in this table are zero-based, so add 1 for the user's over_number):\n{_csv_text(selected_deliveries, limit=300)}
 
 CURRENT QUESTION:\n{question}
 """
